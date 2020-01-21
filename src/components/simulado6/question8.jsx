@@ -1,44 +1,42 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-    { id: '1', question: 'Multa e remoção do veículo' },
-    { id: '2', question: 'Multa.' },
-    { id: '3', question: 'Advertência por escrito e recolhimento do documento de habilitação.' },
-    { id: '4', question: 'Recolhimento do documento de habilitação.' }
+  { id: 'A', question: 'Multa e remoção do veículo' },
+  { id: 'B', question: 'Multa.' },
+  { id: 'C', question: 'Advertência por escrito e recolhimento do documento de habilitação.' },
+  { id: 'D', question: 'Recolhimento do documento de habilitação.' }
 ];
 
 
 const columns = [
-    { dataField: 'id', text: 'Product ID', hidden: true },
-    { dataField: 'question', text: 'Alternativas' },
+  { dataField: 'id',text: ' ',           headerStyle: () => { return { width: '10%', textAlign: 'center' } }},
+  { dataField: 'question', text: ' ',  headerStyle: () => { return { width: '90%', textAlign: 'center' } }},
 ];
+export class Question_8 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+    this._handleSelect = this._handleSelect.bind(this);
+  }
 
-export class question1 extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
+  _handleSelect(row) {
+    this.props.alternativa(row.id);
+  }
 
-        }
-        this._handleSelect = this._handleSelect.bind(this);
-    }
+  render() {
+    const selectRow = {
+      mode: 'radio', 
+      bgColor: '#bbb9b9',
+      clickToSelect: true, 
+      hideSelectColumn: true, 
+      onSelect: this._handleSelect
+    };
 
-    _handleSelect(row) {
-        this.props.alternativa(row.id);
-    }
-    render() {
-        const selectRow = {
-            mode: 'radio',
-            clickToSelect: true,
-            onSelect: this._handleSelect
-        };
-        return (
-            <div>
-                <BootstrapTable keyField='id' data={question} columns={columns} selectRow={selectRow} />
-            </div>
-        );
-    }
+    return (
+      <div><BootstrapTable keyField='id' data={question} columns={columns} selectRow={selectRow} /></div>
+    );
+  }
 }
 
-export default question1;
+export default Question_8;

@@ -39,7 +39,6 @@ import s3 from '../imagens/s 3.jpg';
 
 var selectList = [];
 var numberSelect = ""
-var resultado = [{resposta: "", respondida: ""}]
 
 export class frmPagina extends Component {
   constructor(props){
@@ -77,36 +76,36 @@ export class frmPagina extends Component {
       questao30: false,
       resultado: false, 
       resposta: [
-        { resp: '2', questao: '1'},
-        { resp: '2', questao: '2'},
-        { resp: '2', questao: '3'},
-        { resp: '2', questao: '4'},
-        { resp: '2', questao: '5'},
-        { resp: '1', questao: '6'}, 
-        { resp: '1', questao: '7'}, 
-        { resp: '1', questao: '8'}, 
-        { resp: '1', questao: '9'}, 
-        { resp: '1', questao: '10'}, 
-        { resp: '4', questao: '11'},
-        { resp: '3', questao: '12'},
-        { resp: '4', questao: '13'},
-        { resp: '3', questao: '14'},
-        { resp: '1', questao: '15'},
-        { resp: '2', questao: '16'},
-        { resp: '1', questao: '17'},
-        { resp: '2', questao: '18'},
-        { resp: '4', questao: '19'},
-        { resp: '1', questao: '20'},
-        { resp: '1', questao: '21'},
-        { resp: '3', questao: '22'},
-        { resp: '3', questao: '23'},
-        { resp: '1', questao: '24'},
-        { resp: '3', questao: '25'},
-        { resp: '2', questao: '26'},
-        { resp: '2', questao: '27'},
-        { resp: '1', questao: '28'},
-        { resp: '3', questao: '29'},
-        { resp: '3', questao: '30'},
+        { resp: 'B', questao: '1'},
+        { resp: 'B', questao: '2'},
+        { resp: 'B', questao: '3'},
+        { resp: 'B', questao: '4'},
+        { resp: 'B', questao: '5'},
+        { resp: 'A', questao: '6'}, 
+        { resp: 'A', questao: '7'}, 
+        { resp: 'A', questao: '8'}, 
+        { resp: 'A', questao: '9'}, 
+        { resp: 'A', questao: '10'}, 
+        { resp: 'D', questao: '11'},
+        { resp: 'C', questao: '12'},
+        { resp: 'D', questao: '13'},
+        { resp: 'C', questao: '14'},
+        { resp: 'A', questao: '15'},
+        { resp: 'B', questao: '16'},
+        { resp: 'A', questao: '17'},
+        { resp: 'B', questao: '18'},
+        { resp: 'D', questao: '19'},
+        { resp: 'A', questao: '20'},
+        { resp: 'A', questao: '21'},
+        { resp: 'C', questao: '22'},
+        { resp: 'C', questao: '23'},
+        { resp: 'A', questao: '24'},
+        { resp: 'C', questao: '25'},
+        { resp: 'B', questao: '26'},
+        { resp: 'B', questao: '27'},
+        { resp: 'A', questao: '28'},
+        { resp: 'C', questao: '29'},
+        { resp: 'C', questao: '30'},
       ], 
     }
     this._alterQuestion = this._alterQuestion.bind(this); 
@@ -242,14 +241,7 @@ export class frmPagina extends Component {
 
   _endQuestions(){
     this._alterQuestion(); 
-    for(var i = 0; i < this.state.resposta.length; i++){
-      if (this.state.resposta[i].resp === selectList[i] )  {
-
-      }else{
-
-      }
-    }
-    this.setState({ questao1: !this.state.questao1 });
+    this.setState({ questao30: !this.state.questao30 });
     this.setState({ resultado: !this.state.resultado });
   }
 
@@ -260,7 +252,7 @@ export class frmPagina extends Component {
           <Card>
             <CardHeader>Qual o nome técnico da placa A-37? <img src={a37}  width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question1 alternativa={this._selectQuestion}/> </CardBody>
-            <CardFooter><Button onClick={() => { this._endQuestions()}}>Proxíma</Button></CardFooter>
+            <CardFooter><Button onClick={() => { this._alterQuestion('1')}}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao2 ?

@@ -1,44 +1,42 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-    { id: '1', question: 'Irritabilidade. ' },
-    { id: '2', question: 'Relaxamento muscular.' },
-    { id: '3', question: 'Dores de cabeça.' },
-    { id: '4', question: 'Inônia.' }
+  { id: 'A', question: 'Irritabilidade. ' },
+  { id: 'B', question: 'Relaxamento muscular.' },
+  { id: 'C', question: 'Dores de cabeça.' },
+  { id: 'D', question: 'Inônia.' }
 ];
-
 
 const columns = [
-    { dataField: 'id', text: 'Product ID', hidden: true },
-    { dataField: 'question', text: 'Alternativas' },
+  { dataField: 'id',text: ' ',           headerStyle: () => { return { width: '10%', textAlign: 'center' } }},
+  { dataField: 'question', text: ' ',  headerStyle: () => { return { width: '90%', textAlign: 'center' } }},
 ];
 
-export class question1 extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
+export class Question_29 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+    this._handleSelect = this._handleSelect.bind(this);
+  }
 
-        }
-        this._handleSelect = this._handleSelect.bind(this);
-    }
-
-    _handleSelect(row) {
-        this.props.alternativa(row.id);
-    }
-    render() {
-        const selectRow = {
-            mode: 'radio',
-            clickToSelect: true,
-            onSelect: this._handleSelect
-        };
-        return (
-            <div>
-                <BootstrapTable keyField='id' data={question} columns={columns} selectRow={selectRow} />
-            </div>
-        );
-    }
+  _handleSelect(row) {
+    this.props.alternativa(row.id);
+  }
+    
+  render() {
+    const selectRow = {
+      mode: 'radio', 
+      bgColor: '#bbb9b9',
+      clickToSelect: true, 
+      hideSelectColumn: true, 
+      onSelect: this._handleSelect
+    };
+  
+    return (
+      <div><BootstrapTable keyField='id' data={question} columns={columns} selectRow={selectRow} /></div>
+    );
+  }
 }
 
-export default question1;
+export default Question_29;
