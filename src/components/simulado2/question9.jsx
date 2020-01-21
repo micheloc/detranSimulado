@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '15 dias.' },
-  { id: 'B', question: '05 dias.' },
-  { id: 'C', question: '21 dias.' },
-  { id: 'D', question: '20 dias.' }
+  { id: 'A', question: 'É recomendado para queimaduras de 2º gráu' },
+  { id: 'B', question: 'É contraindicado para os casos de amputação, avulsão e esmagamento.' },
+  { id: 'C', question: 'É utilizado apenas por profissionais e, mesmo assim, em caráter de exceção.' },
+  { id: 'D', question: 'Pode ser aplicado por um condutor que não seja um profissional de saúde.' }
 ];
 
 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'O máximo possivel do eixo da via, caso se trate de uma via arterial de circulação nos dois sentidos, para realizar uma conversão à direita.' },
-  { id: 'B', question: 'Do bordo direito, tratando-se de uma via coletora de dois sentidos, para realizar uma conversão à esquerda.' },
-  { id: 'C', question: 'O máximo possivel do bordo direito da pista para realizar uma conversão à direita em uma via coletora.' },
-  { id: 'D', question: 'Do bordo esquerdo, tratando-se de uma via coletora de dois sentidos, para realizar uma conversão à esquerda.' }
+  { id: 'A', question: 'Disputar a preferência com os outros usuários.' },
+  { id: 'B', question: 'Ficar atento e aumentar a velocidade de deslocamento.' },
+  { id: 'C', question: 'Não se preocupar quando estiver transitando por vias locais.' },
+  { id: 'D', question: 'Ficar atento, parar o veículo se necessaário, dando preferência ao veículo que transita a sua direita.' }
 ];
 
 const columns = [

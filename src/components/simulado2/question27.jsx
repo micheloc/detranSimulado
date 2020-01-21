@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Quebrar o lacre e acionar o gatilho.' },
-  {id: 'B', question:'Manter o extintor em pé, na posição vertical.' },
-  {id: 'C', question:'Empregar grandes quantidades de produto, se possivel com o uso de vários extintores ao mesmo tempo.' },
-  {id: 'D', question:'Dirigir o jato para o meio do fogo.' }
+  {id: 'A', question:'Evitar mudanças abruptas de velocidade e frenagens bruscas.' },
+  {id: 'B', question:'Posicionar o pé no pedal de freio para uma parada repentina .' },
+  {id: 'C', question:'Ultrapassar, em alta velocidade, estas condições adversas.' },
+  {id: 'D', question:'Acelerar o veículo para livrar-se o mais rápido destes perigos.' }
 ]; 
 
 

@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Conselho Estadual de trânsito (CETRAN).' },
-  { id: 'B', question: 'Polícia Rodoviária Federal (PRF).' },
-  { id: 'C', question: 'Departamento Estadual de Trânsito (DETRAN).' },
-  { id: 'D', question: 'Conselho Nacional de Trânsito (CONTRAN).' }
+  { id: 'A', question: 'Curva à direita.' },
+  { id: 'B', question: 'Curva acentuada em "S" à direita.' },
+  { id: 'C', question: 'Vire à direita.' },
+  { id: 'D', question: 'Estreitamento de pista à direita.' }
+
+
 ];
 
 

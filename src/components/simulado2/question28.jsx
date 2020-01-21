@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Sendo mal educado.' },
-  { id: 'B', question: 'Agindo com sentimento de solidariedade humana, cortesia e respeito.' },
-  { id: 'C', question: 'Prejudicando a sua atenção no trânsito, podendo causar um acidente.' },
-  { id: 'D', question: 'Tirando a atenção do condutor advertido.' }
+  { id: 'A', question: 'Envolver o segmento amputado em plástico limpo ou atadura embebida em soro fisiológico e logo após, colocar o membro em um recipiente com gelo.' },
+  { id: 'B', question: 'Envovler o segmento amputado em plástico limpo e mantê-lo aquecido.' },
+  { id: 'C', question: 'Lavar com soro fisiológico o segmento amputado e colocá-lo em contato direto com gelo.' },
+  { id: 'D', question: 'Colocar o segmento amputado em um recipiente com água fria e levá-lo para um hospital.' }
 ];
 
 const columns = [

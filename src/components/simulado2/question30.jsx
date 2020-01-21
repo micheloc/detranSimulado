@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Reposto quando for totalmente consumido.' },
-  {id: 'B', question:'Trocado de seis em seis meses.' },
-  {id: 'C', question:'Trocado de acordo com a quilometragem prevista pelo fabricante.' },
-  {id: 'D', question:'Completado somente quando estiver abaixo do nivel.' }
+  {id: 'A', question:'O ser humano já domina as forças da natureza.' },
+  {id: 'B', question:'A luta pela preservação ambiental é missão de todos.' },
+  {id: 'C', question:'A natureza é limitada e pode ser destruída pelas ações humanas.' },
+  {id: 'D', question:'Os homens têm desprezado os seres que com ele convivem no meio ambiente.' }
 ]; 
 
 

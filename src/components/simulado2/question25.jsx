@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Prevenir o estado de choque.' },
-  { id: 'B', question: 'Envolver as regiões queimadas com panos limpos e úmidos.' },
-  { id: 'C', question: 'Perfurar bolhas formadas na pele.' },
-  { id: 'D', question: 'Chamar por socorro especializado.' }
+  { id: 'A', question: 'Observar uma referência do lado direito da pista.' },
+  { id: 'B', question: 'Utilizar o quebra-sol (pála de proteção interna).' },
+  { id: 'C', question: 'Utilizar óculos protetores (óculos de sol).' },
+  { id: 'D', question: 'Todas as alternativas estão corretas.' }
 ];
 
 

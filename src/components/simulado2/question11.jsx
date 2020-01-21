@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Cronometrar o tempo gasto nos deslocamentos.' },
-  { id: 'B', question: 'Estacionar o veículo sobre a calçada.' },
-  { id: 'C', question: 'Verificar a documentação de porte obrigatório.' },
-  { id: 'D', question: 'Dirigir sempre com atenção.' }
+  { id: 'A', question: 'Deixar de dar passagem pela esquerda quando solicitado.' },
+  { id: 'B', question: 'Conduzir um automóvel sem acionar o limpador de para-brisa.' },
+  { id: 'C', question: 'Deixar de retirar todo e qualqer objeto que tenha sido utilizado para sinalização temporaria da via.' },
+  { id: 'D', question: 'Utilizar o pisca alerta do veículo em situações de emergência.' }
 ];
 
 

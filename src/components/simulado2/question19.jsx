@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Ingerir bebidas alcoólicas somente em pequenas doses.' },
-  { id: 'B', question: 'Estar descansado, parar a cada intervalo de duas horas e ultrapassar com segurança.' },
-  { id: 'C', question: 'Estar descasado, parar a cada cinco horas e ultrapassar com segurança.' },
-  { id: 'D', question: 'Estar constantemente em repouso.' }
+  { id: 'A', question: 'Notificação da autuação.' },
+  { id: 'B', question: 'Multa de trânsito.' },
+  { id: 'C', question: 'Autuação da infração.' },
+  { id: 'D', question: 'Autuação e notificação simultaneamente (ao mesmo tempo).' }
 ];
 
 

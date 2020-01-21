@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Altura máxima permitida.' },
-  {id: 'B', question:'Altura limitada.' },
-  {id: 'C', question:'Largura limitada.' },
-  {id: 'D', question:'Comprimento máximo permitido.' }
+  {id: 'A', question:'Ficar ao lado deles e avisá-los que deverão transitar próximos ao meio-fio.' },
+  {id: 'B', question:'Passar perto deles para forçá-lós a transitar na calçada ou junto ao meio-fio.' },
+  {id: 'C', question:'Reduzir a velocidade de forma compativel com o trânsito e guardar distância lateral 1,5 metros.' },
+  {id: 'D', question:'Não se incomodar, pois ciclistas não representam motivos para preocupação.' }
 ]; 
 
 const columns = [

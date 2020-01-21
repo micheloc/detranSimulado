@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Irritabilidade. ' },
-  { id: 'B', question: 'Relaxamento muscular.' },
-  { id: 'C', question: 'Dores de cabeça.' },
-  { id: 'D', question: 'Inônia.' }
+  { id: 'A', question: 'Autocontrole, técnica e agressividade.' },
+  { id: 'B', question: 'Observação, previsão e decisão.' },
+  { id: 'C', question: 'Conservação do veículo, técnica, decisão e fones de ouvido.' },
+  { id: 'D', question: 'Do aumento da velocidade, das condições das vias e dos fatores externos.' }
 ];
 
 const columns = [

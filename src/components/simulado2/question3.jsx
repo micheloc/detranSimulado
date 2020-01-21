@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '"A", "C" e "E".' },
-  { id: 'B', question: '"A", "B" e "C".' },
-  { id: 'C', question: '"A", "D", e "E".' },
-  { id: 'D', question: '"B", "C", "D" e "E".' }
+  { id: 'A', question: 'Oficial, aluguel, passageiro, carga, misto, de tração e competição.' },
+  { id: 'B', question: 'Oficial, missão diplomática, particular, aluguel e aprendizagem.' },
+  { id: 'C', question: 'Oficial, aluguel, particular, passageiro e carga.' },
+  { id: 'D', question: 'Oficial, missão diplomática, aluguel, passageiro, carga, misto e de policia.' }
 ];
 
 const columns = [

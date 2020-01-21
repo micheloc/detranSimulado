@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Usar a buzina sucessivamente.' },
-  { id: 'B', question: 'Transitar em velocidade compatível com a segurança diante de escolas e onde haja grande movimentação de pedestres.' },
-  { id: 'C', question: 'Usar a buzina para apressar o pedestre.' },
-  { id: 'D', question: 'Usar a luz alta nas vias não iluminadas, mesmo ao seguir outro veículo.' }
+  { id: 'A', question: '20 (vinte) dias, após vender todas as suas peças, quando definitivamente desmontado.' },
+  { id: 'B', question: '48 (Quarenta e oito) horas após o veículo ter sido roubado.' },
+  { id: 'C', question: '30 (trinta) dias, após a constatação de sua condição através de laudo.' },
+  { id: 'D', question: '15 (Quinze) dias, após a constatação de sua condição.' }
 ];
 
 

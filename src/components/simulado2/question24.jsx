@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Conduzir a vitima ao hospital o mais rápido possivel e de qualquer forma' },
-  { id: 'B', question: 'São cuidados que devem ser tornados em caso de acidentes at´´e a chegada do serviço de socorro.' },
-  { id: 'C', question: 'É a oportunidade de se tornar herói.' },
-  { id: 'D', question: 'É a sua chance de testar o que aprendeu.' }
+  { id: 'A', question: 'Transitar com velocidade compatível com a segurança nos cruzamentos não sinalizados' },
+  { id: 'B', question: 'Sinalizar a mudança de direção somente quando estiver realizando a conversão.' },
+  { id: 'C', question: 'Dar passagem pela direita, quando solicitado.' },
+  { id: 'D', question: 'Dar um toque brece na buzina próxima a hospitais e escolas.' }
 ];
 
 

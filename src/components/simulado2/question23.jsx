@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'A Álcool.' },
-  { id: 'B', question: 'A Diesel.' },
-  { id: 'C', question: 'A Querosene.' },
-  { id: 'D', question: 'A Gasolina.' }
+  { id: 'A', question: 'Criar e ordenar áreas para o estacionamento de veículos .' },
+  { id: 'B', question: 'Criar áreas de estacionamento.' },
+  { id: 'C', question: 'Autuar os infratores para garantir a fluidez e segurança no trânsito.' },
+  { id: 'D', question: 'Criar leis para os pedestres e motociclistas.' }
 ];
 
 

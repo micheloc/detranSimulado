@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Pressionar o ferimento até sentir o osso da área lesada.' },
-  { id: 'B', question: 'Aplicar compressão direta no ferimento, com uma gaze ou pano limpo.' },
-  { id: 'C', question: 'Abaixar o membro afetado.' },
-  { id: 'D', question: 'Manter o torniquete bem apertado.' }
+  { id: 'A', question: 'De acordo com a necessidade do condutor.' },
+  { id: 'B', question: 'Depende do agente de trânsito.' },
+  { id: 'C', question: 'O necessário para efetuar o embarque e desembarque de passageiros.' },
+  { id: 'D', question: 'O necessário para a carga e descarga, e embarque e desembarque de passageiros.' }
 ];
 
 

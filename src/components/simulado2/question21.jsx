@@ -3,10 +3,11 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Usar a luz alta do farol.' },
-  { id: 'B', question: 'Aumentar a velocidade para se livrar do trecho sob neblina.' },
-  { id: 'C', question: 'Acender a luz baixa do farol e reduzir a velocidade.' },
-  { id: 'D', question: 'Diminuir a distância em relação ao veículo da frente.' }
+  { id: 'A', question: 'Cabeçote.' },
+  { id: 'B', question: 'Balancins.' },
+  { id: 'C', question: 'Arvore de manivela.' },
+  { id: 'D', question: 'Bielas.' }
+
 ];
 
 
