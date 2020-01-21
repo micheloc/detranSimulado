@@ -39,7 +39,6 @@ import s3 from '../imagens/s 3.jpg';
 
 var selectList = [];
 var numberSelect = ""
-var resultado = [{resposta: "", respondida: ""}]
 
 export class frmPagina extends Component {
   constructor(props){
@@ -107,13 +106,6 @@ export class frmPagina extends Component {
         { resp: '1', questao: '28'},
         { resp: '3', questao: '29'},
         { resp: '3', questao: '30'},
-        // { resp: '2'},
-        // { resp: '2'},
-        // { resp: '3'},
-        // { resp: '3'},
-        // { resp: '4'},
-        // { resp: '2'},
-        // { resp: '3'},
       ], 
     }
     this._alterQuestion = this._alterQuestion.bind(this); 
@@ -256,7 +248,7 @@ export class frmPagina extends Component {
 
       }
     }
-    this.setState({ questao30: !this.state.questao30 });
+    this.setState({ questao1: !this.state.questao1 });
     this.setState({ resultado: !this.state.resultado });
   }
 
@@ -267,7 +259,7 @@ export class frmPagina extends Component {
           <Card>
             <CardHeader>Qual o nome técnico da placa A-37? <img src={a37}  width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question1 alternativa={this._selectQuestion}/> </CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('1')}}>Proxíma</Button></CardFooter>
+            <CardFooter><Button onClick={() => { this._endQuestions()}}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao2 ?
@@ -482,6 +474,7 @@ export class frmPagina extends Component {
           <Card>
             <CardHeader><center><h1>Gabarito</h1></center></CardHeader>
             <CardBody>
+            <center>
               <table border="1">
                 <tr>
                   {this.state.resposta.map(opt => <td style={{width:'45px', color: 'blue'}}><center>{opt.questao}</center></td>)}
@@ -496,6 +489,7 @@ export class frmPagina extends Component {
                   {selectList.map(opt => <td style={{width:'45px'}}><center>{opt}</center></td>)}
                 </tr>
               </table>
+            </center>
             </CardBody>
           </Card>
           : null}
