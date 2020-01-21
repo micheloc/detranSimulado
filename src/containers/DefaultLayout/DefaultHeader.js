@@ -37,20 +37,10 @@ class DefaultHeader extends Component {
         <Nav className="ml-auto" navbar>
           {/* Menu de Cadastro é compra */}
           <NavItem className="px-3">
-             <Link to="/dashboard" className="nav-link">Lista de Desejos</Link>
           </NavItem>
          
           <UncontrolledDropdown nav direction="down">
-            <DropdownToggle nav>
-              Meu Cadastro
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem header tag="div" className="text-center"><strong>Minha Conta</strong></DropdownItem>
-              <DropdownItem> Perfil </DropdownItem>
-              <DropdownItem> Minhas Compras </DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Sair </DropdownItem>
-            </DropdownMenu>
+
           </UncontrolledDropdown>  
         </Nav>
       </React.Fragment>
