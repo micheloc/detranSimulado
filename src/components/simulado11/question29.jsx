@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Irritabilidade. ' },
-  { id: 'B', question: 'Relaxamento muscular.' },
-  { id: 'C', question: 'Dores de cabeça.' },
-  { id: 'D', question: 'Inônia.' }
+  { id: 'A', question: 'Via lateral à direita. ' },
+  { id: 'B', question: 'Junções sucessivas contràrias primeira à direita.' },
+  { id: 'C', question: 'Confluência à direita.' },
+  { id: 'D', question: 'Junções sucessivas contrárias.' }
 ];
 
 const columns = [

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Divisão de fluxos semelhantes e proibição de ultrapassagem.' },
-  { id: 'B', question: 'Divisão de fluxos opostos e permissão de ultrapassagem e mudança de faixa.' },
-  { id: 'C', question: 'Divisão de fluxos semelhantes e permissão de ultrapassagem ou mudança de faixa.' },
-  { id: 'D', question: 'Somente divisão de fluxos semelhantes.' }
+  { id: 'A', question: 'Estreitamento da pista à direita.' },
+  { id: 'B', question: 'Ponte estreita.' },
+  { id: 'C', question: 'Ponte móvel.' },
+  { id: 'D', question: 'Estreitamento de pista ao centro.' }
 ];
 
 

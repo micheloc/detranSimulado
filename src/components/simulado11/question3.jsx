@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '"A", "C" e "E".' },
-  { id: 'B', question: '"A", "B" e "C".' },
-  { id: 'C', question: '"A", "D", e "E".' },
-  { id: 'D', question: '"B", "C", "D" e "E".' }
+  { id: 'A', question: 'Porto.' },
+  { id: 'B', question: 'Área de estacionamento.' },
+  { id: 'C', question: 'Estacionamento de trailer.' },
+  { id: 'D', question: 'Transporte sobre água.' }
 ];
 
 const columns = [

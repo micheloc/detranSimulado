@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Remoção do veículo e multa.' },
-  { id: 'B', question: 'Retenção do veículo.' },
-  { id: 'C', question: 'Apreensão da CNH.' },
-  { id: 'D', question: 'Cassação da CNH.' }
+  { id: 'A', question: 'Ciclista trânsito em sentido contrário.' },
+  { id: 'B', question: 'Pedestres à direita, ciclistas à esquerda.' },
+  { id: 'C', question: 'Pedestres à esquerda, ciclistas à direita.' },
+  { id: 'D', question: 'Trânsito compartilhado de ciclistas e pedestres.' }
 ];
 
 const columns = [

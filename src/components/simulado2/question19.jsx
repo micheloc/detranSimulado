@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Notificação da autuação.' },
-  { id: 'B', question: 'Multa de trânsito.' },
-  { id: 'C', question: 'Autuação da infração.' },
-  { id: 'D', question: 'Autuação e notificação simultaneamente (ao mesmo tempo).' }
+  { id: 'A', question: 'O Ato de dirigir veículo automotor de modo a reduzir a possibilidade de ser envolvido em acidente de trânsito ou de causar dano a terceiros.' },
+  { id: 'B', question: 'O ato de o condutor deixar de fazer algo que provavelmente, poderia ter evitado o acidente de trânsito.' },
+  { id: 'C', question: 'O condutor dirigir um veículo sem prestar muita atenção nas placas de sinalização.' },
+  { id: 'D', question: 'O ato de dar manutenção ao veículo.' }
 ];
 
 

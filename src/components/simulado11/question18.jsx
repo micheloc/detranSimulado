@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Pressionar o ferimento até sentir o osso da área lesada.' },
-  { id: 'B', question: 'Aplicar compressão direta no ferimento, com uma gaze ou pano limpo.' },
-  { id: 'C', question: 'Abaixar o membro afetado.' },
-  { id: 'D', question: 'Manter o torniquete bem apertado.' }
+  { id: 'A', question: 'Somente trânsito de máquinas agrícolas.' },
+  { id: 'B', question: 'Homens trabalhando.' },
+  { id: 'C', question: 'Trânsito de tratores ou maquinária agricola.' },
+  { id: 'D', question: 'Veículo pesado.' }
 ];
 
 

@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Sentido de circulação da via/pista.' },
-  { id: 'B', question: 'Sentido único.' },
-  { id: 'C', question: 'Passagem obrigatória.' },
-  { id: 'D', question: 'Passagem pela direita.' }
+  { id: 'A', question: 'Serviço aeroviário.' },
+  { id: 'B', question: 'Abastecimento.' },
+  { id: 'C', question: 'Área de campismo.' },
+  { id: 'D', question: 'Aeroporto.' }
 ];
 
 

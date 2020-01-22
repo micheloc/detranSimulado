@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Cronometrar o tempo gasto nos deslocamentos.' },
-  { id: 'B', question: 'Estacionar o veículo sobre a calçada.' },
-  { id: 'C', question: 'Verificar a documentação de porte obrigatório.' },
-  { id: 'D', question: 'Dirigir sempre com atenção.' }
+  { id: 'A', question: 'Proibido retornar à direita.' },
+  { id: 'B', question: 'Proibido ultrapassar.' },
+  { id: 'C', question: 'Sentido proibido.' },
+  { id: 'D', question: 'Proibido mudar de direção.' }
 ];
 
 

@@ -33,9 +33,37 @@ import Question28 from './question28';
 import Question29 from './question29';
 import Question30 from './question30'; 
 
-import a37 from '../imagens/A-37.png'; 
-import r24a from '../imagens/R-24a.jpg'; 
-import s3 from '../imagens/s 3.jpg'; 
+import S8 from '../imagens/S8.jpg';
+import S11 from '../imagens/S11.png'; 
+import S12 from '../imagens/S12.png'; 
+import S13 from '../imagens/S13.png'; 
+import S14 from '../imagens/S14.png'; 
+import S16 from '../imagens/S16.jpg'; 
+import R20 from '../imagens/R20.png'; 
+import R8b from '../imagens/R8b.jpg'; 
+import R35b from '../imagens/R35b.png'; 
+import R21 from '../imagens/R21.png'; 
+import R5b from '../imagens/R5b.jpg'; 
+import R18 from '../imagens/R18.png'; 
+import R36b from '../imagens/R36b.jpg'; 
+import R24b from '../imagens/R24b.png'; 
+import R15 from  '../imagens/R15.png'; 
+import R23 from '../imagens/R23.png'; 
+import A29 from '../imagens/A29.png'; 
+import A31 from '../imagens/A 31.jpg'; 
+import A2b from '../imagens/A2b.png'; 
+import A30a from '../imagens/A30a.png'; 
+import A33b from '../imagens/A33b.png'; 
+import A44 from '../imagens/A44.png'; 
+import A35 from '../imagens/A35.png'; 
+import A43 from '../imagens/A43.png';
+import A6 from  '../imagens/A6.png';
+import A21a from '../imagens/A21a.png'; 
+import A32b from '../imagens/A32b.jpg'; 
+import A24 from '../imagens/A24.png'; 
+import A11b from '../imagens/A11b.png'; 
+import A41 from '../imagens/A41.jpg'; 
+
 
 var selectList = [];
 var numberSelect = ""
@@ -76,36 +104,36 @@ export class frmPagina extends Component {
       questao30: false,
       resultado: false, 
       resposta: [
-        { resp: 'B', questao: '1'},
-        { resp: 'B', questao: '2'},
-        { resp: 'B', questao: '3'},
+        { resp: 'D', questao: '1'},
+        { resp: 'D', questao: '2'},
+        { resp: 'D', questao: '3'},
         { resp: 'B', questao: '4'},
-        { resp: 'B', questao: '5'},
-        { resp: 'A', questao: '6'}, 
-        { resp: 'A', questao: '7'}, 
-        { resp: 'A', questao: '8'}, 
-        { resp: 'A', questao: '9'}, 
-        { resp: 'A', questao: '10'}, 
-        { resp: 'D', questao: '11'},
-        { resp: 'C', questao: '12'},
-        { resp: 'D', questao: '13'},
-        { resp: 'C', questao: '14'},
-        { resp: 'A', questao: '15'},
-        { resp: 'B', questao: '16'},
-        { resp: 'A', questao: '17'},
-        { resp: 'B', questao: '18'},
-        { resp: 'D', questao: '19'},
-        { resp: 'A', questao: '20'},
-        { resp: 'A', questao: '21'},
+        { resp: 'A', questao: '5'},
+        { resp: 'B', questao: '6'}, 
+        { resp: 'B', questao: '7'}, 
+        { resp: 'B', questao: '8'}, 
+        { resp: 'D', questao: '9'}, 
+        { resp: 'D', questao: '10'}, 
+        { resp: 'A', questao: '11'},
+        { resp: 'D', questao: '12'},
+        { resp: 'C', questao: '13'},
+        { resp: 'D', questao: '14'},
+        { resp: 'C', questao: '15'},
+        { resp: 'D', questao: '16'},
+        { resp: 'D', questao: '17'},
+        { resp: 'C', questao: '18'},
+        { resp: 'A', questao: '19'},
+        { resp: 'D', questao: '20'},
+        { resp: 'D', questao: '21'},
         { resp: 'C', questao: '22'},
-        { resp: 'C', questao: '23'},
-        { resp: 'A', questao: '24'},
-        { resp: 'C', questao: '25'},
-        { resp: 'B', questao: '26'},
-        { resp: 'B', questao: '27'},
-        { resp: 'A', questao: '28'},
-        { resp: 'C', questao: '29'},
-        { resp: 'C', questao: '30'},
+        { resp: 'B', questao: '23'},
+        { resp: 'C', questao: '24'},
+        { resp: 'B', questao: '25'},
+        { resp: 'D', questao: '26'},
+        { resp: 'A', questao: '27'},
+        { resp: 'D', questao: '28'},
+        { resp: 'B', questao: '29'},
+        { resp: 'D', questao: '30'},
       ], 
     }
     this._alterQuestion = this._alterQuestion.bind(this); 
@@ -250,70 +278,70 @@ export class frmPagina extends Component {
       <div>
         {this.state.questao1 ? 
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-37? <img src={a37}  width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader>Qual o nome técnico da placa S-8? <img src={S8} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question1 alternativa={this._selectQuestion}/> </CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('1')}}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao2 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-24a? <img src={r24a} width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader>Qual o nome técnico da placa S-11? <img src={S11} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question2 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('2') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao3 ?
           <Card>
-            <CardHeader>Para matricular-se no curso para condutores de veículos de produtos perigosos o condutor deverá estar habilitado em uma das categorias:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa S-12? <img src={S12} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question3 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('3') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao4 ?
           <Card>
-            <CardHeader>Para realizar uma conversão, é dever de todo conddutor de veículo aproximar-se:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa S-13? <img src={S13} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question4 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('4') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao5 ?
           <Card>
-            <CardHeader>Existem, no Brasil, determinações que a indústria automobilística deve seguir para diminuir a emissão de gases de seus veículos. Qual órgão é responsável por estas determinações?</CardHeader>
+            <CardHeader>Qual o nome técnico da placa S-14? <img src={S14} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question5 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('5') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao6 ?
           <Card>
-            <CardHeader>Os meios de ação que são utilizados para atingir os objetivos da direção defensiva:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa S-16? <img src={S16} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question6 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('6') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao7 ?
           <Card>
-            <CardHeader>Quanto às placas de identificação do veículo, podemos afirmar que :</CardHeader>
+            <CardHeader>Qual o nome técnico da placa R-20? <img src={R20} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question7 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('7') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao8 ?
           <Card>
-            <CardHeader>O condutor que atirar do veículo ou abandonar na via objetos ou substâncias, estará sujeito a: </CardHeader>
+            <CardHeader>Qual o nome técnico da placa R-8b? <img src={R8b} width="120px" height="120px" align="right" /> </CardHeader>
             <CardBody><Question8 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('8') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao9 ?
           <Card>
-            <CardHeader>O Candidato que for reprovado no exame de legislação de trânsito, ou no exame de direção poderá realizar novo exame após o prazo mínimo de:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa R-35b? <img src={R35b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question9 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('9') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao10 ?
           <Card>
-            <CardHeader>É dever de todo condutor de veículo: </CardHeader>
+            <CardHeader>Qual o nome técnico da placa R21? <img src={R21} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question10 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('10') }}>Proxíma</Button></CardFooter>
           </Card>
@@ -323,70 +351,70 @@ export class frmPagina extends Component {
 
         {this.state.questao11 ?
           <Card>
-            <CardHeader>O condutor do veículo para evitar acidentes deve:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa R-5b? <img src={R5b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question11 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('11') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao12 ?
           <Card>
-            <CardHeader>Resover os conflitos sobre circuscrição e competência de trânsito no âmbito dos municípios é atribuição do:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa R-18? <img src={R18} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question12 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('12') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao13 ?
           <Card>
-            <CardHeader>Estacionar sobre área de cruzamento, interrrompendo o trânsito da via transversal, acarretará:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa R-36b? <img src={R36b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question13 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('13') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao14 ?
           <Card>
-            <CardHeader>Antes de iniciar qualquer manobra que implique em deslocamento lateral, o condutor deverá:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa R-24b? <img src={R24b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question14 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('14') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao15 ?
           <Card>
-            <CardHeader>Quando o motorista sente cansaço constante ou a atenção diminuída pode estar: </CardHeader>
+            <CardHeader>Qual o nome técnico da placa R-15? <img src={R15} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question15 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('15') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao16 ?
           <Card>
-            <CardHeader>De acordo com a legislação de trânsito os veículos quanto à tração, classificam-se em:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa R-23? <img src={R23} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question16 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('16') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao17 ?
           <Card>
-            <CardHeader>Gás sem sabor, sem cheiro e sem cor que é perigoso porque reduz a capacidade de assimilação do oxigênio pelo sangue, e o:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-29? <img src={A29} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question17 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('17') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao18 ?
           <Card>
-            <CardHeader>Podemos considerar como um dos métodos para contenção de hemorragia externa: </CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-31? <img src={A31} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question18 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('18') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao19 ?
           <Card>
-            <CardHeader>Em uma viagem, o condutor defensivo deve adotar os seguintes procedimentos defensivos:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-2b? <img src={A2b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question19 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('19') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao20 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa s-3: <img src={s3} width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-30a: <img src={A30a} width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question20 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('20') }}>Proxíma</Button></CardFooter>
           </Card>
@@ -394,70 +422,70 @@ export class frmPagina extends Component {
 
         {this.state.questao21 ?
           <Card>
-            <CardHeader>Ao dirigir sob neblina ou cerração, é procedimento correto do condutor: </CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-33b? <img src={A33b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question21 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('21') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao22 ?
           <Card>
-            <CardHeader>Quanto às seguintes definições, é correto afirmar:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-44? <img src={A44} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question22 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('22') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao23 ?
           <Card>
-            <CardHeader>A bomba injetora só é utilizada nos veículos:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-35? <img src={A35} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question23 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('23') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao24 ?
           <Card>
-            <CardHeader>Como você deve entender Primeiros socorros:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-43? <img src={A43} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question24 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('24') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao25 ?
           <Card>
-            <CardHeader>Em caso de formação de bolhas decorrentes de queimaduras de 2º grau, o que não podemos fazer: </CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-6? <img src={A6} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question25 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('25') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao26 ?
           <Card>
-            <CardHeader>As linhas divisoras de fluxos seccionadas de cor branca significam:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-21a? <img src={A21a} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question26 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('26') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao27 ?
           <Card>
-            <CardHeader>Ao utilizar o extintor de incêndio de um veículo, não se deve: </CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-32b? <img src={A32b} width="120px" height="120px" align="right" /> </CardHeader>
             <CardBody><Question27 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('27') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao28 ?
           <Card>
-            <CardHeader>O condutor de veículo que se preocupa em avisar o outro que está rodando com o pneu vazio, ou com a porta semiaberta está: </CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-24? <img src={A24} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question28 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('28') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao29 ?
           <Card>
-            <CardHeader>Não se enquadra entre os efeitos danosos do excesso de ruídos:</CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-11b? <img src={A11b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question29 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('29') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao30 ?
           <Card>
-            <CardHeader>O óleo lubrificante do motor deve ser: </CardHeader>
+            <CardHeader>Qual o nome técnico da placa A-41? <img src={A41} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question30 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._endQuestions() }}>Finalizar</Button></CardFooter>
           </Card>

@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Usar a luz alta do farol.' },
-  { id: 'B', question: 'Aumentar a velocidade para se livrar do trecho sob neblina.' },
-  { id: 'C', question: 'Acender a luz baixa do farol e reduzir a velocidade.' },
-  { id: 'D', question: 'Diminuir a distância em relação ao veículo da frente.' }
+  { id: 'A', question: 'Pedestre ande pela esquerda.' },
+  { id: 'B', question: 'Área escolar.' },
+  { id: 'C', question: 'Passagem sinalizada de pedestres.' },
+  { id: 'D', question: 'Passagem sinalizada de escolares.' }
 ];
 
 

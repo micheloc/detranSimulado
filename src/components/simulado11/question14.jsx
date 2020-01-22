@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Assegurar-se que poderá efetuar a manobra e adentrar a via rapidamente' },
-  { id: 'B', question: 'Manter-se sempre ao centro da via, para depois sinalizar.'},
-  { id: 'C', question: 'Assegurar-se que poderá efetuar a manobra sem perigo para os demais usuários e fazer o sinal indicativo de sua intenção.' },
-  { id: 'D', question: 'Desacelerar o veículo e colocar-se no centro da via.' }
+  { id: 'A', question: 'Sentido obrigatório.' },
+  { id: 'B', question: 'Sentido duplo.'},
+  { id: 'C', question: 'Sentido de circulação da via.' },
+  { id: 'D', question: 'Passagem obrigatória.' }
 ];
 
 const columns = [

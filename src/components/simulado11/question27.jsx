@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Quebrar o lacre e acionar o gatilho.' },
-  {id: 'B', question:'Manter o extintor em pé, na posição vertical.' },
-  {id: 'C', question:'Empregar grandes quantidades de produto, se possivel com o uso de vários extintores ao mesmo tempo.' },
-  {id: 'D', question:'Dirigir o jato para o meio do fogo.' }
+  {id: 'A', question:'Passagem sinalizada de pedestres.' },
+  {id: 'B', question:'Área escolar.' },
+  {id: 'C', question:'Trânsito de pedestres.' },
+  {id: 'D', question:'Passagem sinalizada de escolares' }
 ]; 
 
 

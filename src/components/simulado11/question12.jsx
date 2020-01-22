@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Conselho Estadual de trânsito (CETRAN).' },
-  { id: 'B', question: 'Polícia Rodoviária Federal (PRF).' },
-  { id: 'C', question: 'Departamento Estadual de Trânsito (DETRAN).' },
-  { id: 'D', question: 'Conselho Nacional de Trânsito (CONTRAN).' }
+  { id: 'A', question: 'Peso máximo permitido por eixo.' },
+  { id: 'B', question: 'Carga máxima permitida.' },
+  { id: 'C', question: 'Altura máxima permitida.' },
+  { id: 'D', question: 'Comprimento máximo permitido.' }
 ];
 
 

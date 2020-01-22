@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Conduzir a vitima ao hospital o mais rápido possivel e de qualquer forma' },
-  { id: 'B', question: 'São cuidados que devem ser tornados em caso de acidentes at´´e a chegada do serviço de socorro.' },
-  { id: 'C', question: 'É a oportunidade de se tornar herói.' },
-  { id: 'D', question: 'É a sua chance de testar o que aprendeu.' }
+  { id: 'A', question: 'Cruzamento de via' },
+  { id: 'B', question: 'Zona de decolagem.' },
+  { id: 'C', question: 'Aeroporto.' },
+  { id: 'D', question: 'Zona de pouso.' }
 ];
 
 

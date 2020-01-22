@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Prevenir o estado de choque.' },
-  { id: 'B', question: 'Envolver as regiões queimadas com panos limpos e úmidos.' },
-  { id: 'C', question: 'Perfurar bolhas formadas na pele.' },
-  { id: 'D', question: 'Chamar por socorro especializado.' }
+  { id: 'A', question: 'Via lateral à esquerda.' },
+  { id: 'B', question: 'Cruzamento de vias.' },
+  { id: 'C', question: 'Confluência à esquerda.' },
+  { id: 'D', question: 'Pronto-socorro.' }
 ];
 
 

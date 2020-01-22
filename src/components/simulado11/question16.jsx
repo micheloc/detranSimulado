@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Tração animal, propulsão humana, automotor, elétrico, reboque e sembirreboque.' },
-  {id: 'B', question:'Tração animal, propulsão humana, carga e motocicleta.' },
-  {id: 'C', question:'Tração animal, propulsão humana, carga e misto.' },
-  {id: 'D', question:'Passageiro, carga, misto, reboque e semirreboque.' }
+  {id: 'A', question:'ônibus, caminhões e veiculos de grande porte mantenham-se à direita.' },
+  {id: 'B', question:'Circulação exclusiva de caminhões pela direita.' },
+  {id: 'C', question:'Ciculação exclusiva de automóveis pela direita.' },
+  {id: 'D', question:'Conserve-se à direita.' }
 ]; 
 
 
