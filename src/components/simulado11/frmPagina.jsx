@@ -48,7 +48,7 @@ import R18 from '../imagens/R18.png';
 import R36b from '../imagens/R36b.jpg'; 
 import R24b from '../imagens/R24b.png'; 
 import R15 from  '../imagens/R15.png'; 
-import R23 from '../imagens/R23.png'; 
+import R23 from '../imagens/R23.jpg'; 
 import A29 from '../imagens/A29.png'; 
 import A31 from '../imagens/A 31.jpg'; 
 import A2b from '../imagens/A2b.png'; 
