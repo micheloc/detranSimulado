@@ -5,7 +5,7 @@ const question = [
   { id: 'A', question: 'Irritabilidade. ' },
   { id: 'B', question: 'Relaxamento muscular.' },
   { id: 'C', question: 'Dores de cabeça.' },
-  { id: 'D', question: 'Inônia.' }
+  { id: 'D', question: 'Insônia.' }
 ];
 
 const columns = [

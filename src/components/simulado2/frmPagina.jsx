@@ -33,8 +33,8 @@ import Question28 from './question28';
 import Question29 from './question29';
 import Question30 from './question30'; 
 
-import r25b from '../imagens/R25b.png'; 
-import a4b from '../imagens/R-24a.jpg'; 
+import r25b from '../imagens/A25b.png'; 
+import a4b from '../imagens/A4B.jpg'; 
 import s9 from '../imagens/S9.jpg'; 
 
 var selectList = [];
