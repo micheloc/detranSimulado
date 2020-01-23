@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Pressionar o ferimento até sentir o osso da área lesada.' },
-  { id: 'B', question: 'Aplicar compressão direta no ferimento, com uma gaze ou pano limpo.' },
-  { id: 'C', question: 'Abaixar o membro afetado.' },
-  { id: 'D', question: 'Manter o torniquete bem apertado.' }
+  { id: 'A', question: 'Acessibilidade direta aos lotes lindeiros e destinada a coletar e distribuir o trânsito das vias arteriais, possibilitando o trânsito dentro das regiões urbanas.' },
+  { id: 'B', question: 'Interseções em nível, geralmente controladas por semáforo, com acessibilidade aos lotes lindeiros e às vias locais.' },
+  { id: 'C', question: 'Acessos especiais com trânsito livre, sem interseções em nível, sem acessibilidade direta aos lotes lindeiros e sem travessia de pedestre em nível.' },
+  { id: 'D', question: 'Travessia de pedestre em nivel, desde que devidamente sinalizado.' }
 ];
 
 

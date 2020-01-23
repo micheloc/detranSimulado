@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '"A", "C" e "E".' },
-  { id: 'B', question: '"A", "B" e "C".' },
-  { id: 'C', question: '"A", "D", e "E".' },
-  { id: 'D', question: '"B", "C", "D" e "E".' }
+  { id: 'A', question: 'Transitar ao lado de outro veículo, interrompendo ou pertubando o trânsito. ' },
+  { id: 'B', question: 'Prestar socorro à vitima de acidente de trânsito.' },
+  { id: 'C', question: 'Usar cinto de segurança.' },
+  { id: 'D', question: 'Parar antes de entrar em via preferencial.' }
 ];
 
 const columns = [

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Divisão de fluxos semelhantes e proibição de ultrapassagem.' },
-  { id: 'B', question: 'Divisão de fluxos opostos e permissão de ultrapassagem e mudança de faixa.' },
-  { id: 'C', question: 'Divisão de fluxos semelhantes e permissão de ultrapassagem ou mudança de faixa.' },
-  { id: 'D', question: 'Somente divisão de fluxos semelhantes.' }
+  { id: 'A', question: 'Tantas carteiras de habilitação, quantas forem as categorias nas quais estiver habilitado.' },
+  { id: 'B', question: 'Seu veículo apreendido.' },
+  { id: 'C', question: 'Sua carteira Nacional de Habilitação cassada, pois só é permitido se habilitar para uma categoria.' },
+  { id: 'D', question: 'Registrada na sua carteira de habilitação todas as categorias em que está habilitado.' }
 ];
 
 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Borda da pista é a margem da pista, podendo ser demarcada por faixas transversais que delineiam a parte da via destinada ao estacionamento de veículos.' },
-  { id: 'B', question: 'Caminão-trator é o veículo automotor destinado a realizar trabalhos agrícolas de construção e pavimentação.' },
-  { id: 'C', question: 'Canteiro central é o obstáculo físico como separador de duas pistas de rolamento.' },
-  { id: 'D', question: 'Caminhonete é um veículo destinado a realizar transporte de passageiros e de carga no mesmo compartilhamento, com peso bruto total de até três mil e quinhentos quilogramas.' }
+  { id: 'A', question: 'Carga, Misto, Reboque e Semirreboque' },
+  { id: 'B', question: 'Oficial, aluguel, passageiro, carga, misto, de tração e competição.' },
+  { id: 'C', question: 'Oficial, missão diplomática, aluguel, passageiro, carga, misto e de policia.' },
+  { id: 'D', question: 'Oficial, missão diplomática, particular, aluguel e aprendizagem.' }
 ];
 
 

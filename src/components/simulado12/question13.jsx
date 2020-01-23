@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Remoção do veículo e multa.' },
-  { id: 'B', question: 'Retenção do veículo.' },
-  { id: 'C', question: 'Apreensão da CNH.' },
-  { id: 'D', question: 'Cassação da CNH.' }
+  { id: 'A', question: 'Mediante autorização prévia do respectivo fabricante.' },
+  { id: 'B', question: 'Mediante prévia autorização do órgão executivo de trânsito.' },
+  { id: 'C', question: 'Mediante a apresentação da vistoria do veículo por uma oficina credenciada.' },
+  { id: 'D', question: 'Em caso de acidente de trânsito.' }
 ];
 
 const columns = [

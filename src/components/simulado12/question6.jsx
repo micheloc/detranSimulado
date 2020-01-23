@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Engenharia e conhecimento.' },
-  {id: 'B', question:'Engenharia e policiamento.' },
-  {id: 'C', question:'Educação, fiscalização e engenharia.' },
-  {id: 'D', question:'Habilidade e educação.' }
+  {id: 'A', question:'A autoridade de trânsito.' },
+  {id: 'B', question:'Aos orientadores de trânsito.' },
+  {id: 'C', question:'Aos auxiliares de trânsito.' },
+  {id: 'D', question:'A Policia Rodoviária Federal,Polícia Militar e à Guarda Mirim.' }
 ]; 
 
 

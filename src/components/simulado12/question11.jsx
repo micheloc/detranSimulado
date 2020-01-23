@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Cronometrar o tempo gasto nos deslocamentos.' },
-  { id: 'B', question: 'Estacionar o veículo sobre a calçada.' },
-  { id: 'C', question: 'Verificar a documentação de porte obrigatório.' },
-  { id: 'D', question: 'Dirigir sempre com atenção.' }
+  { id: 'A', question: 'Sempre que o passageiro solicitar.' },
+  { id: 'B', question: 'Somente nos pontos estabelecidos para esse fim.' },
+  { id: 'C', question: 'Em qualquer ponto da via, desde que esteja na rota estabelecida.' },
+  { id: 'D', question: 'Em qualquer ponto da via, desde que não atrapalhe o trânsito.' }
 ];
 
 

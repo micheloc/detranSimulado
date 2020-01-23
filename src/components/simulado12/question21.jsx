@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Usar a luz alta do farol.' },
-  { id: 'B', question: 'Aumentar a velocidade para se livrar do trecho sob neblina.' },
-  { id: 'C', question: 'Acender a luz baixa do farol e reduzir a velocidade.' },
-  { id: 'D', question: 'Diminuir a distância em relação ao veículo da frente.' }
+  { id: 'A', question: 'DETRAN com ou sem recolhimento do valor da multa.' },
+  { id: 'B', question: 'CONTRAN sem o recolhimento do valor da multa.' },
+  { id: 'C', question: 'CETRAN sem o recolhimento do valor da multa.' },
+  { id: 'D', question: 'CETRAN após o recolhimento do valor da multa.' }
 ];
 
 

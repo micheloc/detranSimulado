@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Lixo domêstico.' },
-  { id: 'B', question: 'Enxofre.' },
-  { id: 'C', question: 'Monóxido de carbono.' },
-  { id: 'D', question: 'Nitrogênio.'}
+  { id: 'A', question: 'Dirigir com documento de habilitação de categoria inferior a do veículo conduzido.' },
+  { id: 'B', question: 'Dirigir sem atenção ou sem os cuidados indispensáveis à segurança.' },
+  { id: 'C', question: 'Dirigir sem portar os documentos do veículos.' },
+  { id: 'D', question: 'Estacionar o veículo sobre as faixas destinadas a pedestres.'}
 ];
 
 

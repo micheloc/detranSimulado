@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Irritabilidade. ' },
-  { id: 'B', question: 'Relaxamento muscular.' },
-  { id: 'C', question: 'Dores de cabeça.' },
-  { id: 'D', question: 'Inônia.' }
+  { id: 'A', question: 'Somente servidor civil estatutário ou celetista. ' },
+  { id: 'B', question: 'Somente policial militar designado pela respectiva autoridade de trânsito.' },
+  { id: 'C', question: 'Servidor civil, estatutário ou celetista, ou policial militar, ambos designados pela respctiva autoridade de trânsito.' },
+  { id: 'D', question: 'Somente servidor civil estatutário e o policial rodoviário federal.' }
 ];
 
 const columns = [

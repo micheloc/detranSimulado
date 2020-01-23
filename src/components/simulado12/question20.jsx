@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Serviço mecânico.' },
-  {id: 'B', question:'Loja de ferragens.' },
-  {id: 'C', question:'Area de manutenção.' },
-  {id: 'D', question:'Serviço de urgência.' }
+  {id: 'A', question:'Adentrar a garagens ou estacionamentos.' },
+  {id: 'B', question:'Retornar com cuidado, observando os outros veiculos.' },
+  {id: 'C', question:'Fugir de situações de congestionamento.' },
+  {id: 'D', question:'Fazer pequenas manobras, de forma a não causar riscos à segurança.' }
 ]; 
 
 

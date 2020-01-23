@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Multa e remoção do veículo' },
-  { id: 'B', question: 'Multa.' },
-  { id: 'C', question: 'Advertência por escrito e recolhimento do documento de habilitação.' },
-  { id: 'D', question: 'Recolhimento do documento de habilitação.' }
+  { id: 'A', question: 'A notificação devolvida por desatualização do endereço será considerada inválida.' },
+  { id: 'B', question: 'O recurso em primeira instância, contra a imposição de multa poderá ser interposto no prazo legal, sem o recolhimento do seu valor.' },
+  { id: 'C', question: 'O pagamento da multa poderá ser efetuado até a data do vencimento expressa na notificação da penalidade, por 60% do seu valor.' },
+  { id: 'D', question: 'Das decisões da JARI não cabe recurso.' }
 ];
 
 

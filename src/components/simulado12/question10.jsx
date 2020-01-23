@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Usar a buzina sucessivamente.' },
-  { id: 'B', question: 'Transitar em velocidade compatível com a segurança diante de escolas e onde haja grande movimentação de pedestres.' },
-  { id: 'C', question: 'Usar a buzina para apressar o pedestre.' },
-  { id: 'D', question: 'Usar a luz alta nas vias não iluminadas, mesmo ao seguir outro veículo.' }
+  { id: 'A', question: 'Veículos de maior velocidade e para ultrapassagem.' },
+  { id: 'B', question: 'Veículos lentos e pesados circularem.' },
+  { id: 'C', question: 'Circulação de bicicletas.' },
+  { id: 'D', question: 'Fazer retorno com segurança.' }
 ];
 
 

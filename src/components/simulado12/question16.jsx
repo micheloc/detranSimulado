@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Tração animal, propulsão humana, automotor, elétrico, reboque e sembirreboque.' },
-  {id: 'B', question:'Tração animal, propulsão humana, carga e motocicleta.' },
-  {id: 'C', question:'Tração animal, propulsão humana, carga e misto.' },
-  {id: 'D', question:'Passageiro, carga, misto, reboque e semirreboque.' }
+  {id: 'A', question:'Fundo cinza e caracteres pretos.' },
+  {id: 'B', question:'Fundo preto e caracteres brancos.' },
+  {id: 'C', question:'Fundo preto e caracteres cinzas.' },
+  {id: 'D', question:'Fundo azul e caracteres brancos.' }
 ]; 
 
 

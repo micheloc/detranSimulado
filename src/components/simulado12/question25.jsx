@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Prevenir o estado de choque.' },
-  { id: 'B', question: 'Envolver as regiões queimadas com panos limpos e úmidos.' },
-  { id: 'C', question: 'Perfurar bolhas formadas na pele.' },
-  { id: 'D', question: 'Chamar por socorro especializado.' }
+  { id: 'A', question: 'Tenha completado 16 (dezesseis) anos.' },
+  { id: 'B', question: 'Esteja matriculado na autoescola.' },
+  { id: 'C', question: 'Tenha completado 18 (dezoito) anos.' },
+  { id: 'D', question: 'Tenha sido aprovado nos exames de sanidade física, mental e de legislação de trânsito.' }
 ];
 
 

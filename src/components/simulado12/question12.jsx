@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Conselho Estadual de trânsito (CETRAN).' },
-  { id: 'B', question: 'Polícia Rodoviária Federal (PRF).' },
-  { id: 'C', question: 'Departamento Estadual de Trânsito (DETRAN).' },
-  { id: 'D', question: 'Conselho Nacional de Trânsito (CONTRAN).' }
+  { id: 'A', question: 'A Proteção à vida e a incolumidade física da pessoa.' },
+  { id: 'B', question: 'Penalizar o infrator.' },
+  { id: 'C', question: 'Orientar o infrator.' },
+  { id: 'D', question: 'Assegurar a aplicação da penalidade.' }
 ];
 
 

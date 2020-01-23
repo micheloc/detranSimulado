@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Concentrado.' },
-  { id: 'B', question: 'Com suspeita de uso de energéticos.' },
-  { id: 'C', question: 'Com fadiga.' },
-  { id: 'D', question: 'Sob tensão emocional.' }
+  { id: 'A', question: 'A fixação de publicidade ou de qualquer legenda ou simbolos ao longo das vias poderá ser feito, sem prejuizo para a segurança.' },
+  { id: 'B', question: 'Nas vias públicas e nos imóveis é permitido colocar luzes, fixar publicidade e inscrições, sempre que necessário, sem autorização da autoridade competente.' },
+  { id: 'C', question: 'Os locais destinados a postos de gasolina, oficinas, estacionamento ou garagens.' },
+  { id: 'D', question: 'No caso de uma obra ou evento, a responsabilidade de sinalizar é do responsável pela execução.' }
 ];
 
 

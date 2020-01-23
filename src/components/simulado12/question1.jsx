@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Altura máxima permitida.' },
-  {id: 'B', question:'Altura limitada.' },
-  {id: 'C', question:'Largura limitada.' },
-  {id: 'D', question:'Comprimento máximo permitido.' }
+  {id: 'A', question:'Poderá estacionar desde que o condutor e passageiros saiam do veículo.' },
+  {id: 'B', question:'Poderá estacionar o veículo em fila dupla.' },
+  {id: 'C', question:'Poderá parar apenas e no tempo suficiente para embarque ou desembarque de passageiros.' },
+  {id: 'D', question:'Poderá parar apenas para descarregar cargas em grande quantidade.' }
 ]; 
 
 const columns = [
