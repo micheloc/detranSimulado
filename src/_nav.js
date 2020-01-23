@@ -66,9 +66,9 @@ export default {
       icon: 'icon-pin',
     },
     {
-       NAME: 'SIMULADO 12',
-       URL: '/NAV/SIMULADO12',
-       ICON: 'ICON-PIN',
+       name: 'Simulado 12',
+       url: '/nav/simulado12',
+       icon: 'icon-pin',
     },
     // {
     //   name: 'Simulado 13',
