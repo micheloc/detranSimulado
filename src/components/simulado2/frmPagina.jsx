@@ -97,7 +97,7 @@ export class frmPagina extends Component {
         { resp: 'D', questao: '17'},
         { resp: 'C', questao: '18'},
         { resp: 'A', questao: '19'},
-        { resp: 'C', questao: '20'},
+        { resp: 'A', questao: '20'},
         { resp: 'A', questao: '21'},
         { resp: 'D', questao: '22'},
         { resp: 'C', questao: '23'},
