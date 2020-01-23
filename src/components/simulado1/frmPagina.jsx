@@ -481,9 +481,7 @@ export class frmPagina extends Component {
             <CardBody>
             <center>
             <table border="1">
-            <tr>
-              <td colSpan={this.state.resposta.length}> <center><h4>{contError < 21 ? "Reprovado (Acertos : " :"Aprovado (Acertos : " }{contAcerto + ")"}</h4></center></td>
-            </tr>
+            <tr><td colSpan={this.state.resposta.length}> <center><h4>{parseInt(contError) > 9 ? "Reprovado (Acertos : " :"Aprovado (Acertos : " }{contAcerto + ")"}</h4></center></td></tr>
             <tr>
               {this.state.resposta.map(opt => <td style={{width:'45px', color: 'blue'}}><center>{opt.questao}</center></td>)}
             </tr>
