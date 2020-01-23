@@ -238,6 +238,7 @@ export class frmPagina extends Component {
   }
 
   _selectQuestion(question){
+    
     numberSelect = question; 
   }
 

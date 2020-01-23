@@ -10,9 +10,13 @@ export class home extends Component {
                 <center><h3>todas as alternativas foram tiradas de simulados utilizado em auto escolas do estado de goias.</h3></center>
                 <center><h3>Cada simulado são composto por 30 alternativas, sendo elas de marcação.</h3></center>
                 <center><h3>Este simulado não contem tempo regressivo, o tempo dispõe do estudante para assimilar e decorar as alternativas.</h3></center>
-                <center><h3>No final será gerado um gabarito contendo as respostas, é as alternativas marcadas, onde as alternativas que estão de azul é a resposta certa</h3></center>
-                <center><h3>é as alternativas vermelhas as respostas selecionadas.</h3></center>
+                <center><h2>Observação:</h2></center>
+                <center><h3>Ao final de cada simulado será gerado um gabarito</h3></center>
+                <center><h3>A cor vermelha corresponde as questões selecionadas, a cor azul corresponde as alternativas corretas</h3></center>
                 <center><h2>Tenham um bom proveito!!!</h2></center>
+
+
+
             </div>
         );
     }
