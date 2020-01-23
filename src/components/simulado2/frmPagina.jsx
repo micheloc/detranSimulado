@@ -38,7 +38,9 @@ import a4b from '../imagens/A4B.jpg';
 import s9 from '../imagens/S9.jpg'; 
 
 var selectList = [];
-var numberSelect = ""
+var numberSelect = "";
+var contAcerto = 0; 
+var contError = 0; 
 
 export class frmPagina extends Component {
   constructor(props){
@@ -241,13 +243,12 @@ export class frmPagina extends Component {
 
   _endQuestions(){
     this._alterQuestion(); 
-    var acertos = 0
-    var erros = 0
-    for(var i = 0; i < numberSelect.length; i++){
-      if (this.state.resposta[i].resp === numberSelect[i]){
-          acertos += 1; 
+    for (var i = 0; i < selectList.length; i++){
+      
+      if (selectList[i] === this.state.resposta[i].resp){
+        contAcerto += 1; 
       }else{
-        erros += 1; 
+        contError +=1; 
       }
     }
     this.setState({ questao30: !this.state.questao30 });
@@ -477,20 +478,14 @@ export class frmPagina extends Component {
             <CardHeader><center><h1>Gabarito</h1></center></CardHeader>
             <CardBody>
             <center>
-              <table border="1">
-                <tr>
-                  {this.state.resposta.map(opt => <td style={{width:'45px', color: 'blue'}}><center>{opt.questao}</center></td>)}
-                </tr>
-                <tr>
-                  {this.state.resposta.map(opt => <td style={{width:'45px'}}><center>{opt.resp}</center></td>)}
-                </tr>
-                <tr>
-                </tr>
-                  {this.state.resposta.map(opt => <td style={{width:'45px', color: 'red'}}><center>{opt.questao}</center></td>)}
-                <tr>
-                  {selectList.map(opt => <td style={{width:'45px'}}><center>{opt}</center></td>)}
-                </tr>
-              </table>
+            <table border="1">
+              <tr><td colSpan={this.state.resposta.length}> <center><h4>{contError < 21 ? "Reprovado (Acertos : " :"Aprovado (Acertos : " }{contAcerto + ")"}</h4></center></td></tr>
+              <tr>{this.state.resposta.map(opt => <td style={{width:'45px', color: 'blue'}}><center>{opt.questao}</center></td>)}</tr>
+              <tr>{this.state.resposta.map(opt => <td style={{width:'45px'}}><center>{opt.resp}</center></td>)}</tr>
+              <tr></tr>
+                {this.state.resposta.map(opt => <td style={{width:'45px', color: 'red'}}><center>{opt.questao}</center></td>)}
+              <tr>{selectList.map(opt => <td style={{width:'45px'}}><center>{opt}</center></td>)}</tr>
+            </table>
             </center>
             </CardBody>
           </Card>

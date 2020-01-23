@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
+import { Card, CardBody, CardHeader, CardFooter, Button, Row } from 'reactstrap';
 import Question1 from './question1';
 import Question2 from './question2';
 import Question3 from './question3';
@@ -67,6 +67,8 @@ import A41 from '../imagens/A41.jpg';
 
 var selectList = [];
 var numberSelect = ""
+var contAcerto = 0; 
+var contError = 0; 
 
 export class frmPagina extends Component {
   constructor(props){
@@ -269,7 +271,18 @@ export class frmPagina extends Component {
 
   _endQuestions(){
     this._alterQuestion(); 
-    this.setState({ questao30: !this.state.questao30 });
+
+    for (var i = 0; i < selectList.length; i++){
+      
+      if (selectList[i] === this.state.resposta[i].resp){
+        contAcerto += 1; 
+      }else{
+        contError +=1; 
+      }
+    }
+
+
+    this.setState({ questao3: !this.state.questao3 });
     this.setState({ resultado: !this.state.resultado });
   }
 
@@ -278,70 +291,70 @@ export class frmPagina extends Component {
       <div>
         {this.state.questao1 ? 
           <Card>
-            <CardHeader>Qual o nome técnico da placa S-8? <img src={S8} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader> <b>(1)</b> : Qual o nome técnico da placa S-8? <img src={S8} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question1 alternativa={this._selectQuestion}/> </CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('1')}}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao2 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa S-11? <img src={S11} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader> <b>(2)</b> : Qual o nome técnico da placa S-11? <img src={S11} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question2 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('2') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao3 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa S-12? <img src={S12} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader> <b>(3)</b> : Qual o nome técnico da placa S-12? <img src={S12} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question3 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('3') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao4 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa S-13? <img src={S13} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(4)</b> : Qual o nome técnico da placa S-13? <img src={S13} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question4 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('4') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao5 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa S-14? <img src={S14} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(5)</b> : Qual o nome técnico da placa S-14? <img src={S14} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question5 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('5') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao6 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa S-16? <img src={S16} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(6)</b> : Qual o nome técnico da placa S-16? <img src={S16} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question6 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('6') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao7 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-20? <img src={R20} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader> <b>(7)</b> : Qual o nome técnico da placa R-20? <img src={R20} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question7 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('7') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao8 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-8b? <img src={R8b} width="120px" height="120px" align="right" /> </CardHeader>
+            <CardHeader> <b>(8)</b> : Qual o nome técnico da placa R-8b? <img src={R8b} width="120px" height="120px" align="right" /> </CardHeader>
             <CardBody><Question8 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('8') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao9 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-35b? <img src={R35b} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(9)</b> : Qual o nome técnico da placa R-35b? <img src={R35b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question9 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('9') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao10 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R21? <img src={R21} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(10)</b> : Qual o nome técnico da placa R21? <img src={R21} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question10 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('10') }}>Proxíma</Button></CardFooter>
           </Card>
@@ -351,70 +364,70 @@ export class frmPagina extends Component {
 
         {this.state.questao11 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-5b? <img src={R5b} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(11)</b> : Qual o nome técnico da placa R-5b? <img src={R5b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question11 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('11') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao12 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-18? <img src={R18} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(12)</b> : Qual o nome técnico da placa R-18? <img src={R18} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question12 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('12') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao13 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-36b? <img src={R36b} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(13)</b> : Qual o nome técnico da placa R-36b? <img src={R36b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question13 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('13') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao14 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-24b? <img src={R24b} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(14)</b> : Qual o nome técnico da placa R-24b? <img src={R24b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question14 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('14') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao15 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-15? <img src={R15} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(15)</b> : Qual o nome técnico da placa R-15? <img src={R15} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question15 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('15') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao16 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-23? <img src={R23} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(16)</b> : Qual o nome técnico da placa R-23? <img src={R23} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question16 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('16') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao17 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-29? <img src={A29} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(17)</b> : Qual o nome técnico da placa A-29? <img src={A29} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question17 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('17') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao18 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-31? <img src={A31} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(18)</b> : Qual o nome técnico da placa A-31? <img src={A31} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question18 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('18') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao19 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-2b? <img src={A2b} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(19)</b> : Qual o nome técnico da placa A-2b? <img src={A2b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question19 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('19') }}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao20 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-30a: <img src={A30a} width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader> <b>(20)</b> : Qual o nome técnico da placa A-30a: <img src={A30a} width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question20 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('20') }}>Proxíma</Button></CardFooter>
           </Card>
@@ -422,70 +435,70 @@ export class frmPagina extends Component {
 
         {this.state.questao21 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-33b? <img src={A33b} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(21)</b> : Qual o nome técnico da placa A-33b? <img src={A33b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question21 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('21') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao22 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-44? <img src={A44} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(22)</b> : Qual o nome técnico da placa A-44? <img src={A44} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question22 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('22') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao23 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-35? <img src={A35} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(23)</b> : Qual o nome técnico da placa A-35? <img src={A35} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question23 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('23') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao24 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-43? <img src={A43} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(24)</b> : Qual o nome técnico da placa A-43? <img src={A43} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question24 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('24') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao25 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-6? <img src={A6} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(25)</b> : Qual o nome técnico da placa A-6? <img src={A6} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question25 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('25') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao26 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-21a? <img src={A21a} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(26)</b> : Qual o nome técnico da placa A-21a? <img src={A21a} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question26 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('26') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao27 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-32b? <img src={A32b} width="120px" height="120px" align="right" /> </CardHeader>
+            <CardHeader>  <b>(27)</b> : Qual o nome técnico da placa A-32b? <img src={A32b} width="120px" height="120px" align="right" /> </CardHeader>
             <CardBody><Question27 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('27') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao28 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-24? <img src={A24} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(28)</b> : Qual o nome técnico da placa A-24? <img src={A24} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question28 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('28') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao29 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-11b? <img src={A11b} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(29)</b> : Qual o nome técnico da placa A-11b? <img src={A11b} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question29 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('29') }}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao30 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-41? <img src={A41} width="120px" height="120px" align="right" /></CardHeader>
+            <CardHeader>  <b>(30)</b> : Qual o nome técnico da placa A-41? <img src={A41} width="120px" height="120px" align="right" /></CardHeader>
             <CardBody><Question30 alternativa={this._selectQuestion}/></CardBody>
             <CardFooter><Button onClick={() => { this._endQuestions() }}>Finalizar</Button></CardFooter>
           </Card>
@@ -497,6 +510,9 @@ export class frmPagina extends Component {
             <CardBody>
             <center>
               <table border="1">
+                <tr>
+                  <td colSpan={this.state.resposta.length}> <center><h4>{contError < 21 ? "Reprovado (Acertos : " :"Aprovado (Acertos : " }{contAcerto + ")"}</h4></center></td>
+                </tr>
                 <tr>
                   {this.state.resposta.map(opt => <td style={{width:'45px', color: 'blue'}}><center>{opt.questao}</center></td>)}
                 </tr>
