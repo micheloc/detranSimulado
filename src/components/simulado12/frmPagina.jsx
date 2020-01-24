@@ -77,6 +77,7 @@ export class frmPagina extends Component {
       questao29: false,
       questao30: false,
       resultado: false, 
+      activateNext: true, 
       resposta: [
         { resp: 'C', questao: '1'},
         { resp: 'B', questao: '2'},
@@ -112,6 +113,7 @@ export class frmPagina extends Component {
     }
     this._alterQuestion = this._alterQuestion.bind(this); 
     this._selectQuestion = this._selectQuestion.bind(this);
+    this._openNext = this._openNext.bind(this);
   }
 
   _alterQuestion(question){
@@ -237,8 +239,13 @@ export class frmPagina extends Component {
     selectList.push(numberSelect); 
   }
 
-  _selectQuestion(question){
+  _selectQuestion(question, select){
+    this.setState({activateNext: select})
     numberSelect = question; 
+  }
+
+  _openNext(habilitar){
+    this.setState({activateNext: habilitar})
   }
 
   _endQuestions(){
@@ -261,71 +268,71 @@ export class frmPagina extends Component {
         {this.state.questao1 ? 
           <Card>
             <CardHeader> <b>(1)</b> : Em locais onde há proibição de estacionar, o condutor: </CardHeader>
-            <CardBody><Question1 alternativa={this._selectQuestion}/> </CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('1')}}>Proxíma</Button></CardFooter>
+            <CardBody><Question1 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('1')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao2 ?
           <Card>
             <CardHeader><b>(2)</b> : Quando uma pista de rolamento de mão dupla for dividida ao centro por duas faixas amarelas continuas, isto significa: </CardHeader>
-            <CardBody><Question2 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('2') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question2 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('2')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao3 ?
           <Card>
             <CardHeader> <b>(3)</b> : É proibido a todo condutor de veículo: </CardHeader>
-            <CardBody><Question3 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('3') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question3 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('3')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao4 ?
           <Card>
             <CardHeader> <b>(4)</b> : A pontuação de uma infração de natureza grave é : </CardHeader>
-            <CardBody><Question4 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('4') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question4 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('4')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao5 ?
           <Card>
             <CardHeader> <b>(5)</b> : Tem por finalidade alertar os usuários da via para condições potencialmente perigosas, indicando sua natureza, cuja mensagem possui caráter de recomendação: </CardHeader>
-            <CardBody><Question5 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('5') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question5 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('5')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao6 ?
           <Card>
             <CardHeader><b>(6)</b> : A quem compete a aplicação da penalidade de multa ?</CardHeader>
-            <CardBody><Question6 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('6') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question6 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('6')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao7 ?
           <Card>
             <CardHeader><b>(7)</b> : O candidato para se habilitar na categoria "D" deverá realizar o exame de direção em um veículo: </CardHeader>
-            <CardBody><Question7 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('7') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question7 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('7')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao8 ?
           <Card>
             <CardHeader><b>(8)</b> : Quanto à aplicação de penalidades podemos afirmar que: </CardHeader>
-            <CardBody><Question8 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('8') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question8 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('8')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao9 ?
           <Card>
             <CardHeader><b>(9)</b> : Organizar e manter o registro nacional de veículos automotores (RENAVAM) é competência do: </CardHeader>
-            <CardBody><Question9 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('9') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question9 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('9')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao10 ?
           <Card>
             <CardHeader><b>(10)</b> : As faixas da esquerda deverão ser usadas, em uma pista de rolamento com várias faixas de trânsito no mesmo sentido para: </CardHeader>
-            <CardBody><Question10 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('10') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question10 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('10')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
 
@@ -334,142 +341,142 @@ export class frmPagina extends Component {
         {this.state.questao11 ?
           <Card>
             <CardHeader><b>(11)</b> : O embarque e desembarque de passageiros do transporte coletivo deverá acontecer :</CardHeader>
-            <CardBody><Question11 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('11') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question11 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('11')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao12 ?
           <Card>
             <CardHeader> <b>(12)</b> : As medidas administrativas adotadas pela autoridade de trânsito ou seus agentes têm por objetivos: </CardHeader>
-            <CardBody><Question12 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('12') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question12 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('12')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao13 ?
           <Card>
             <CardHeader> <b>(13)</b> : A alteração da característica de identificação do veículo, somente poderá ser feita: </CardHeader>
-            <CardBody><Question13 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('13') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question13 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('13')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao14 ?
           <Card>
             <CardHeader> <b>(14)</b> : As cores das placas de identificação dos veículos registrados como de aluguel, serão: </CardHeader>
-            <CardBody><Question14 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('14') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question14 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('14')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao15 ?
           <Card>
             <CardHeader> <b>(15)</b> : Quanto à sinalização de trânsito podemos afirmar que: </CardHeader>
-            <CardBody><Question15 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('15') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question15 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('15')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao16 ?
           <Card>
             <CardHeader> <b>(16)</b> : As cores das placas de identificação dos veículos registrados como pertencentes a coleção, serão: </CardHeader>
-            <CardBody><Question16 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('16') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question16 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('16')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao17 ?
           <Card>
             <CardHeader> <b>(17)</b> : O recolhimento da Carteira Nacional de Habilitação ocorrerá quando o condutor: </CardHeader>
-            <CardBody><Question17 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('17') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question17 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('17')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao18 ?
           <Card>
             <CardHeader> <b>(18)</b> : Via de trânsito rápido é aquela caracterizada por: </CardHeader>
-            <CardBody><Question18 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('18') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question18 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('18')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao19 ?
           <Card>
             <CardHeader> <b>(19)</b> : A pontuação de uma infração de natureza média é : </CardHeader>
-            <CardBody><Question19 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('19') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question19 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('19')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao20 ?
           <Card>
             <CardHeader> <b>(20)</b> : Segundo a legislação de trânsito, é permitido transitar em marcha à ré, para:</CardHeader>
-            <CardBody><Question20 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('20') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question20 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('20')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
 
         {this.state.questao21 ?
           <Card>
             <CardHeader> <b>(21)</b> : Caso a decisão da JARI seja desfavorável a um recurso interposto, sobre uma multa de natureza gravíssima, imposta pelo DNIT, o recurso de segunda instância, será encaminhado ao:</CardHeader>
-            <CardBody><Question21 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('21') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question21 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('21')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao22 ?
           <Card>
             <CardHeader> <b>(22)</b> : De acordo com a legislação de trânsito, os veículos quanto à categoria, classificam-se em: </CardHeader>
-            <CardBody><Question22 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('22') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question22 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('22')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao23 ?
           <Card>
             <CardHeader> <b>(23)</b> : Em uma rotatória onde não há sinalização, a preferência de passagem é do veículo que: </CardHeader>
-            <CardBody><Question23 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('23') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question23 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('23')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao24 ?
           <Card>
             <CardHeader> <b>(24)</b> : As linhas divisoras de fluxos continuas de cor amarela significam: </CardHeader>
-            <CardBody><Question24 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('24') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question24 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('24')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao25 ?
           <Card>
             <CardHeader> <b>(25)</b> : A Licença para aprendizagem de direção veicular (LADV) na via ou em locais autorizados para este fim, será expedida pelo DETRAN ao candidato que: </CardHeader>
-            <CardBody><Question25 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('25') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question25 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('25')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao26 ?
           <Card>
             <CardHeader> <b>(26)</b> : Quando o condutor for habilitado em mais de uma categoria terá:  </CardHeader>
-            <CardBody><Question26 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('26') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question26 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('26')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao27 ?
           <Card>
             <CardHeader> <b>(27)</b> : Na estrutura do sistema nacional de trânsito, são órgãos normativos:  </CardHeader>
-            <CardBody><Question27 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('27') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question27 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('27')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao28 ?
           <Card>
             <CardHeader> <b>(28)</b> : É motivo de suspensão do direito de dirigir quando o condutor cometer a seguinte infração de trânsito: </CardHeader>
-            <CardBody><Question28 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('28') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question28 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('28')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao29 ?
           <Card>
             <CardHeader> <b>(29)</b> : O agente da autoridade de trânsito competente para lavrar o auto de infração poderá ser : </CardHeader>
-            <CardBody><Question29 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('29') }}>Proxíma</Button></CardFooter>
+            <CardBody><Question29 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('29')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao30 ?
           <Card>
             <CardHeader> <b>(30)</b> : Qual nome que se dá às taxas recolhidas pelos órgãos de trânsito, provenientes das infrações de trânsito? </CardHeader>
-            <CardBody><Question30 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._endQuestions() }}>Finalizar</Button></CardFooter>
+            <CardBody><Question30 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._endQuestions() }} disabled={this.state.activateNext}>Finalizar</Button></CardFooter>
           </Card>
         : null}
 
