@@ -16,13 +16,19 @@ const columns = [
 export class Question_1 extends Component {
   constructor(props){
     super(props); 
-    this.state={}
+    this.state={openSelect: true}
     this._handleSelect = this._handleSelect.bind(this); 
+  }
+
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
     
   _handleSelect(row, isSelect){
-    console.log(isSelect)
-    this.props.alternativa(row.id);
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
   }
 
   render() {
