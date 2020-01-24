@@ -237,7 +237,7 @@ export class frmPagina extends Component {
     selectList.push(numberSelect); 
   }
 
-  _selectQuestion(question){
+  _selectQuestion(question, select){
     
     numberSelect = question; 
   }

@@ -20,7 +20,8 @@ export class Question_1 extends Component {
     this._handleSelect = this._handleSelect.bind(this); 
   }
     
-  _handleSelect(row){
+  _handleSelect(row, isSelect){
+    console.log(isSelect)
     this.props.alternativa(row.id);
   }
 
