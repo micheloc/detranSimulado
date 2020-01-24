@@ -7,7 +7,6 @@ import { AppAside, AppFooter, AppHeader, AppSidebar, AppSidebarFooter, AppSideba
 import navigation from '../../_nav';
 // routes config
 import routes from '../../routes';
-import { relative } from 'path';
 
 const DefaultAside = React.lazy(() => import('./DefaultAside'));
 const DefaultFooter = React.lazy(() => import('./DefaultFooter'));

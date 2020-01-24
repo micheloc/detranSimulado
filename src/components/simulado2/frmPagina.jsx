@@ -484,16 +484,17 @@ export class frmPagina extends Component {
           <Card>
             <CardHeader><center><h1>Gabarito</h1></center></CardHeader>
             <CardBody>
-            <center>
-            <table border="1">
-              <tr><td colSpan={this.state.resposta.length}> <center><h4>{parseInt(contError) > 9 ? "Reprovado (Acertos : " :"Aprovado (Acertos : " }{contAcerto + ")"}</h4></center></td></tr>
-              <tr>{this.state.resposta.map(opt => <td style={{width:'45px', color: 'blue'}}><center>{opt.questao}</center></td>)}</tr>
-              <tr>{this.state.resposta.map(opt => <td style={{width:'45px'}}><center>{opt.resp}</center></td>)}</tr>
-              <tr></tr>
-                {this.state.resposta.map(opt => <td style={{width:'45px', color: 'red'}}><center>{opt.questao}</center></td>)}
-              <tr>{selectList.map(opt => <td style={{width:'45px'}}><center>{opt}</center></td>)}</tr>
-            </table>
-            </center>
+              <center>
+                <table border="1">
+                  <tbody>
+                    <tr key="gabarito"><th  key={1} colSpan={this.state.resposta.length}> <center><h4>{parseInt(contError) > 9 ? "Reprovado (Acertos : " :"Aprovado (Acertos : " }{contAcerto + ")"}</h4></center></th></tr>
+                    <tr key="alternativas1">{this.state.resposta.map(opt => <th  key={opt.questao} style={{width:'45px', color: 'blue'}}><center>{opt.questao}</center></th>)}</tr>
+                    <tr key="respostas">{this.state.resposta.map(opt => <th  key={opt.questao} style={{width:'45px'}}><center>{opt.resp}</center></th>)}</tr>
+                    <tr key="questaoSelecionada">{this.state.resposta.map((opt, index)=> <th key={index} style={{width:'45px', color: 'red'}}><center>{opt.questao}</center></th>)}</tr>
+                    <tr key="respostaSeleciona">{selectList.map((opt, index) => <th  key={index} style={{width:'45px'}}><center>{opt}</center></th>)}</tr>
+                  </tbody>
+                </table>
+              </center>
             </CardBody>
           </Card>
           : null}
