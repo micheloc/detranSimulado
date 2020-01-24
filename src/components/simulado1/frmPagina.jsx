@@ -240,6 +240,7 @@ export class frmPagina extends Component {
   }
 
   _selectQuestion(question, select){
+    console.log(question )
     this.setState({activateNext: select})
     numberSelect = question; 
   }
