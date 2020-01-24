@@ -262,7 +262,7 @@ export class frmPagina extends Component {
       }
     }
 
-    this.setState({ questao2: !this.state.questao2 });
+    this.setState({ questao30: !this.state.questao30 });
     this.setState({ resultado: !this.state.resultado });
   }
 
@@ -280,7 +280,7 @@ export class frmPagina extends Component {
           <Card>
             <CardHeader> <b>(2)</b> : Qual o nome técnico da placa R-24a? <img src={r24a} width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question2 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
-            <CardFooter><Button onClick={() => { this._endQuestions('2') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
+            <CardFooter><Button onClick={() => { this._alterQuestion('2') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao3 ?
