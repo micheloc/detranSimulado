@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Engenharia e conhecimento.' },
-  {id: 'B', question:'Engenharia e policiamento.' },
-  {id: 'C', question:'Educação, fiscalização e engenharia.' },
-  {id: 'D', question:'Habilidade e educação.' }
+  {id: 'A', question:'Comprimento máximo permitido.' },
+  {id: 'B', question:'Largura máxima permitida.' },
+  {id: 'C', question:'Comprimento limitado.' },
+  {id: 'D', question:'Comprimento máximo permitido entre eixos.' }
 ]; 
 
 

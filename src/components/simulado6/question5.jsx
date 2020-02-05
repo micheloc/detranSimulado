@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'IBAMA.' },
-  { id: 'B', question: 'DETRAN.' },
-  { id: 'C', question: 'INMETRO.' },
-  { id: 'D', question: 'CONAMA.' }
+  { id: 'A', question: 'Abaixar o membro afetado.' },
+  { id: 'B', question: 'Estourar as bolhas existentes e passar mercúrio.' },
+  { id: 'C', question: 'Aplicar compressas úmidas com água fria ou soro fisiológico.' },
+  { id: 'D', question: 'Estourar as bolhas existentes e lavar a área com água ou soro fisiológico.' }
 ];
 
 

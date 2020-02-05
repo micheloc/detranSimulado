@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Prevenir o estado de choque.' },
-  { id: 'B', question: 'Envolver as regiões queimadas com panos limpos e úmidos.' },
-  { id: 'C', question: 'Perfurar bolhas formadas na pele.' },
-  { id: 'D', question: 'Chamar por socorro especializado.' }
+  { id: 'A', question: 'Através da vareta do óleo.' },
+  { id: 'B', question: 'Verificando se há vazamento de água.' },
+  { id: 'C', question: 'Quando a água ferver no reservatório.' },
+  { id: 'D', question: 'Através do indicador próprio existente no painel.' }
 ];
 
 

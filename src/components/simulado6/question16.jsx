@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Tração animal, propulsão humana, automotor, elétrico, reboque e sembirreboque.' },
-  {id: 'B', question:'Tração animal, propulsão humana, carga e motocicleta.' },
-  {id: 'C', question:'Tração animal, propulsão humana, carga e misto.' },
-  {id: 'D', question:'Passageiro, carga, misto, reboque e semirreboque.' }
+  {id: 'A', question:'Número ou nome do produto.' },
+  {id: 'B', question:'Classe de risco.' },
+  {id: 'C', question:'Certificado de capacitação do veículo para o transporte.' },
+  {id: 'D', question:'Declaração de responsabilidade.' }
 ]; 
 
 

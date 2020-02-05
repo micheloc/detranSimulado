@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Pressionar o ferimento até sentir o osso da área lesada.' },
-  { id: 'B', question: 'Aplicar compressão direta no ferimento, com uma gaze ou pano limpo.' },
-  { id: 'C', question: 'Abaixar o membro afetado.' },
-  { id: 'D', question: 'Manter o torniquete bem apertado.' }
+  { id: 'A', question: 'DNIT e AGETOP.' },
+  { id: 'B', question: 'DETRAN e Polícia Rodoviária Federal.' },
+  { id: 'C', question: 'DENATRAN e DETRAN.' },
+  { id: 'D', question: 'CONTRAN e CETRAN.' }
 ];
 
 

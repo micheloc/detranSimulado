@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Lixo domêstico.' },
-  { id: 'B', question: 'Enxofre.' },
-  { id: 'C', question: 'Monóxido de carbono.' },
-  { id: 'D', question: 'Nitrogênio.'}
+  { id: 'A', question: 'Retirar as já existentes e recolocar novas compressas.' },
+  { id: 'B', question: 'Colocar mais compressas sobre as que já estão no local.' },
+  { id: 'C', question: 'Retirar as já existentes, aguardar por volta de 10 segundos e recolocar novas compressas.' },
+  { id: 'D', question: 'Colocar a mão sobre o ferimento para estancar a hemorragia.'}
 ];
 
 

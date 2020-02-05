@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Altura máxima permitida.' },
-  {id: 'B', question:'Altura limitada.' },
-  {id: 'C', question:'Largura limitada.' },
-  {id: 'D', question:'Comprimento máximo permitido.' }
+  {id: 'A', question:'De 03 (Três) em 03  (Três) anos.' },
+  {id: 'B', question:'De 02 (Dois) em 02  (Dois) anos.' },
+  {id: 'C', question:'De 05 (Cinco) em 05 (Cinco) anos.' },
+  {id: 'D', question:'De 10 (Dez) em 10 (Dez) anos.' }
 ]; 
 
 const columns = [

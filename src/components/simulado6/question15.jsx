@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Concentrado.' },
-  { id: 'B', question: 'Com suspeita de uso de energéticos.' },
-  { id: 'C', question: 'Com fadiga.' },
-  { id: 'D', question: 'Sob tensão emocional.' }
+  { id: 'A', question: 'Socorrer a vitima.' },
+  { id: 'B', question: 'Permanecer no interior do veículo até a chegada de socorro.' },
+  { id: 'C', question: 'Remover os cabos, utilizando-se de uma madeira molhada.' },
+  { id: 'D', question: 'Subir no teto do veículo mantendo-se calçado.' }
 ];
 
 

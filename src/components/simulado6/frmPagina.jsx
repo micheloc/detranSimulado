@@ -33,9 +33,9 @@ import Question28 from './question28';
 import Question29 from './question29';
 import Question30 from './question30'; 
 
-import a37 from '../imagens/A-37.png'; 
-import r24a from '../imagens/R-24a.jpg'; 
-import s3 from '../imagens/s 3.jpg'; 
+import r38 from '../imagens/R-38.png'; 
+import a48 from '../imagens/A-48.png'; 
+import s2 from '../imagens/S-2.png'; 
 
 var selectList = [];
 var numberSelect = "";
@@ -306,7 +306,7 @@ export class frmPagina extends Component {
         : null}
         {this.state.questao6 ?
           <Card>
-            <CardHeader> <b>(6)</b> :  Qual o nome técnico da placa A-38? <img src={a38}  width="120px" height="120px" align="right"/>:</CardHeader>
+            <CardHeader> <b>(6)</b> :  Qual o nome técnico da placa A-48? <img src={a48}  width="120px" height="120px" align="right"/>:</CardHeader>
             <CardBody><Question6 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('6') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
@@ -400,7 +400,7 @@ export class frmPagina extends Component {
         : null}
         {this.state.questao19 ?
           <Card>
-            <CardHeader> <b>(19)</b> : Qual o nome técnico da placa A-38? <img src={a38}  width="120px" height="120px" align="right"/> :</CardHeader>
+            <CardHeader> <b>(19)</b> : Qual o nome técnico da placa S-2? <img src={s2}  width="120px" height="120px" align="right"/> :</CardHeader>
             <CardBody><Question19 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('19') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>

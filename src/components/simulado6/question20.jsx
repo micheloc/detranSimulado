@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Serviço mecânico.' },
-  {id: 'B', question:'Loja de ferragens.' },
-  {id: 'C', question:'Area de manutenção.' },
-  {id: 'D', question:'Serviço de urgência.' }
+  {id: 'A', question:'Que os cabos dos pólos da bateria não estão apertados.' },
+  {id: 'B', question:'Falha no sistema de injeção eletrônica.' },
+  {id: 'C', question:'O não funcionamento do alternador ou a correia do alternador estar quebrada.' },
+  {id: 'D', question:'Falta de óleo no motor.' }
 ]; 
 
 

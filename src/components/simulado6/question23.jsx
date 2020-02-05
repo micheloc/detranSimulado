@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'A Álcool.' },
-  { id: 'B', question: 'A Diesel.' },
-  { id: 'C', question: 'A Querosene.' },
-  { id: 'D', question: 'A Gasolina.' }
+  { id: 'A', question: 'Departamento Estadual de Trânsito (DETRAN).' },
+  { id: 'B', question: 'Departamento Nacional de Trânsito (DENATRAN).' },
+  { id: 'C', question: 'Conselho Nacional de Trânsito (CONTRAN).' },
+  { id: 'D', question: 'Conselho Estadual de Trânsito (CETRAN).' }
 ];
 
 

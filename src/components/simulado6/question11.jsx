@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Cronometrar o tempo gasto nos deslocamentos.' },
-  { id: 'B', question: 'Estacionar o veículo sobre a calçada.' },
-  { id: 'C', question: 'Verificar a documentação de porte obrigatório.' },
-  { id: 'D', question: 'Dirigir sempre com atenção.' }
+  { id: 'A', question: 'Se o prazo de licenciamento estiver vencido.' },
+  { id: 'B', question: 'No caso de retenção do veículo, se a irregularidade não puder ser sanada no local.' },
+  { id: 'C', question: 'No caso de infração em que seja aplicável a penalidade de apreensão do veículo.' },
+  { id: 'D', question: 'Se, alienado o veículo, não for transferida sua propriedade no prazo de 30(trinta) dias.' }
 ];
 
 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Remoção do veículo e multa.' },
-  { id: 'B', question: 'Retenção do veículo.' },
-  { id: 'C', question: 'Apreensão da CNH.' },
-  { id: 'D', question: 'Cassação da CNH.' }
+  { id: 'A', question: 'Qualquer tipo de veículo automotor.' },
+  { id: 'B', question: 'Veículo de 02 (duas) ou 03 (três) rodas, acima de 180cc.' },
+  { id: 'C', question: 'Veículo de 02 (duas) ou 03 (três) rodas, até 180cc.' },
+  { id: 'D', question: 'Veículos motorizados usados no transporte de passageiros, e que tenham mais de 08 (oito) lugares, além daquele do condutor.' }
 ];
 
 const columns = [

@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Sentido de circulação da via/pista.' },
-  { id: 'B', question: 'Sentido único.' },
-  { id: 'C', question: 'Passagem obrigatória.' },
-  { id: 'D', question: 'Passagem pela direita.' }
+  { id: 'A', question: 'Frear bruscamente o veículo.' },
+  { id: 'B', question: 'Passar, aumentando a velocidade.' },
+  { id: 'C', question: 'Diminuir a velocidade e parar.' },
+  { id: 'D', question: 'Buzinar para alertar os pedestres.' }
 ];
 
 

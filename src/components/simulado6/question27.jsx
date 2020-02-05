@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Quebrar o lacre e acionar o gatilho.' },
-  {id: 'B', question:'Manter o extintor em pé, na posição vertical.' },
-  {id: 'C', question:'Empregar grandes quantidades de produto, se possivel com o uso de vários extintores ao mesmo tempo.' },
-  {id: 'D', question:'Dirigir o jato para o meio do fogo.' }
+  {id: 'A', question:'Ramo da ciência que estuda o ser vivo.' },
+  {id: 'B', question:'Ramo do saber ético que se ocupa dos valores morais de respeito à pessoa humana no campo das ciências da vida.' },
+  {id: 'C', question:'Ramos do saber, pertencente à química, que se ocupa dos valores quânticos, no campo das ciências.' },
+  {id: 'D', question:'Ramo do saber que não tem relação com a ecologia.' }
 ]; 
 
 

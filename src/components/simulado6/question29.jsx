@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Irritabilidade. ' },
-  { id: 'B', question: 'Relaxamento muscular.' },
-  { id: 'C', question: 'Dores de cabeça.' },
-  { id: 'D', question: 'Insônia.' }
+  { id: 'A', question: 'Evitar aceleradas bruscas e frenagens excessivas. ' },
+  { id: 'B', question: 'Utilizar lubrificantes de boa qualidade.' },
+  { id: 'C', question: 'Calibrar periodicamente os pneus.' },
+  { id: 'D', question: 'Transitar com veículo sem catalisador.' }
 ];
 
 const columns = [

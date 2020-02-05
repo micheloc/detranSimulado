@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Sendo mal educado.' },
-  { id: 'B', question: 'Agindo com sentimento de solidariedade humana, cortesia e respeito.' },
-  { id: 'C', question: 'Prejudicando a sua atenção no trânsito, podendo causar um acidente.' },
-  { id: 'D', question: 'Tirando a atenção do condutor advertido.' }
+  { id: 'A', question: 'Conflitos que ameaçam a segurança do trânsito.' },
+  { id: 'B', question: 'Um relacionamento mais humano e continuo entre os grupos.' },
+  { id: 'C', question: 'Superação das diferenças individuais entre condutores e pedestres.' },
+  { id: 'D', question: 'Convivências harmônica no trânsito.' }
 ];
 
 const columns = [

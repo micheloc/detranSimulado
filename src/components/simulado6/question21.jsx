@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Usar a luz alta do farol.' },
-  { id: 'B', question: 'Aumentar a velocidade para se livrar do trecho sob neblina.' },
-  { id: 'C', question: 'Acender a luz baixa do farol e reduzir a velocidade.' },
-  { id: 'D', question: 'Diminuir a distância em relação ao veículo da frente.' }
+  { id: 'A', question: 'O prazo minimo desta suspensão será de um mês até o máximo de um ano.' },
+  { id: 'B', question: 'Somente poderá ser aplicada ao condutor que atingir mais de 20 pontos em seu pontuário.' },
+  { id: 'C', question: 'A CNH será devolvida a seu titular, imediatamente depois de cumprido o prazo da penalidade e o curso de reciclagem.' },
+  { id: 'D', question: 'No caso de reincidência no período de doze meses, o prazo será de seis meses até o máximo de dois anos.' }
 ];
 
 
