@@ -33,9 +33,9 @@ import Question28 from './question28';
 import Question29 from './question29';
 import Question30 from './question30'; 
 
-import a37 from '../imagens/A-37.png'; 
-import r24a from '../imagens/R-24a.jpg'; 
-import s3 from '../imagens/s 3.jpg'; 
+import s10 from '../imagens/S-10.jpg'; 
+import a3b from '../imagens/A-3b.jfif'; 
+import r25c from '../imagens/R-25c.jpg'; 
 
 var selectList = [];
 var numberSelect = "";
@@ -80,36 +80,36 @@ export class frmPagina extends Component {
       activateNext: true,
       id: 1,  
       resposta: [
-        { resp: 'A', questao: '1'},
-        { resp: 'A', questao: '2'},
-        { resp: 'A', questao: '3'},
-        { resp: 'A', questao: '4'},
-        { resp: 'D', questao: '5'},
-        { resp: 'B', questao: '6'}, 
-        { resp: 'C', questao: '7'}, 
+        { resp: 'C', questao: '1'},
+        { resp: 'D', questao: '2'},
+        { resp: 'B', questao: '3'},
+        { resp: 'D', questao: '4'},
+        { resp: 'C', questao: '5'},
+        { resp: 'A', questao: '6'}, 
+        { resp: 'D', questao: '7'}, 
         { resp: 'D', questao: '8'}, 
-        { resp: 'C', questao: '9'}, 
-        { resp: 'C', questao: '10'}, 
-        { resp: 'D', questao: '11'},
-        { resp: 'C', questao: '12'},
+        { resp: 'D', questao: '9'}, 
+        { resp: 'B', questao: '10'}, 
+        { resp: 'C', questao: '11'},
+        { resp: 'A', questao: '12'},
         { resp: 'B', questao: '13'},
-        { resp: 'C', questao: '14'},
-        { resp: 'A', questao: '15'},
-        { resp: 'B', questao: '16'},
-        { resp: 'C', questao: '17'},
-        { resp: 'A', questao: '18'},
+        { resp: 'A', questao: '14'},
+        { resp: 'B', questao: '15'},
+        { resp: 'A', questao: '16'},
+        { resp: 'A', questao: '17'},
+        { resp: 'C', questao: '18'},
         { resp: 'B', questao: '19'},
-        { resp: 'D', questao: '20'},
-        { resp: 'D', questao: '21'},
-        { resp: 'C', questao: '22'},
+        { resp: 'B', questao: '20'},
+        { resp: 'B', questao: '21'},
+        { resp: 'D', questao: '22'},
         { resp: 'B', questao: '23'},
-        { resp: 'B', questao: '24'},
-        { resp: 'A', questao: '25'},
-        { resp: 'A', questao: '26'},
-        { resp: 'C', questao: '27'},
+        { resp: 'D', questao: '24'},
+        { resp: 'C', questao: '25'},
+        { resp: 'D', questao: '26'},
+        { resp: 'D', questao: '27'},
         { resp: 'C', questao: '28'},
-        { resp: 'D', questao: '29'},
-        { resp: 'A', questao: '30'},
+        { resp: 'B', questao: '29'},
+        { resp: 'D', questao: '30'},
       ], 
     }
     this._alterQuestion = this._alterQuestion.bind(this); 
@@ -271,21 +271,21 @@ export class frmPagina extends Component {
       <div>
         {this.state.questao1 ? 
           <Card>
-            <CardHeader> <b>(1)</b> : Qual o nome técnico da placa S-10? <img src={a37}  width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader> <b>(1)</b> : Qual o nome técnico da placa S-10? <img src={s10}  width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question1 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('1')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao2 ?
           <Card>
-            <CardHeader> <b>(2)</b> : Qual o nome técnico da placa A-3b? <img src={r24a} width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader> <b>(2)</b> : Qual o nome técnico da placa A-3b? <img src={a3b} width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question2 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('2') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao3 ?
           <Card>
-            <CardHeader> <b>(3)</b>  Qual o nome técnico da placa R-25c? <img src={r24a} width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader> <b>(3)</b>  Qual o nome técnico da placa R-25c? <img src={r25c} width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question3 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('3') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
