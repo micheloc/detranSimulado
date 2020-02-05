@@ -33,9 +33,9 @@ import Question28 from './question28';
 import Question29 from './question29';
 import Question30 from './question30'; 
 
-import a37 from '../imagens/A-37.png'; 
-import r24a from '../imagens/R-24a.jpg'; 
-import s3 from '../imagens/s 3.jpg'; 
+import r34 from '../imagens/R-34.jpg';  
+import s5 from '../imagens/S-5.png'; 
+import a36 from '../imagens/A-36.jpg'; 
 
 var selectList = [];
 var numberSelect = "";
@@ -285,7 +285,7 @@ export class frmPagina extends Component {
         : null}
         {this.state.questao3 ?
           <Card>
-            <CardHeader> <b>(3)</b>  : Qual o nome técnico da placa R-34? <img src={r34} width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader> <b>(3)</b>  : Qual o nome técnico da placa S-5? <img src={s5} width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question3 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('3') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
