@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '15 dias.' },
-  { id: 'B', question: '05 dias.' },
-  { id: 'C', question: '21 dias.' },
-  { id: 'D', question: '20 dias.' }
+  { id: 'A', question: 'Poderá ser efetuado a qualquer tempo por 80% do seu valor.' },
+  { id: 'B', question: 'Poderá ser efetuado até a data do vencimento expressa na notificação da penalidade, por 20% do seu valor.' },
+  { id: 'C', question: 'Somente poderá ser efetuado na sua totalidade .' },
+  { id: 'D', question: 'Poderá ser efetuado até a data do vencimento expressa na notificação da penalidade, por 80% do seu valor.' }
 ];
 
 
@@ -14,14 +14,21 @@ const columns = [
   { dataField: 'question', text: ' ',  headerStyle: () => { return { width: '90%', textAlign: 'center' } }},
 ];
 export class Question_9 extends Component {
-  constructor(props) {
-  super(props);
-  this.state = {};
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
+  }
+    
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
   }
   render() {
     const selectRow = {

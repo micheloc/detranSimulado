@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Conduzir a vitima ao hospital o mais rápido possivel e de qualquer forma' },
-  { id: 'B', question: 'São cuidados que devem ser tornados em caso de acidentes at´´e a chegada do serviço de socorro.' },
-  { id: 'C', question: 'É a oportunidade de se tornar herói.' },
-  { id: 'D', question: 'É a sua chance de testar o que aprendeu.' }
+  { id: 'A', question: 'Ter prioridade em situações de congestionamento sobre qualquer outro' },
+  { id: 'B', question: 'Chegar ao seu destino no menor tempo possivel.' },
+  { id: 'C', question: 'Realizar ultrapassagem em qualquer circunstância.' },
+  { id: 'D', question: 'Fazer uma manobra de emergência, quando houver necessidade, como frear ou desviar o veículo de outro.' }
 ];
 
 
@@ -15,16 +15,22 @@ const columns = [
 ];
 
 export class Question_24 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
     
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
 
     const selectRow = {

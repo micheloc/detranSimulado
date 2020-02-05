@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Tração animal, propulsão humana, automotor, elétrico, reboque e sembirreboque.' },
-  {id: 'B', question:'Tração animal, propulsão humana, carga e motocicleta.' },
-  {id: 'C', question:'Tração animal, propulsão humana, carga e misto.' },
-  {id: 'D', question:'Passageiro, carga, misto, reboque e semirreboque.' }
+  {id: 'A', question:'O responsável pela infração e a autoridade de trânsito que impôs a penalidade.' },
+  {id: 'B', question:'Somente o responsável pela infração.' },
+  {id: 'C', question:'Somente a autoridade que impôs a penalidade.' },
+  {id: 'D', question:'O responsável pela infração e o agente da autoridade de trânsito.' }
 ]; 
 
 
@@ -16,16 +16,22 @@ const columns = [
 ];
 
 export class Question_16 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
-
+    
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
     const selectRow = {
       mode: 'radio', 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Assegurar-se que poderá efetuar a manobra e adentrar a via rapidamente' },
-  { id: 'B', question: 'Manter-se sempre ao centro da via, para depois sinalizar.'},
-  { id: 'C', question: 'Assegurar-se que poderá efetuar a manobra sem perigo para os demais usuários e fazer o sinal indicativo de sua intenção.' },
-  { id: 'D', question: 'Desacelerar o veículo e colocar-se no centro da via.' }
+  { id: 'A', question: 'A mistura álcool + gasolina, após a sua combustão, produz uma menor quantidade de gases poluentes' },
+  { id: 'B', question: 'A mistura álcool + gasolina, após sua combustão, produz uma maior quantidade de gases poluentes.'},
+  { id: 'C', question: 'A mistura álcool + gasolina faz com que a combustão seja ruim.' },
+  { id: 'D', question: 'A utilização do álcool na gasolina não traz nenhuma vantagem.' }
 ];
 
 const columns = [
@@ -14,16 +14,22 @@ const columns = [
 ];
 
 export class Question_14 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
-
+    
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
     const selectRow = {
       mode: 'radio', 
