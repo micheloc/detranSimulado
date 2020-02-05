@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Pressionar o ferimento até sentir o osso da área lesada.' },
-  { id: 'B', question: 'Aplicar compressão direta no ferimento, com uma gaze ou pano limpo.' },
-  { id: 'C', question: 'Abaixar o membro afetado.' },
-  { id: 'D', question: 'Manter o torniquete bem apertado.' }
+  { id: 'A', question: 'Circular pelo meio-fio junto à calçada.' },
+  { id: 'B', question: 'Transitar com farol aceso somente à noite.' },
+  { id: 'C', question: 'Usar sempre o capacete com viseira ou óculos protetores e vestuário de proteção.' },
+  { id: 'D', question: 'Usar roupas escuras para ser visto pelos outros usuários.' }
 ];
 
 
@@ -16,16 +16,22 @@ const columns = [
     
 
 export class Question_18 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
-  
+    
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
     const selectRow = {
       mode: 'radio', 

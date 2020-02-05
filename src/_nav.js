@@ -45,16 +45,16 @@ export default {
     //   url: '/nav/simulado7',
     //   icon: 'icon-pin',
     // },
-    {
-      name: 'Simulado 8',
-      url: '/nav/simulado8',
-      icon: 'icon-pin',
-    },
     // {
-    //   name: 'Simulado 9',
-    //   url: '/nav/simulado9',
+    //   name: 'Simulado 8',
+    //   url: '/nav/simulado8',
     //   icon: 'icon-pin',
     // },
+    {
+      name: 'Simulado 9',
+      url: '/nav/simulado9',
+      icon: 'icon-pin',
+    },
     // {
     //   name: 'Simulado 10',
     //   url: '/nav/simulado10',

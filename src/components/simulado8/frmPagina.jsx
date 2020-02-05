@@ -271,21 +271,21 @@ export class frmPagina extends Component {
       <div>
         {this.state.questao1 ? 
           <Card>
-            <CardHeader> <b>(1)</b> : Qual o nome técnico da placa A-37? <img src={a37}  width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader> <b>(1)</b> : Qual o nome técnico da placa S-10? <img src={a37}  width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question1 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('1')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao2 ?
           <Card>
-            <CardHeader> <b>(2)</b> : Qual o nome técnico da placa R-24a? <img src={r24a} width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader> <b>(2)</b> : Qual o nome técnico da placa A-3b? <img src={r24a} width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question2 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('2') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao3 ?
           <Card>
-            <CardHeader> <b>(3)</b>  Qual o nome técnico da placa R-24a? <img src={r24a} width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader> <b>(3)</b>  Qual o nome técnico da placa R-25c? <img src={r24a} width="120px" height="120px" align="right"/></CardHeader>
             <CardBody><Question3 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('3') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
