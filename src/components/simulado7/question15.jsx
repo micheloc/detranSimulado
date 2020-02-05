@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Concentrado.' },
-  { id: 'B', question: 'Com suspeita de uso de energéticos.' },
-  { id: 'C', question: 'Com fadiga.' },
-  { id: 'D', question: 'Sob tensão emocional.' }
+  { id: 'A', question: 'Retirar as partes das roupas que estejam grudadas na área queimada.' },
+  { id: 'B', question: 'Passar pomadas, mercúrio ou quaisquer outros produtos.' },
+  { id: 'C', question: 'Isolar a área exposta com pano limpo, porém sem manter contato com a ferida.' },
+  { id: 'D', question: 'Lavar as regiões queimadas com soro fisiológico ou álcool.' }
 ];
 
 

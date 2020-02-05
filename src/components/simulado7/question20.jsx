@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Serviço mecânico.' },
-  {id: 'B', question:'Loja de ferragens.' },
-  {id: 'C', question:'Area de manutenção.' },
-  {id: 'D', question:'Serviço de urgência.' }
+  {id: 'A', question:'Via local, via coletora, via arterial e via de trânsito rápido.' },
+  {id: 'B', question:'Estrada, rodovia, preferencial e principal.' },
+  {id: 'C', question:'Via Local, via externa e via preferencial.' },
+  {id: 'D', question:'Via secundária, via de trânsito rápido e via de trânsito lento.' }
 ]; 
 
 

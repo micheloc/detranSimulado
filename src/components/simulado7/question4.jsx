@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'O máximo possivel do eixo da via, caso se trate de uma via arterial de circulação nos dois sentidos, para realizar uma conversão à direita.' },
-  { id: 'B', question: 'Do bordo direito, tratando-se de uma via coletora de dois sentidos, para realizar uma conversão à esquerda.' },
-  { id: 'C', question: 'O máximo possivel do bordo direito da pista para realizar uma conversão à direita em uma via coletora.' },
-  { id: 'D', question: 'Do bordo esquerdo, tratando-se de uma via coletora de dois sentidos, para realizar uma conversão à esquerda.' }
+  { id: 'A', question: 'Servir como reservatório e coletor de óleo lubrificante.' },
+  { id: 'B', question: 'Proteger o bloco do motor.' },
+  { id: 'C', question: 'Servir como reservatório do radiador.' },
+  { id: 'D', question: 'Proteger o volante do motor.' }
 ];
 
 const columns = [

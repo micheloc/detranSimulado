@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'A Álcool.' },
-  { id: 'B', question: 'A Diesel.' },
-  { id: 'C', question: 'A Querosene.' },
-  { id: 'D', question: 'A Gasolina.' }
+  { id: 'A', question: 'As ambulâncias e os veículos de polícia e do corpo de bombeiros.' },
+  { id: 'B', question: 'Os veículos prestadores de serviço de utilidade pública.' },
+  { id: 'C', question: 'Os veículos de transporte coletivo de passageiros.' },
+  { id: 'D', question: 'Os veículos precedidos de batedores.' }
 ];
 
 

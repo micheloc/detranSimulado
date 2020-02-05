@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Cronometrar o tempo gasto nos deslocamentos.' },
-  { id: 'B', question: 'Estacionar o veículo sobre a calçada.' },
-  { id: 'C', question: 'Verificar a documentação de porte obrigatório.' },
-  { id: 'D', question: 'Dirigir sempre com atenção.' }
+  { id: 'A', question: 'Divisão de fluxos opostos e permissão de ultrpassagem.' },
+  { id: 'B', question: 'Somente divisão de fluxos opostos.' },
+  { id: 'C', question: 'Divisão de fluxos opostos e proibição de ultrapassagem.' },
+  { id: 'D', question: 'Divisão de fluxos semelhantes e permissão de ultrapassagem.' }
 ];
 
 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Borda da pista é a margem da pista, podendo ser demarcada por faixas transversais que delineiam a parte da via destinada ao estacionamento de veículos.' },
-  { id: 'B', question: 'Caminhão-trator é o veículo automotor destinado a realizar trabalhos agrícolas de construção e pavimentação.' },
-  { id: 'C', question: 'Canteiro central é o obstáculo físico como separador de duas pistas de rolamento.' },
-  { id: 'D', question: 'Caminhonete é um veículo destinado a realizar transporte de passageiros e de carga no mesmo compartilhamento, com peso bruto total de até três mil e quinhentos quilogramas.' }
+  { id: 'A', question: 'O ato de dirigir veículo automotor de modo a reduzir a possibilidade de ser envolvido em acidente de trânsito ou de causar dano a terceiros.' },
+  { id: 'B', question: 'O condutor dirigir um veículo sem prestar muita atenção nas placas de sinalização.' },
+  { id: 'C', question: 'O ato de dar manutenção ao veículo.' },
+  { id: 'D', question: 'A inobservância de regras de passagem do veículo com o qual vai cruzar.' }
 ];
 
 

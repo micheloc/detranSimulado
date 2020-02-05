@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Tração animal, propulsão humana, automotor, elétrico, reboque e sembirreboque.' },
-  {id: 'B', question:'Tração animal, propulsão humana, carga e motocicleta.' },
-  {id: 'C', question:'Tração animal, propulsão humana, carga e misto.' },
-  {id: 'D', question:'Passageiro, carga, misto, reboque e semirreboque.' }
+  {id: 'A', question:'Com a calibragem correta, de acordo com a carga e a capacidade do veículo.' },
+  {id: 'B', question:'Mais vazio possível para aumentar o contato do veículo com a pista.' },
+  {id: 'C', question:'Bastante cheios para suportar o peso do veículo.' },
+  {id: 'D', question:'Bastante cheios ou vazios, de acordo com a carga do veículo.' }
 ]; 
 
 
