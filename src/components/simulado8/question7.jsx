@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Obedecer apenas à sinalizção luminosa e das placas.' },
-  { id: 'B', question: 'Obedecer somente à sinalização luminosa e sonora.' },
-  { id: 'C', question: 'Para o veículo para atender ao sinal do passageiro em qualquer local, em se tratando de transporte coletivo.' },
-  { id: 'D', question: 'Ultrapassar outro veículo em movimento pela esquerda, salvo exceção regulamentada.' }
+  { id: 'A', question: 'Sinalização especial.' },
+  { id: 'B', question: 'Sinalização vertical.' },
+  { id: 'C', question: 'Sinalização horizontal.' },
+  { id: 'D', question: 'Sinalização semafórica.' }
 ];
 
 

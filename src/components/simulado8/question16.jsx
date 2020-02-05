@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'O responsável pela infração e a autoridade de trânsito que impôs a penalidade.' },
-  {id: 'B', question:'Somente o responsável pela infração.' },
-  {id: 'C', question:'Somente a autoridade que impôs a penalidade.' },
-  {id: 'D', question:'O responsável pela infração e o agente da autoridade de trânsito.' }
+  {id: 'A', question:'Vapor.' },
+  {id: 'B', question:'Motor.' },
+  {id: 'C', question:'Combustão.' },
+  {id: 'D', question:'Roda.' }
 ]; 
 
 

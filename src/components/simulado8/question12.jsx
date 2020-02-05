@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'O direito de votar e de ser votado.' },
-  { id: 'B', question: 'O respeito às regras gerais de circulação.' },
-  { id: 'C', question: 'O direito que qualquer cidadão tem de solicitar, por escrito aos órgãos do Sistema Nacional de Trânsito, sinalização ou sugerir alterações em normas.' },
-  { id: 'D', question: 'A aplicação das normas gerais de circulação e conduta.' }
+  { id: 'A', question: 'Garagem.' },
+  { id: 'B', question: 'Área de Abastecimento.' },
+  { id: 'C', question: 'Terminal rodoviário.' },
+  { id: 'D', question: 'Ponto de Ônibus.' }
 ];
 
 

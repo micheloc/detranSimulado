@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Acionar o farol alto e buzinar para o outro condutor ultrapassar.' },
-  { id: 'B', question: 'Dar uma freada brusca para alertar o condutor do outro veículo.' },
-  { id: 'C', question: 'Desviar para a esquerda, gritando com o outro condutor.' },
-  { id: 'D', question: 'Deslocar para a direita da pista, reduzindo a velocidade, se necessário.' }
+  { id: 'A', question: 'Ausência de ruídos respiratórios ou movimentos de ar pelo nariz ou boca.' },
+  { id: 'B', question: 'Dilatação das pupilas.' },
+  { id: 'C', question: 'Áreas da pele com formação de bolhas.' },
+  { id: 'D', question: 'Perda imediata da consciência.' }
 ];
 
 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'A mistura álcool + gasolina, após a sua combustão, produz uma menor quantidade de gases poluentes' },
-  { id: 'B', question: 'A mistura álcool + gasolina, após sua combustão, produz uma maior quantidade de gases poluentes.'},
-  { id: 'C', question: 'A mistura álcool + gasolina faz com que a combustão seja ruim.' },
-  { id: 'D', question: 'A utilização do álcool na gasolina não traz nenhuma vantagem.' }
+  { id: 'A', question: 'Manter os pneus calibrados anualmente.' },
+  { id: 'B', question: 'Trafegar com o veículo bastante pesado.'},
+  { id: 'C', question: 'Adaptar a velocidade do veículo às condições da pista, da chuva e dos pneus.' },
+  { id: 'D', question: 'Não conduzir o veículo nos períodos chuvosos.' }
 ];
 
 const columns = [

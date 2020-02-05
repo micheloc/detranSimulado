@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Regulamentação.' },
-  { id: 'B', question: 'Indicação.' },
-  { id: 'C', question: 'Educação.' },
-  { id: 'D', question: 'Advertência.'}
+  { id: 'A', question: 'Conferir a documentação de porte obrigatório.' },
+  { id: 'B', question: 'Utilizar os equipamentos de proteção do veículo de forma inadequada.' },
+  { id: 'C', question: 'Fazer periodicamente a manutenção preventiva do veículo.' },
+  { id: 'D', question: 'Programar os melhores itinerários com antecedência.'}
 ];
 
 

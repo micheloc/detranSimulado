@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Curva acentuada em "S" à direita.' },
-  { id: 'B', question: 'Curva acentuada à direita.' },
-  { id: 'C', question: 'Curva à direita.' },
-  { id: 'D', question: 'Pista sinuosa à direita.' }
+  { id: 'A', question: 'Pista sinuosa à esquerda.' },
+  { id: 'B', question: 'Curva acentuada em "S" à esquerda.' },
+  { id: 'C', question: 'Curva acentuada à esquerda.' },
+  { id: 'D', question: 'Curva sinuosa à direita.' }
 ];
 
 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'No banco sob as pernas do motorista.' },
-  { id: 'B', question: 'No porta malas.' },
-  { id: 'C', question: 'Na lateral próximo aos pedais.' },
-  { id: 'D', question: 'Na lateral do banco do motorista.' }
+  { id: 'A', question: 'Fugir do local do acidente sem prestar socorro.' },
+  { id: 'B', question: 'Sinalizar adequadamente o local, a fim de evitar um novo acidente.' },
+  { id: 'C', question: 'Socorrer a vítima e comunicar-se com seus familiares.' },
+  { id: 'D', question: 'Apresentar-se à autoridade de trânsito.' }
 ];
 
 

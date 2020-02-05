@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Um veículo misto e ser registrado com peso bruto total (PBT) superior a 3.500 kg, além de poder transportar mais de 08(oito) passageiros.' },
-  { id: 'B', question: 'Um veículo de passageiro com mais de 08 (oito) lugares, sem contar o lugar do condutor.' },
-  { id: 'C', question: 'Um veículo motorizado utilizado no transporte de carga, registrado com capacidade mínima de Peso Bruto Total (PBT) de 6.000 kg.' },
-  { id: 'D', question: 'Um veículo de carga e ser registrado com Peso Bruto Total (PBT) superior a 3.500 KG.' }
+  { id: 'A', question: 'Multas de trânsito, encargos do DETRAN e seguro total contra danos a terceiros.' },
+  { id: 'B', question: 'Multas de trânsito e ambientais e taxa para regravação anual do chassi.' },
+  { id: 'C', question: 'IPVA, seguro total contra danos a terceiros e multa de trânsito.' },
+  { id: 'D', question: 'IPVA, DPVAT, encargos do DETRAN, multas de trânsito e ambientais.' }
 ];
 
 

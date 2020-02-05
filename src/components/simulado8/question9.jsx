@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Poderá ser efetuado a qualquer tempo por 80% do seu valor.' },
-  { id: 'B', question: 'Poderá ser efetuado até a data do vencimento expressa na notificação da penalidade, por 20% do seu valor.' },
-  { id: 'C', question: 'Somente poderá ser efetuado na sua totalidade .' },
-  { id: 'D', question: 'Poderá ser efetuado até a data do vencimento expressa na notificação da penalidade, por 80% do seu valor.' }
+  { id: 'A', question: 'Pista escorregadia.' },
+  { id: 'B', question: 'Pista irregular.' },
+  { id: 'C', question: 'Uso obrigatório de correntes.' },
+  { id: 'D', question: 'Proibido trânsito de tração animal.' }
 ];
 
 

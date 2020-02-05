@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '60 passos largos ou 60 metros.' },
-  { id: 'B', question: '40 passos largos ou 40 metros.' },
-  { id: 'C', question: '80 passos largos ou 80 metros.' },
-  { id: 'D', question: '30 passos largos ou 30 metros.' }
+  { id: 'A', question: 'Ceder o seu direito e, logo a frente, tentar advertir o motorista errado.' },
+  { id: 'B', question: 'Fazer valer o seu direito, mesmo com o rísco de um pequeno acidente.' },
+  { id: 'C', question: 'Ceder seu direito ao motorista errado e evitar o acidente.' },
+  { id: 'D', question: 'Não se preocupar com o outro motorista, pois ele está errado.' }
 ];
 
 const columns = [

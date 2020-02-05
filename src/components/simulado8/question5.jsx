@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Manter o farol alto, à noite, quando o veículo estiver parado na via pública para fins de embarque ou desembarque.' },
-  { id: 'B', question: 'Manter aceso o farol alto, nas vias urbanas dotadas de iluminação pública.' },
-  { id: 'C', question: 'Manter acesa a luz de placa, durante a noite, quando o veículo estiver em movimento.' },
-  { id: 'D', question: 'Manter acesas as luzes externas de umas motocicleta, somente a noite e quando estiver em movimento.' }
+  { id: 'A', question: 'Legislação de Trânsito.' },
+  { id: 'B', question: 'Educação de Trânsito.' },
+  { id: 'C', question: 'Engenharia de Trânsito.' },
+  { id: 'D', question: 'Sinalização de Trânsito.' }
 ];
 
 

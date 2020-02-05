@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Circular pelo meio-fio junto à calçada.' },
-  { id: 'B', question: 'Transitar com farol aceso somente à noite.' },
-  { id: 'C', question: 'Usar sempre o capacete com viseira ou óculos protetores e vestuário de proteção.' },
-  { id: 'D', question: 'Usar roupas escuras para ser visto pelos outros usuários.' }
+  { id: 'A', question: 'Tratá-los com cortesia, respeitando-os e ajudando-os no trânsito.' },
+  { id: 'B', question: 'Discutir com eles, fazendo valer a sua opinião.' },
+  { id: 'C', question: 'Deixar de sinalizar quando vai entrar à direita ou à esquerda, pois eles cabem em qualquer lugar.' },
+  { id: 'D', question: 'Ignorá-los, pois não tem tempo a perder.' }
 ];
 
 

@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Pressionar o ferimento até sentir o osso da área lesada.' },
-  { id: 'B', question: 'Realizar compressão no ferimento, diretamente sobre ele, com uma gaze ou pano limpo.' },
-  { id: 'C', question: 'Colocar o local do sangramento mais abaixo do corpo.' },
-  { id: 'D', question: 'Retirar qualquer sujeira ou objeto que estiver no ferimento.' }
+  { id: 'A', question: 'Conferir as atividades que serão desenvolvidas durante o deslocamento.' },
+  { id: 'B', question: 'Verificar se o veículo está limpo.' },
+  { id: 'C', question: 'Informar-se sobre as condições de tráfego das avenidas.' },
+  { id: 'D', question: 'Verificar as condições de funcionamento dos equipamentos de uso obrigatório.' }
 ];
 
 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Ter prioridade em situações de congestionamento sobre qualquer outro' },
-  { id: 'B', question: 'Chegar ao seu destino no menor tempo possivel.' },
-  { id: 'C', question: 'Realizar ultrapassagem em qualquer circunstância.' },
-  { id: 'D', question: 'Fazer uma manobra de emergência, quando houver necessidade, como frear ou desviar o veículo de outro.' }
+  { id: 'A', question: 'Respeito aos direitos e aos deveres do cidadão e do grupo' },
+  { id: 'B', question: 'Conflitos que ameaçam a segurança do trânsito.' },
+  { id: 'C', question: 'Convivência harmônica no transito.' },
+  { id: 'D', question: 'Superação das diferenças individuais entre condutores e pedestres.' }
 ];
 
 

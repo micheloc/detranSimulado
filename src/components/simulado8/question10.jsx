@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Deslocar com antecedência o veículo para a faixa mais à direita quando for entrar à esquerda.' },
-  { id: 'B', question: 'Abster-se de todo ato que possa constituir perigo ou obstáculo para trânsito.' },
-  { id: 'C', question: 'Colocar o veículo na via pública sem observar as cautelas necessárias.' },
-  { id: 'D', question: 'Dirigir de forma arrojada em vias com trânsito congestionado.' }
+  { id: 'A', question: 'Não é permitido tranportar passageiro neste veículo.' },
+  { id: 'B', question: 'É permitido circular com este veículo sobre as calçadas.' },
+  { id: 'C', question: 'Este veículo deve ser conduzido pela direita da pista de rolamento.' },
+  { id: 'D', question: 'É proibida sua circulação em vias arteriais e coletoras.' }
 ];
 
 

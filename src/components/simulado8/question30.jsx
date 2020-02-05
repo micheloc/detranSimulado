@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Identidade.' },
-  {id: 'B', question:'Bairrismo.' },
-  {id: 'C', question:'Naturalidade.' },
-  {id: 'D', question:'Nacionalidade.' }
+  {id: 'A', question:'Tipo, condições, traçado da via e condições climáticas.' },
+  {id: 'B', question:'Gravidade do acidente e quantidade de vítimas.' },
+  {id: 'C', question:'Tipo de acidente e quantidade de vítimas.' },
+  {id: 'D', question:'Gravidade do acidente e condições da via.' }
 ]; 
 
 

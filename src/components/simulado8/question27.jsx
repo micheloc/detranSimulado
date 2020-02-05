@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Desconsiderar a curva e continuar a contagem até alcançar a medida prevista.' },
-  {id: 'B', question:'Continuar a contagem e acrescer à medida prevista 15 passos largos.' },
-  {id: 'C', question:'Continuar a contagem e acrescer à medida prevista 20 passos largos.' },
-  {id: 'D', question:'Iniciar novamente a contagem a partir da curva.' }
+  {id: 'A', question:'Pare.' },
+  {id: 'B', question:'Siga.' },
+  {id: 'C', question:'Diminua a marcha.' },
+  {id: 'D', question:'Acenda as lanternas.' }
 ]; 
 
 

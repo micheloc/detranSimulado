@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Na parte superior do veículo.' },
-  { id: 'B', question: 'No local que for mais seguro para colocar o triângulo.' },
-  { id: 'C', question: 'A uma distância segura e de uma forma que os demais condutores sejam previnidos quando à imobilização.' },
-  { id: 'D', question: 'Dentro do veículo, na parte traseira.' }
+  { id: 'A', question: 'O uso dos equipamentos de segurança do veículo.' },
+  { id: 'B', question: 'A utilização dos espelhos retrovisores.' },
+  { id: 'C', question: 'A supervisão e disciplina.' },
+  { id: 'D', question: 'O ajustamento pessoal individual.' }
 ];
 
 

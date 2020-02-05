@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Transitar em grupos e à direita.' },
-  { id: 'B', question: 'O uso de capacete de segurança.' },
-  { id: 'C', question: 'O uso de blusão e luvas de couro.' },
-  { id: 'D', question: 'Transitar na metade da velocidade máxima prevista para a via.' }
+  { id: 'A', question: 'Retirar do corpo da vítima objetos que possam machucá-la, como exemplo os óculos e fones de ouvidos.' },
+  { id: 'B', question: 'Deixar os restos de alimentos e objetos na boca da vítima, mesmo podendo retirá-los.' },
+  { id: 'C', question: 'Afastar da vítima objetos que possam machucá-la.' },
+  { id: 'D', question: 'Proteger a cabeça da vítima.' }
 ];
 
 

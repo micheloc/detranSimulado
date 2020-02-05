@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'CONTRAN após o recolhimento do valor da multa.' },
-  {id: 'B', question:'CONTRAN sem o recolhimento do valor da multa.' },
-  {id: 'C', question:'CETRAN após o recolhimento do valor da multa.' },
-  {id: 'D', question:'CETRAN sem o recolhimento do valor da multa.' }
+  {id: 'A', question:'Deverá sempre ser de cor amarela e verde.' },
+  {id: 'B', question:'Deverá possuir 30 (trinta) centímetros de largura.' },
+  {id: 'C', question:'Deverá estar presente em toda a extensão da parte frontal, lateral e traseira do veículo.' },
+  {id: 'D', question:'Deverá ser de cor preta quando a carroceria do veículo for pintada na cor amarela.' }
 ]; 
 
 

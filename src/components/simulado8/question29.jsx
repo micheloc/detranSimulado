@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Diminuir o barulho do escapamento. ' },
-  { id: 'B', question: 'Diminuir a emissão dos gases produzidos pela combustão do combustível.' },
-  { id: 'C', question: 'Lubrificar o sistema de emissão de gases.' },
-  { id: 'D', question: 'Refrigerar o motor.' }
+  { id: 'A', question: 'Não agridem o meio ambiente. ' },
+  { id: 'B', question: 'Influenciam na valorização em caso de venda do veículo .' },
+  { id: 'C', question: 'Apenas contribuem para a poluição do solo.' },
+  { id: 'D', question: 'Contribuem, principalmente, para a poluição do ar e sonora.' }
 ];
 
 const columns = [

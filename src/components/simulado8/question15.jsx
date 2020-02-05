@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Somente quando mudar de proprietário.' },
-  { id: 'B', question: 'Anualmente, no DETRAN onde o veículo for registrado.' },
-  { id: 'C', question: 'Semestralmente, desde que seu proprietário pague o IPVA anualmente.' },
-  { id: 'D', question: 'Somente uma vez.' }
+  { id: 'A', question: 'Passageiros, carga, misto, competição, de tração, especial e de coleção.' },
+  { id: 'B', question: 'Oficial, particular, aprendizagem, especial, carga, de tração, aluguel e competição.' },
+  { id: 'C', question: 'Passageiros, carga, missão diplomática e aluguel.' },
+  { id: 'D', question: 'Particular, aluguel, misto, de tração e escolar.' }
 ];
 
 
