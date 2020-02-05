@@ -40,11 +40,11 @@ export default {
       url: '/nav/simulado6',
       icon: 'icon-pin',
     },
-    // {
-    //   name: 'Simulado 7',
-    //   url: '/nav/simulado7',
-    //   icon: 'icon-pin',
-    // },
+    {
+      name: 'Simulado 7',
+      url: '/nav/simulado7',
+      icon: 'icon-pin',
+    },
     {
       name: 'Simulado 8',
       url: '/nav/simulado8',
@@ -83,6 +83,11 @@ export default {
     // {
     //   name: 'Simulado 15',
     //   url: '/nav/simulado15',
+    //   icon: 'icon-pin',
+    // },
+    // {
+    //   name: 'Simulado 16',
+    //   url: '/nav/simulado16',
     //   icon: 'icon-pin',
     // },
   ],
