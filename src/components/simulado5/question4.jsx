@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Afastar curiosos e se for fácil e seguro, desligar o motor do veículo.' },
+  { id: 'B', question: 'Caso esteja nervoso, fumar no local para aliviar a tensão.' },
+  { id: 'C', question: 'Ficar próximo do veículo acidentado com balde com água.' },
+  { id: 'D', question: 'Aguardar junto ao veículo acidentado a chegada do Corpo de Bombeiros.' }
 ];
 
 const columns = [

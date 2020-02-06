@@ -33,9 +33,9 @@ import Question28 from './question28';
 import Question29 from './question29';
 import Question30 from './question30'; 
 
-import a34  from '../imagens/A-34.jpg';  
-import s4   from '../imagens/S-4.png'; 
-import r25a from '../imagens/R-25a.jpg'; 
+import s1   from '../imagens/S-1.png';  
+import r9   from '../imagens/R-9.jpg'; 
+import a39  from '../imagens/A-39.png'; 
 
 var selectList = [];
 var numberSelect = "";

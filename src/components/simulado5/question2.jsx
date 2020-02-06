@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Departamento Nacional de Trânsito (DENATRAN).' },
+  { id: 'B', question: 'Conselho Estadual de Trânsito (CETRAN).' },
+  { id: 'C', question: 'Departamento Estadual de Trânsito (DETRAN).' },
+  { id: 'D', question: 'Órgão Executivo Municipal.' }
 ];
 
 

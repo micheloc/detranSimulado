@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Carroça - veículo de tração animal destinado aos transporte de carga ou passageiro.' },
+  {id: 'B', question:'Caminhão-trator - veículo destinado exclusivamente ao trabalho rural.' },
+  {id: 'C', question:'Caminhoneta - veículo misto destinado ao transporte de passageiros e carga no mesmo compartimento.' },
+  {id: 'D', question:'Autmóvel - veículo automotor com capacidade para mais de oito passageiros.' }
 ]; 
 
 const columns = [

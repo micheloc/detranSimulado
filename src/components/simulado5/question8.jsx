@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Para-choque dianteiro e traseiro, trava de portas e ignição automática.' },
+  { id: 'B', question: 'Pneus, chassi, iluminador de placa traseira e direção hidráulica.' },
+  { id: 'C', question: 'Espelhos retrovisores interno e externo, velocimentro, buzina e cinto de segurança.' },
+  { id: 'D', question: 'Extintores de incêndio, faróis de milha e ar condicionado.' }
 ];
 
 

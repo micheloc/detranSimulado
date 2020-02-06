@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Ter responsabilidade e possuir Carteira de identidade.' },
+  { id: 'B', question: 'Possuir apenas Carteira de Identidade e comprovante de endereço.' },
+  { id: 'C', question: 'Ter no mínimo 21 anos de idade, possuir Carteira de Identidade ou equivalente e saber ler e escrever.' },
+  { id: 'D', question: 'Ser penalmente, saber ler e escrever, ter Carteira de Identidade ou equivalente e possuir Cadastro de Pessoa Fisica - CPF.' }
 ];
 
 
