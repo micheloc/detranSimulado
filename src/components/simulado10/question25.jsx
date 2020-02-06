@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Não se preocupa com os perigos' },
-  { id: 'B', question: 'Dirige com rapidez em qualquer rodovia, sem provocar acidentes.' },
-  { id: 'C', question: 'Apesar da ação incorreta dos outros condutores e das condições adversas, evita acidentes e não disputa preferências.' },
-  { id: 'D', question: 'Tem muito cuidado com os outros motoristas e confia em sua habilidades.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 

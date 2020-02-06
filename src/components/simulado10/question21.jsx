@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Sinalizar o local do acidente, a fim de que curiosos não parem seus veículos e obstruam a via.' },
-  { id: 'B', question: 'Iniciar a sinalização em um ponto em que os motoristas ainda não possam ver o acidente.' },
-  { id: 'C', question: 'Iniciar os procedimentos de socorro à vítima, independentemente, de ter sinalizado o local.' },
-  { id: 'D', question: 'Manter, dentro do possível, as vias livres para o tráfego fluir.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 

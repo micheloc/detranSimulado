@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Por decisão fundamentada da autoridade de trânsito competente em processo administrativo, assegurado o direito de defesa ao infrator.' },
-  { id: 'B', question: 'Por decisão fundamentada da autoridade de trânsito competente, sem assegurar o direito de ampla defesa.' },
-  { id: 'C', question: 'Por decisão do órgão máximo normativo de trânsito.' },
-  { id: 'D', question: 'Por decisão fundamentada da autoridade de trânsito, sem o direito de questionar, por se tratar de procedimento interno.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 

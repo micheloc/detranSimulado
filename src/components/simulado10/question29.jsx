@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Pessoas que possuem bens móveis e imoveis. ' },
-  { id: 'B', question: 'É qualidade de cidadão, pessoa que está no gozo de seus direitos e deveres civis e politicos.' },
-  { id: 'C', question: 'Pessoa que tem somente deveres garantidos pelo Código civil.' },
-  { id: 'D', question: 'E o atributo conferido apenas às pessoas que podem votar e serem votadas.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 const columns = [

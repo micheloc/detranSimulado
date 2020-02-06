@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Dirigir veículos automotores para os quais foi habilitado, em todo o territorio nacional.' },
-  {id: 'B', question:'Dirigir veículos automotores para os quais foi habilitado, apenas na localidade onde foi emitida.' },
-  {id: 'C', question:'Dirigir qualquer tipo de veículo em todo o território nacional.' },
-  {id: 'D', question:'Dirigir qualquer tipo de veículo automotor.' }
+  {id: 'A', question:'.' },
+  {id: 'B', question:'.' },
+  {id: 'C', question:'.' },
+  {id: 'D', question:'.' }
 ]; 
 
 const columns = [

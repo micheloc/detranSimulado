@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Transitar com o veículo sem nova vistoria, após o acidente.' },
-  { id: 'B', question: 'Parar afastado da guia da calçada (meio-fio) a mais de um metro.'},
-  { id: 'C', question: 'Estacionar onde houver guia da calçada (meio-fio) rebaixada para entrada ou saída de veículos.' },
-  { id: 'D', question: 'Estacionar na contramão de direção.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.'},
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 const columns = [

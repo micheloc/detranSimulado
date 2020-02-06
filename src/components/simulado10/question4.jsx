@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Servir como reservatório e coletor de óleo lubrificante.' },
-  { id: 'B', question: 'Proteger o bloco do motor.' },
-  { id: 'C', question: 'Servir como reservatório do radiador.' },
-  { id: 'D', question: 'Proteger o volante do motor.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 const columns = [

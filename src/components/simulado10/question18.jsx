@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Nos acidentes de trânsito, os ocupantes dos veículos que usam cinto de segurança ficam desprotegidos, sofrendo todas as consequências do acidente.' },
-  { id: 'B', question: 'Dar ao motorista condições de trafegar em altas velocidades.' },
-  { id: 'C', question: 'Dar segurança aos condutores para as manobras arrojadas.' },
-  { id: 'D', question: 'Proteger seu portador, limitar as movimentações dos ocupantes e evitar que sejam jogados para fora do veículo.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 

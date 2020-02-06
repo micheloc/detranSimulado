@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Usar roupas coloridas e que constrastem com o terreno.' },
-  {id: 'B', question:'Ficar na lateral da pista de costas para o fluxo dos veículos.' },
-  {id: 'C', question:'Ficar o tempo todo agitando um pano colorido para alertar os motoristas.' },
-  {id: 'D', question:'Fique logo antes de uma curva ou em outro local.' }
+  {id: 'A', question:'.' },
+  {id: 'B', question:'.' },
+  {id: 'C', question:'.' },
+  {id: 'D', question:'.' }
 ]; 
 
 

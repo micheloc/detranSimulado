@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Administrar fundo de âmbito nacional destinado à segurança e educação de trânsito.' },
-  { id: 'B', question: 'Encaminhar aos órgãos e entidades executivas de trânsito e rodoviários, informações sobre problemas observados nas autuações e apontados em recursos, e que se repitam sistematicamente.' },
-  { id: 'C', question: 'Estabelecer em conjunto com a Polícia Militar as diretrizes para o policiamento ostensivo de trânsito.' },
-  { id: 'D', question: 'Organizar e mater o RENACH.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 

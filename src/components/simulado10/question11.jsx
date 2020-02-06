@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Divisão de fluxos opostos e permissão de ultrpassagem.' },
-  { id: 'B', question: 'Somente divisão de fluxos opostos.' },
-  { id: 'C', question: 'Divisão de fluxos opostos e proibição de ultrapassagem.' },
-  { id: 'D', question: 'Divisão de fluxos semelhantes e permissão de ultrapassagem.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Usar o ponto neutro (banguela).' },
-  { id: 'B', question: 'Testar os freios, reduzir a velocidade e manter o veículo engrenado.' },
-  { id: 'C', question: 'Aproveitar a descida para fazer ultrapassagens.' },
-  { id: 'D', question: 'Testar os freios, reduzir a velocidade e manter o veículo desengrenado usando o ponto neutro.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 
