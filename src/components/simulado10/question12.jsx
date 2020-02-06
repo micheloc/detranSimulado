@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Expedir a CNH e a Permissão para Dirigir mediante delegação do órgão federal competente.' },
+  { id: 'B', question: 'Regulamentar o serviço de aluguel de veículos.'},
+  { id: 'C', question: 'Sinalizar e controlar o fluxo das vias públicas.' },
+  { id: 'D', question: 'Estabelecer os modelos das placas de veículos.' }
+
 ];
 
 

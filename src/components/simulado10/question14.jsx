@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.'},
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Não será tolerado nenhum percentual sobre os limites de peso bruto transmitido por eixo.' },
+  { id: 'B', question: 'As modificações nas características dos veículos poderão ser feitas pelo proprietário ou responsável, sem prévia autorização da autoridade de trânsito.' },
+  { id: 'C', question: 'As combinações para transporte de veículos que excedam os limites permitidos pela Legislação, não necessitam de autorização especial de trânsito.' },
+  { id: 'D', question: 'O veículo de carga deverá estar devidamente equipado, quando transitar, de modo a evitar derramamento de carga sobre a via.' }
 ];
 
 const columns = [

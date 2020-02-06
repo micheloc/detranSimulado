@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Conviver no trânsito é um exercício de respeito a todos que usufruem das vias públicas.' },
+  {id: 'B', question:'O principal objetivo do código de trânsito brasileiro é assegurar a aplicação de penalidades aos infratores.' },
+  {id: 'C', question:'É obrigação de todo condutor de veículo adotar um padrão civilizado e respeitar as deficiências dos outros usuários da via.' },
+  {id: 'D', question:'Para ser um condutor de veículo, além de habilidade para conduzi-lo são necessários conhecimentos de meio ambiente e cidadania.' },
 ]; 
 
 

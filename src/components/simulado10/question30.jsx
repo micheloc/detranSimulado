@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Os veículos movidos a álcool só eliminam gás carbônico (CO2).' },
+  {id: 'B', question:'O CFC (clorofluorcarboneto), presente em muitos aparelhos de ar condicionado dos veículos, pode vazar e contribuir para a destruição da camada de ozônio.' },
+  {id: 'C', question:'O monóxido de carbono não mata por asfixia química nem impede o óxigênio de chegar às células.' },
+  {id: 'D', question:'A poluição do ar produzida pelos automóveis não aumenta o efeito estufa.' }
 ]; 
 
 

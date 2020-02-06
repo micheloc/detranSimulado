@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Aplicar gelo e imobilizar a articulação com talas ou material rígido.' },
+  { id: 'B', question: 'Realizar curativos compressivos.' },
+  { id: 'C', question: 'Aplicar compressas quentes e movimentar a articulação.' },
+  { id: 'D', question: 'Acalmar a vítima prevenindo o estado de choque.' }
 ];
 
 

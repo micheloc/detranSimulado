@@ -18,6 +18,7 @@ const simulado12 = React.lazy(() => import('./components/simulado12/frmPagina'))
 const simulado13 = React.lazy(() => import('./components/simulado13/frmPagina'));
 const simulado14 = React.lazy(() => import('./components/simulado14/frmPagina'));
 const simulado15 = React.lazy(() => import('./components/simulado15/frmPagina'));
+const simulado16 = React.lazy(() => import('./components/simulado16/frmPagina'));
 
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
@@ -41,9 +42,7 @@ const routes = [
   { path: '/nav/simulado13', name: 'Simulado 13', component: simulado13 }, 
   { path: '/nav/simulado14', name: 'Simulado 14', component: simulado14 }, 
   { path: '/nav/simulado15', name: 'Simulado 15', component: simulado15 }, 
-
-
-
+  { path: '/nav/simulado16', name: 'Simulado 16', component: simulado16 }, 
 ];
 
 export default routes;

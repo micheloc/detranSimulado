@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Dar partida no motor.' },
+  { id: 'B', question: 'Transmitir energia à bobina.' },
+  { id: 'C', question: 'Alimentar o som do carro.' },
+  { id: 'D', question: 'Manter a bateria carregada.' }
 ];
 
 const columns = [

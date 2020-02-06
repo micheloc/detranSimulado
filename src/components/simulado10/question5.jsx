@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'É permitido retornar no meio do quarteirão onde há faixa dupla contínua amarela.' },
+  { id: 'B', question: 'O código de trânsito brasileiro proibe o retorno em qualquer local das vias urbanas.' },
+  { id: 'C', question: 'Nas vias urbanas, poderá ser feita nos locais para isto determinados ou em outros locais que ofereçam condições de segurança e fluidez.' },
+  { id: 'D', question: 'É permitido retornar em qualquer local das vias urbanas, desde que se tenha boa visibilidade.' }
 ];
 
 

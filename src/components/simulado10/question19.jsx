@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'O candidato com visão monocular poderá exercer atividade remunerada em um ônibus.' },
+  { id: 'B', question: 'O analfabeto poderá obter a CNH, desde que saiba assinar.' },
+  { id: 'C', question: 'Os exames de sanidade fisica e mental, do candidato portador de necessidades especiais, serão realizados por uma junta médica.' },
+  { id: 'D', question: 'O analfabeto com visão monocular poderá se habilitar em qualquer categoria.' }
 ];
 
 

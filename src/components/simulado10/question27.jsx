@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Ligar a seta e convergir.' },
+  {id: 'B', question:'Dar um toque breve na buzina e convergir.' },
+  {id: 'C', question:'Pisar no freio.' },
+  {id: 'D', question:'Ter certeza de que pode realizar a manobra sem perigo para os outros usuários da via.' }
 ]; 
 
 

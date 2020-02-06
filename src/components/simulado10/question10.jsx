@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Ajustá-los como veículo em movimento.' },
+  { id: 'B', question: 'Procurar eliminar os pontos cegos (sem alcance visual).' },
+  { id: 'C', question: 'Visualizar o pavimento o mais próximo do veículo.' },
+  { id: 'D', question: 'Esticar o pescoço para buscar uma melhor visualização.' }
 ];
 
 

@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'As possibilidades de evitar sofrimento às pessoas aumentam.' },
+  { id: 'B', question: 'A segurança no trânsito aumenta.' },
+  { id: 'C', question: 'As chances de acontecer um acidente aumentam.' },
+  { id: 'D', question: 'As possibilidades de prejuízos a terceiros diminuem.' }
 ];
 
 const columns = [

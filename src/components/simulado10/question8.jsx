@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Placas, marcas, luzes, gestos, sons, marcos e túneis.' },
+  { id: 'B', question: 'Placas, marcas, luzes, gestos, sons, marcas, marcos e barreiras.' },
+  { id: 'C', question: 'Placas, pontes, luzes, gestos, sons, marcas, marcos e barreiras.' },
+  { id: 'D', question: 'Placas, marcas, luzes, gestos, sons, marcos e muros.' }
 ];
 
 

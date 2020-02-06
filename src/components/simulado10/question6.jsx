@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Acender os faróis do seu veículo para chamar a atenção dos outros motoristas.' },
+  {id: 'B', question:'Certificar-se de que dispões de espaço suficiente e de que a visibilidade lhe permite fazê-la com segurança.' },
+  {id: 'C', question:'Ligar a luz de seta e fazer a ultrapassagem rapidamente.' },
+  {id: 'D', question:'Buzinar e forçar a saída para o lado do veículo que estiver a sua frente.' }
 ]; 
 
 
