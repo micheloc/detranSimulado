@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Usar a luz alta do farol.' },
-  { id: 'B', question: 'Aumentar a velocidade para se livrar do trecho sob neblina.' },
-  { id: 'C', question: 'Acender a luz baixa do farol e reduzir a velocidade.' },
-  { id: 'D', question: 'Diminuir a distância em relação ao veículo da frente.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 
@@ -16,16 +16,22 @@ const columns = [
 ];
 
 export class Question_21 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
-  
+    
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
     const selectRow = {
       mode: 'radio', 
