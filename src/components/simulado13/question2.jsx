@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Sentido de circulação da via/pista.' },
-  { id: 'B', question: 'Sentido único.' },
-  { id: 'C', question: 'Passagem obrigatória.' },
-  { id: 'D', question: 'Passagem pela direita.' }
+  { id: 'A', question: '.' },
+  { id: 'B', question: '.' },
+  { id: 'C', question: '.' },
+  { id: 'D', question: '.' }
 ];
 
 
@@ -16,14 +16,21 @@ const columns = [
 ];
 
 export class Question_2 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
+  }
+    
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
   }
     
   render() {
