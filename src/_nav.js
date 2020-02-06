@@ -55,11 +55,11 @@ export default {
       url: '/nav/simulado9',
       icon: 'icon-pin',
     },
-    // {
-    //   name: 'Simulado 10',
-    //   url: '/nav/simulado10',
-    //   icon: 'icon-pin',
-    // },
+    {
+      name: 'Simulado 10',
+      url: '/nav/simulado10',
+      icon: 'icon-pin',
+    },
     {
       name: 'Simulado 11',
       url: '/nav/simulado11',

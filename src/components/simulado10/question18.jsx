@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Pressionar o ferimento até sentir o osso da área lesada.' },
-  { id: 'B', question: 'Aplicar compressão direta no ferimento, com uma gaze ou pano limpo.' },
-  { id: 'C', question: 'Abaixar o membro afetado.' },
-  { id: 'D', question: 'Manter o torniquete bem apertado.' }
+  { id: 'A', question: 'Nos acidentes de trânsito, os ocupantes dos veículos que usam cinto de segurança ficam desprotegidos, sofrendo todas as consequências do acidente.' },
+  { id: 'B', question: 'Dar ao motorista condições de trafegar em altas velocidades.' },
+  { id: 'C', question: 'Dar segurança aos condutores para as manobras arrojadas.' },
+  { id: 'D', question: 'Proteger seu portador, limitar as movimentações dos ocupantes e evitar que sejam jogados para fora do veículo.' }
 ];
 
 
@@ -16,16 +16,22 @@ const columns = [
     
 
 export class Question_18 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
-  
+    
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
     const selectRow = {
       mode: 'radio', 

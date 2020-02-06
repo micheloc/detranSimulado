@@ -33,12 +33,14 @@ import Question28 from './question28';
 import Question29 from './question29';
 import Question30 from './question30'; 
 
-import a37 from '../imagens/A-37.png'; 
-import r24a from '../imagens/R-24a.jpg'; 
-import s3 from '../imagens/s 3.jpg'; 
+import a34  from '../imagens/A-34.jpg';  
+import s4   from '../imagens/S-4.png'; 
+import r25a from '../imagens/R-25a.jpg'; 
 
 var selectList = [];
-var numberSelect = ""
+var numberSelect = "";
+var contAcerto = 0; 
+var contError = 0; 
 
 export class frmPagina extends Component {
   constructor(props){
@@ -75,41 +77,44 @@ export class frmPagina extends Component {
       questao29: false,
       questao30: false,
       resultado: false, 
+      activateNext: true,
+      id: 1,  
       resposta: [
-        { resp: 'B', questao: '1'},
-        { resp: 'B', questao: '2'},
-        { resp: 'B', questao: '3'},
-        { resp: 'B', questao: '4'},
-        { resp: 'B', questao: '5'},
-        { resp: 'A', questao: '6'}, 
-        { resp: 'A', questao: '7'}, 
-        { resp: 'A', questao: '8'}, 
-        { resp: 'A', questao: '9'}, 
-        { resp: 'A', questao: '10'}, 
+        { resp: 'C', questao: '1'},
+        { resp: 'D', questao: '2'},
+        { resp: 'C', questao: '3'},
+        { resp: 'D', questao: '4'},
+        { resp: 'C', questao: '5'},
+        { resp: 'B', questao: '6'}, 
+        { resp: 'C', questao: '7'}, 
+        { resp: 'B', questao: '8'}, 
+        { resp: 'B', questao: '9'}, 
+        { resp: 'B', questao: '10'}, 
         { resp: 'D', questao: '11'},
-        { resp: 'C', questao: '12'},
+        { resp: 'A', questao: '12'},
         { resp: 'D', questao: '13'},
-        { resp: 'C', questao: '14'},
-        { resp: 'A', questao: '15'},
+        { resp: 'D', questao: '14'},
+        { resp: 'B', questao: '15'},
         { resp: 'B', questao: '16'},
-        { resp: 'A', questao: '17'},
-        { resp: 'B', questao: '18'},
-        { resp: 'D', questao: '19'},
-        { resp: 'A', questao: '20'},
-        { resp: 'A', questao: '21'},
+        { resp: 'C', questao: '17'},
+        { resp: 'D', questao: '18'},
+        { resp: 'C', questao: '19'},
+        { resp: 'D', questao: '20'},
+        { resp: 'B', questao: '21'},
         { resp: 'C', questao: '22'},
-        { resp: 'C', questao: '23'},
+        { resp: 'A', questao: '23'},
         { resp: 'A', questao: '24'},
         { resp: 'C', questao: '25'},
-        { resp: 'B', questao: '26'},
-        { resp: 'B', questao: '27'},
-        { resp: 'A', questao: '28'},
-        { resp: 'C', questao: '29'},
-        { resp: 'C', questao: '30'},
+        { resp: 'C', questao: '26'},
+        { resp: 'D', questao: '27'},
+        { resp: 'D', questao: '28'},
+        { resp: 'D', questao: '29'},
+        { resp: 'B', questao: '30'},
       ], 
     }
     this._alterQuestion = this._alterQuestion.bind(this); 
     this._selectQuestion = this._selectQuestion.bind(this);
+    this._openNext = this._openNext.bind(this); 
   }
 
   _alterQuestion(question){
@@ -235,12 +240,28 @@ export class frmPagina extends Component {
     selectList.push(numberSelect); 
   }
 
-  _selectQuestion(question){
+  _selectQuestion(question, select){
+    console.log(question )
+    this.setState({activateNext: select})
     numberSelect = question; 
+  }
+
+  _openNext(habilitar){
+    this.setState({activateNext: habilitar})
   }
 
   _endQuestions(){
     this._alterQuestion(); 
+
+    for (var i = 0; i < selectList.length; i++){
+      
+      if (selectList[i] === this.state.resposta[i].resp){
+        contAcerto += 1; 
+      }else{
+        contError +=1; 
+      }
+    }
+
     this.setState({ questao30: !this.state.questao30 });
     this.setState({ resultado: !this.state.resultado });
   }
@@ -250,72 +271,72 @@ export class frmPagina extends Component {
       <div>
         {this.state.questao1 ? 
           <Card>
-            <CardHeader>Qual o nome técnico da placa A-37? <img src={a37}  width="120px" height="120px" align="right"/></CardHeader>
-            <CardBody><Question1 alternativa={this._selectQuestion}/> </CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('1')}}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(1)</b> : Nos motores atuais são utilizados dois sistemas de inflamação que são :</CardHeader>
+            <CardBody><Question1 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('1')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao2 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa R-24a? <img src={r24a} width="120px" height="120px" align="right"/></CardHeader>
-            <CardBody><Question2 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('2') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(2)</b> : Qual o nome técnico da placa A-34? <img src={a34} width="120px" height="120px" align="right"/></CardHeader>
+            <CardBody><Question2 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('2') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao3 ?
           <Card>
-            <CardHeader>Para matricular-se no curso para condutores de veículos de produtos perigosos o condutor deverá estar habilitado em uma das categorias:</CardHeader>
-            <CardBody><Question3 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('3') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(3)</b>  : Quando uma pessoa não percebe uma situação de risco ou perigo visível : </CardHeader>
+            <CardBody><Question3 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('3') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao4 ?
           <Card>
-            <CardHeader>Para realizar uma conversão, é dever de todo conddutor de veículo aproximar-se:</CardHeader>
-            <CardBody><Question4 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('4') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(4)</b> : Qual a função do alternador :</CardHeader>
+            <CardBody><Question4 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('4') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao5 ?
           <Card>
-            <CardHeader>Existem, no Brasil, determinações que a indústria automobilística deve seguir para diminuir a emissão de gases de seus veículos. Qual órgão é responsável por estas determinações?</CardHeader>
-            <CardBody><Question5 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('5') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(5)</b> : Sobre, a operação de retorno podemos afirmar : </CardHeader>
+            <CardBody><Question5 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('5') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao6 ?
           <Card>
-            <CardHeader>Os meios de ação que são utilizados para atingir os objetivos da direção defensiva:</CardHeader>
-            <CardBody><Question6 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('6') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(6)</b> : Para fazer a ultrapassagem de outro veículo em movimento, o motorista deverá :</CardHeader>
+            <CardBody><Question6 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('6') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao7 ?
           <Card>
-            <CardHeader>Quanto às placas de identificação do veículo, podemos afirmar que :</CardHeader>
-            <CardBody><Question7 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('7') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(7)</b> : As medidas administrativas adotadas pela autoridade de trânsito ou seus agentes têm por objetivos : </CardHeader>
+            <CardBody><Question7 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('7') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao8 ?
           <Card>
-            <CardHeader>O condutor que atirar do veículo ou abandonar na via objetos ou substâncias, estará sujeito a: </CardHeader>
-            <CardBody><Question8 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('8') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(8)</b> : A sinalização de trânsito é feita nas vias públicas, através de : </CardHeader>
+            <CardBody><Question8 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('8') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao9 ?
           <Card>
-            <CardHeader>O Candidato que for reprovado no exame de legislação de trânsito, ou no exame de direção poderá realizar novo exame após o prazo mínimo de:</CardHeader>
-            <CardBody><Question9 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('9') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(9)</b> : Ao fazer uma curva, o veículo terá maior estabilidade se o condutor :</CardHeader>
+            <CardBody><Question9 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('9') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao10 ?
           <Card>
-            <CardHeader>É dever de todo condutor de veículo: </CardHeader>
-            <CardBody><Question10 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('10') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(10)</b> : O condutor ao ajustar os espelhos retrovisores, deve : </CardHeader>
+            <CardBody><Question10 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('10') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
 
@@ -323,143 +344,143 @@ export class frmPagina extends Component {
 
         {this.state.questao11 ?
           <Card>
-            <CardHeader>O condutor do veículo para evitar acidentes deve:</CardHeader>
-            <CardBody><Question11 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('11') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(11)</b> : Havendo a inadiável necessidade de parar temporariamente o veículo na pista de rolamento, o condutor deve :</CardHeader>
+            <CardBody><Question11 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('11') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao12 ?
           <Card>
-            <CardHeader>Resover os conflitos sobre circuscrição e competência de trânsito no âmbito dos municípios é atribuição do:</CardHeader>
-            <CardBody><Question12 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('12') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(12)</b> : Ao órgão executivo de trânsito estadual cabe, dentre outras atribuições :</CardHeader>
+            <CardBody><Question12 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('12') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao13 ?
           <Card>
-            <CardHeader>Estacionar sobre área de cruzamento, interrrompendo o trânsito da via transversal, acarretará:</CardHeader>
-            <CardBody><Question13 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('13') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(13)</b> : É o órgão máximo executivo de trânsito da União :</CardHeader>
+            <CardBody><Question13 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('13') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao14 ?
           <Card>
-            <CardHeader>Antes de iniciar qualquer manobra que implique em deslocamento lateral, o condutor deverá:</CardHeader>
-            <CardBody><Question14 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('14') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(14)</b> : Quanto aos veículos, marque a alternativa correta :</CardHeader>
+            <CardBody><Question14 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('14') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao15 ?
           <Card>
-            <CardHeader>Quando o motorista sente cansaço constante ou a atenção diminuída pode estar: </CardHeader>
-            <CardBody><Question15 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('15') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(15)</b> : Qual a definição a seguir é correta : </CardHeader>
+            <CardBody><Question15 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('15') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao16 ?
           <Card>
-            <CardHeader>De acordo com a legislação de trânsito os veículos quanto à tração, classificam-se em:</CardHeader>
-            <CardBody><Question16 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('16') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(16)</b> : Sobre trânsito e cidadania, assinale a alternativa incorreta :</CardHeader>
+            <CardBody><Question16 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('16') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao17 ?
           <Card>
-            <CardHeader>Gás sem sabor, sem cheiro e sem cor que é perigoso porque reduz a capacidade de assimilação do oxigênio pelo sangue, e o:</CardHeader>
-            <CardBody><Question17 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('17') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(17)</b> : A expedição de novo certificado de registro de veículo será será obrigatória para todos os veículos cadastrados no RENAVAM, quando :</CardHeader>
+            <CardBody><Question17 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('17') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao18 ?
           <Card>
-            <CardHeader>Podemos considerar como um dos métodos para contenção de hemorragia externa: </CardHeader>
-            <CardBody><Question18 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('18') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(18)</b> : Um silvo breve significa : </CardHeader>
+            <CardBody><Question18 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('18') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao19 ?
           <Card>
-            <CardHeader>Em uma viagem, o condutor defensivo deve adotar os seguintes procedimentos defensivos:</CardHeader>
-            <CardBody><Question19 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('19') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(19)</b> : Sobre os candidatos à obtenção da CNH, podemos afirmar que :</CardHeader>
+            <CardBody><Question19 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('19') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao20 ?
           <Card>
-            <CardHeader>Qual o nome técnico da placa s-3: <img src={s3} width="120px" height="120px" align="right"/></CardHeader>
-            <CardBody><Question20 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('20') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(20)</b> : Em um acidente com vítimas, quando possível devemos manter o tráfego fluindo por vários motivos. Para a vítima o mais importante é  : </CardHeader>
+            <CardBody><Question20 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('20') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
 
         {this.state.questao21 ?
           <Card>
-            <CardHeader>Ao dirigir sob neblina ou cerração, é procedimento correto do condutor: </CardHeader>
-            <CardBody><Question21 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('21') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(21)</b> : Qual o nome técnico da placa R-25a? <img src={r25a} width="120px" height="120px" align="right"/> </CardHeader>
+            <CardBody><Question21 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('21') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao22 ?
           <Card>
-            <CardHeader>Quanto às seguintes definições, é correto afirmar:</CardHeader>
-            <CardBody><Question22 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('22') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(22)</b> : Os automóveis poluem o ambiente, pois estão constantemente em funcionamento. Qual dos elementos abaixo não contribui para esta poluição :</CardHeader>
+            <CardBody><Question22 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('22') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao23 ?
           <Card>
-            <CardHeader>A bomba injetora só é utilizada nos veículos:</CardHeader>
-            <CardBody><Question23 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('23') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(23)</b> : Para tratar uma vítima de luxação devemos :</CardHeader>
+            <CardBody><Question23 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('23') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao24 ?
           <Card>
-            <CardHeader>Como você deve entender Primeiros socorros:</CardHeader>
-            <CardBody><Question24 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('24') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(24)</b> : Qual o nome técnico da placa S-4? <img src={s4} width="120px" height="120px" align="right"/></CardHeader>
+            <CardBody><Question24 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('24') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao25 ?
           <Card>
-            <CardHeader>Em caso de formação de bolhas decorrentes de queimaduras de 2º grau, o que não podemos fazer: </CardHeader>
-            <CardBody><Question25 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('25') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(25)</b> : O gás que é eliminado pelos organismos, resultado do processo de respiração celular, bem como produzido pelos veículos automotores e pelas indústrias, sendo um dos grandes responsáveis pelo efeito estufa, é o :</CardHeader>
+            <CardBody><Question25 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('25') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao26 ?
           <Card>
-            <CardHeader>As linhas divisoras de fluxos seccionadas de cor branca significam:</CardHeader>
-            <CardBody><Question26 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('26') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(26)</b> : O condutor do veículo, ao se deparar com trechos de rodovia onde são frenqüentes os ventos fortes, deve :</CardHeader>
+            <CardBody><Question26 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('26') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao27 ?
           <Card>
-            <CardHeader>Ao utilizar o extintor de incêndio de um veículo, não se deve: </CardHeader>
-            <CardBody><Question27 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('27') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(27)</b> : Dirigindo um veículo na via pública, o condutor que queira executar uma manobra deverá :  </CardHeader>
+            <CardBody><Question27 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('27') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao28 ?
           <Card>
-            <CardHeader>O condutor de veículo que se preocupa em avisar o outro que está rodando com o pneu vazio, ou com a porta semiaberta está: </CardHeader>
-            <CardBody><Question28 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('28') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(28)</b> : Qual a distância recomendada para iniciar a sinalização, em uma via de fluxo rápido com velocidade máxima permitida de 80 quilômetros por hora, em caso de acidente : </CardHeader>
+            <CardBody><Question28 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('28') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao29 ?
           <Card>
-            <CardHeader>Não se enquadra entre os efeitos danosos do excesso de ruídos:</CardHeader>
-            <CardBody><Question29 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._alterQuestion('29') }}>Proxíma</Button></CardFooter>
+            <CardHeader> <b>(29)</b> : Quais os tipos de queimaduras :</CardHeader>
+            <CardBody><Question29 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._alterQuestion('29') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao30 ?
           <Card>
-            <CardHeader>O óleo lubrificante do motor deve ser: </CardHeader>
-            <CardBody><Question30 alternativa={this._selectQuestion}/></CardBody>
-            <CardFooter><Button onClick={() => { this._endQuestions() }}>Finalizar</Button></CardFooter>
+            <CardHeader> <b>(30)</b> : Assinale a alternativa correta : </CardHeader>
+            <CardBody><Question30 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
+            <CardFooter><Button onClick={() => { this._endQuestions() }} disabled={this.state.activateNext}>Finalizar</Button></CardFooter>
           </Card>
         : null}
 
@@ -467,22 +488,17 @@ export class frmPagina extends Component {
           <Card>
             <CardHeader><center><h1>Gabarito</h1></center></CardHeader>
             <CardBody>
-            <center>
-              <table border="1">
-                <tr>
-                  {this.state.resposta.map(opt => <td style={{width:'45px', color: 'blue'}}><center>{opt.questao}</center></td>)}
-                </tr>
-                <tr>
-                  {this.state.resposta.map(opt => <td style={{width:'45px'}}><center>{opt.resp}</center></td>)}
-                </tr>
-                <tr>
-                </tr>
-                  {this.state.resposta.map(opt => <td style={{width:'45px', color: 'red'}}><center>{opt.questao}</center></td>)}
-                <tr>
-                  {selectList.map(opt => <td style={{width:'45px'}}><center>{opt}</center></td>)}
-                </tr>
-              </table>
-            </center>
+              <center>
+                <table border="1">
+                  <tbody>
+                    <tr key="gabarito"><th  key={1} colSpan={this.state.resposta.length}> <center><h4>{parseInt(contError) > 9 ? "Reprovado (Acertos : " :"Aprovado (Acertos : " }{contAcerto + ")"}</h4></center></th></tr>
+                    <tr key="alternativas1">{this.state.resposta.map(opt => <th  key={opt.questao} style={{width:'45px', color: 'blue'}}><center>{opt.questao}</center></th>)}</tr>
+                    <tr key="respostas">{this.state.resposta.map(opt => <th  key={opt.questao} style={{width:'45px'}}><center>{opt.resp}</center></th>)}</tr>
+                    <tr key="questaoSelecionada">{this.state.resposta.map((opt, index)=> <th key={index} style={{width:'45px', color: 'red'}}><center>{opt.questao}</center></th>)}</tr>
+                    <tr key="respostaSeleciona">{selectList.map((opt, index) => <th  key={index} style={{width:'45px'}}><center>{opt}</center></th>)}</tr>
+                  </tbody>
+                </table>
+              </center>
             </CardBody>
           </Card>
           : null}

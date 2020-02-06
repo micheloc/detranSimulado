@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Assegurar-se que poderá efetuar a manobra e adentrar a via rapidamente' },
-  { id: 'B', question: 'Manter-se sempre ao centro da via, para depois sinalizar.'},
-  { id: 'C', question: 'Assegurar-se que poderá efetuar a manobra sem perigo para os demais usuários e fazer o sinal indicativo de sua intenção.' },
-  { id: 'D', question: 'Desacelerar o veículo e colocar-se no centro da via.' }
+  { id: 'A', question: 'Transitar com o veículo sem nova vistoria, após o acidente.' },
+  { id: 'B', question: 'Parar afastado da guia da calçada (meio-fio) a mais de um metro.'},
+  { id: 'C', question: 'Estacionar onde houver guia da calçada (meio-fio) rebaixada para entrada ou saída de veículos.' },
+  { id: 'D', question: 'Estacionar na contramão de direção.' }
 ];
 
 const columns = [
@@ -14,16 +14,22 @@ const columns = [
 ];
 
 export class Question_14 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
-
+    
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
     const selectRow = {
       mode: 'radio', 

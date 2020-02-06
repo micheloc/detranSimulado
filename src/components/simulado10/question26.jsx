@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Divisão de fluxos semelhantes e proibição de ultrapassagem.' },
-  { id: 'B', question: 'Divisão de fluxos opostos e permissão de ultrapassagem e mudança de faixa.' },
-  { id: 'C', question: 'Divisão de fluxos semelhantes e permissão de ultrapassagem ou mudança de faixa.' },
-  { id: 'D', question: 'Somente divisão de fluxos semelhantes.' }
+  { id: 'A', question: 'Remover o objeto e conter a hemorragia.' },
+  { id: 'B', question: 'Lavar com água morna a área transfixada.' },
+  { id: 'C', question: 'Imobilzar e proteger o objeto até a chegada no hospital.' },
+  { id: 'D', question: 'Retirar o objeto do local.' }
 ];
 
 
@@ -15,16 +15,22 @@ const columns = [
 ];
 
 export class Question_26 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
     
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
     const selectRow = {
       mode: 'radio', 

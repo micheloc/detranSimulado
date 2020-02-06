@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Os caracteres das placas serão individualizados para cada veículo e o acompanharão até a baixa do registro, sendo vedado seu reaproveitamento.' },
-  { id: 'B', question: 'Nos veículos de transporte de carga e os coletivos de passageiros, deverão constar sua tara e o peso bruto total (PBT) em qualquer parte da carroceria.' },
-  { id: 'C', question: 'É permitida a utilização de adesivo em subsitituição da placa dianteira dos automóveis.' },
-  { id: 'D', question: 'Os veículos de três rodas são dispensados das placas de identificação.' }
+  { id: 'A', question: 'Cuidado, animais na pista.' },
+  { id: 'B', question: 'Animais à frente.' },
+  { id: 'C', question: 'Tráfego de animais.' },
+  { id: 'D', question: 'Animais selvagens.' }
 ];
 
 
@@ -15,16 +15,22 @@ const columns = [
 ];
     
 export class Question_7 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
-  
+    
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
     const selectRow = {
       mode: 'radio', 

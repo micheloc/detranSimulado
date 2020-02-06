@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'IBAMA.' },
-  { id: 'B', question: 'DETRAN.' },
-  { id: 'C', question: 'INMETRO.' },
-  { id: 'D', question: 'CONAMA.' }
+  { id: 'A', question: 'Circulação dos veículos de passageiros.' },
+  { id: 'B', question: 'Veículos de maior velocidade e para ultrapassagem.' },
+  { id: 'C', question: 'Fazer retorno com segurança.' },
+  { id: 'D', question: 'Circulação de bicicletas.' }
 ];
 
 
@@ -15,16 +15,22 @@ const columns = [
 ];
 
 export class Question_5 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-    this._handleSelect = this._handleSelect.bind(this);
+  constructor(props){
+    super(props); 
+    this.state={openSelect: true}
+    this._handleSelect = this._handleSelect.bind(this); 
   }
 
-  _handleSelect(row) {
-    this.props.alternativa(row.id);
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
   }
     
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
+  }
   render() {
     const selectRow = {
       mode: 'radio', 

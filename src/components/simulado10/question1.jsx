@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'Altura máxima permitida.' },
-  {id: 'B', question:'Altura limitada.' },
-  {id: 'C', question:'Largura limitada.' },
-  {id: 'D', question:'Comprimento máximo permitido.' }
+  {id: 'A', question:'Dirigir veículos automotores para os quais foi habilitado, em todo o territorio nacional.' },
+  {id: 'B', question:'Dirigir veículos automotores para os quais foi habilitado, apenas na localidade onde foi emitida.' },
+  {id: 'C', question:'Dirigir qualquer tipo de veículo em todo o território nacional.' },
+  {id: 'D', question:'Dirigir qualquer tipo de veículo automotor.' }
 ]; 
 
 const columns = [
@@ -16,12 +16,19 @@ const columns = [
 export class Question_1 extends Component {
   constructor(props){
     super(props); 
-    this.state={}
+    this.state={openSelect: true}
     this._handleSelect = this._handleSelect.bind(this); 
   }
+
+  componentDidMount(){
+    this.props.habilitar(this.state.openSelect)
+  }
     
-  _handleSelect(row){
-    this.props.alternativa(row.id);
+  _handleSelect(row, isSelect){
+    if (isSelect ===  true)
+      this.setState({openSelect: null}, () => {
+        this.props.alternativa(row.id, this.state.openSelect);
+      })
   }
 
   render() {
