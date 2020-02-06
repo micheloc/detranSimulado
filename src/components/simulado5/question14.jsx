@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.'},
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Acionar imediatamente os freios para reduzir bastante a velocidade.' },
+  { id: 'B', question: 'Não se preocupar, porque a responsabilidade é de quem ultrapassa.'},
+  { id: 'C', question: 'Acelerar para conservar a dianteira.' },
+  { id: 'D', question: 'Deslocar-se para a faixa da direita, sem acelerar a marcha.' }
 ];
 
 const columns = [

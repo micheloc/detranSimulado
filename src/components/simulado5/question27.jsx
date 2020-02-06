@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Ultrapassar outro veículo em movimento somente pela direita.' },
+  {id: 'B', question:'Transitar sempre na faixa da direita quando se deslocar em maior velocidade.' },
+  {id: 'C', question:'Seguir veículo em serviço de urgência.' },
+  {id: 'D', question:'Dar sempre preferência de passagem aos veículos que se deslocam sobre trilhos.' }
 ]; 
 
 

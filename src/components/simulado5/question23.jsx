@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Uma infração de trânsito.' },
+  { id: 'B', question: 'Dever de todo condutor de táxi e de veículo de transporte coletivo.' },
+  { id: 'C', question: 'Apenas uma questão de cortesia dos condutores de caminhão e de veículo destinado ao transporte de gado.' },
+  { id: 'D', question: 'Proibido a todo condutor de táxi e de veículo de transporte coletivo, pois tira a sua atenção do trânsito.' }
 ];
 
 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'A infração de trânsito for de natureza leve ou média.' },
+  {id: 'B', question:'O veículo estiver apreendido no pátio do Detran.' },
+  {id: 'C', question:'A infração de trânsito for de natureza grave ou gravíssima.' },
+  {id: 'D', question:'A infração de trânsito for de natureza gravíssima.' }
 ]; 
 
 

@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'No local onde se encontram os veículos envolvidos no acidente.' },
+  {id: 'B', question:'Deve começar sempre a vinte metros do local do acidente.' },
+  {id: 'C', question:'Deve começar antes do local do acidente é ser visível.' },
+  {id: 'D', question:'No local onde se encontram as vítimas envolvidas no acidente.' }
 ]; 
 
 

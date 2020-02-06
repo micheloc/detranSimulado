@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'A poluição não modifica o meio ambiente.' },
+  { id: 'B', question: 'A poluição do ar se agravou a partir da revolução industrial.' },
+  { id: 'C', question: 'A principal causa da poluição do ar, nas grandes cidades, é devido à emissão de resíduos de combustíveis dos veículos automotores.' },
+  { id: 'D', question: 'A poluição tem como consequência a redução da camada de ozônio.' }
 ];
 
 

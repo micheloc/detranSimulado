@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Fazer advertências necessárias, a fim de evitar acidentes.' },
+  { id: 'B', question: 'Chamar pessoas conhecidas.' },
+  { id: 'C', question: 'Advertir os demais usuários da via, em qualquer hora do dia ou da noite.' },
+  { id: 'D', question: 'Apressar os outros veículos que se encontram na via.' }
 ];
 
 

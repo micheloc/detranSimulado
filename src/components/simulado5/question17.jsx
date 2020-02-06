@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.'}
+  { id: 'A', question: 'Acionar primeiro o pedal de embreagem.' },
+  { id: 'B', question: 'Acionar simultaneamente o pedal de freio e o freio de mão.' },
+  { id: 'C', question: 'Manter distância segura em relação aos demais veículos e freios em bom estado.' },
+  { id: 'D', question: 'Travar as rodas do veículo.'}
 ];
 
 

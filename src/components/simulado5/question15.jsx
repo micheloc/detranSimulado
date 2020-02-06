@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Sinalização vertical adequada e pista irregular.' },
+  { id: 'B', question: 'Acostamento rebaixado e pista escorregadia.' },
+  { id: 'C', question: 'Falta de vegetação próxima à pista e vento lateral.' },
+  { id: 'D', question: 'Acostamento regular e depressão na pista.' }
 ];
 
 
