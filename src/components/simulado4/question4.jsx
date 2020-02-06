@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Inspeção anual para verificação dos equipamentos obrigatórios e de segurança.' },
+  { id: 'B', question: 'Autorização emitida pelo órgão competente para circular nas vias públicas.' },
+  { id: 'C', question: 'Registro como veículo de passageiros.' },
+  { id: 'D', question: 'Equipamento registrado instantâneo inalterável de velocidade e tempo.' }
 ];
 
 const columns = [

@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Estacionar para avisar que está permitindo a ultrapassagem.' },
+  { id: 'B', question: 'Manter a velocidade do seu veículo, sem acelerar a marcha.' },
+  { id: 'C', question: 'Parar o veículo.' },
+  { id: 'D', question: 'Deslocar-se para o acostamento à esquerda para facilitar a ultrapassagem.' }
 ];
 
 

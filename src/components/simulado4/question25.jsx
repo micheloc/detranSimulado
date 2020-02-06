@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Multa, recolhimento e cassação do documento de habilitação e retenção do veículo.' },
+  { id: 'B', question: 'Multa, recolhimento do documento de habilitação, suspensão do direito de dirigir, remoção e apreensão do veículo.' },
+  { id: 'C', question: 'Multa, cassação do documento de habilitação e retenção do veículo.' },
+  { id: 'D', question: 'Multa, apreensão do veículo e cassação do documento de habilitação.' }
 ];
 
 

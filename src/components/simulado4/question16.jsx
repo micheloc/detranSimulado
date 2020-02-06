@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Quando se tratar de transporte coletivo, parar o veículo para atender ao sinal do passageiro em qualqeur local.' },
+  {id: 'B', question:'Manter acesas,à noite, as luzes de posição quando o veículo estiver parado para fins de embarque ou desembarque de passageiros e carga ou descarga de mercadorias.' },
+  {id: 'C', question:'Dirigir na contramão de direção e na faixa própria.' },
+  {id: 'D', question:'Ultrapassar outro veículo em movimento somente pela direita.' }
 ]; 
 
 

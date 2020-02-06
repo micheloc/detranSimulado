@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Motorizado utilizado no transporte de passageiros registrado com capacidade minima de 20(vinte) lugares.' },
+  { id: 'B', question: 'Que tenha capacidade para transportar mais de 3.500 (três mil e quinhentos) quilogramas de carga.' },
+  { id: 'C', question: 'Que tenha capacidade para transportar no mínimo, 6.000 kg (seis mil) quilogramas de carga.' },
+  { id: 'D', question: 'Registrado como de transporte de passageiros que tenha, no mínimo, 08 (oito) lugares.' }
 ];
 
 

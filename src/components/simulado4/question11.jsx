@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Motoristas, pedestres e advertência.' },
+  { id: 'B', question: 'Atenção, devendo o condutor parar o veículo, salvo se isto resultar em situação de perigo.' },
+  { id: 'C', question: 'Atenção, devendo o condutor passar com cautela.' },
+  { id: 'D', question: 'Obrigatoriedade de parada.' }
 ];
 
 

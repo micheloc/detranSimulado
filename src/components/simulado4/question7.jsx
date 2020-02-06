@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'As vias pavimentadas urbanas, sem sinalização, poderão ser abertas ao trânsito só para veículos de tração animal.' },
+  { id: 'B', question: 'A fixação de publicidade ou de qualquer legenda ou simbolos ao longo das vias poderá ser feito, sem prejuízo para a segurança.' },
+  { id: 'C', question: 'No caso de uma obra ou evento, a responsabilidade de sinalizar é do responsável pela execução.' },
+  { id: 'D', question: 'Nas vias públicas e nos imóveis é permitido colocar luzes, fixar publicidade e inscrições, sempre que necessário, sem autorização da autoridade competente.' }
 ];
 
 

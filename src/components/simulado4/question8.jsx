@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'A fotocópia autenticada substitui a CNH.' },
+  { id: 'B', question: 'Em caso de acidente de trânsito com vítima, não se imporá a prisão em flagrante, se o condutor prestar pronto e total socorro à vítima.' },
+  { id: 'C', question: 'A CNH tem fé pública e não é expedida em caractér permanente.' },
+  { id: 'D', question: 'Ao condutor habilitado em mais de uma categoria concede-se mais de uma CNH.' }
 ];
 
 

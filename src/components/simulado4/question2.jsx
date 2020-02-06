@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'O condutor ou passageiro deixar de usar o cinto de segurança, ou até colocá-lo.' },
+  { id: 'B', question: 'O condutor atirar do veículo objetos na via.' },
+  { id: 'C', question: 'O condutor deixa de preservar o local do acidente.' },
+  { id: 'D', question: 'O condutor dirigir sem atenção e sem os cuidados indispensáveis à segurança do trânsito.' }
 ];
 
 

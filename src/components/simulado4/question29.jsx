@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Ceder o seu direito e, logo à frente, tentar advertir o motorista errado.' },
+  { id: 'B', question: 'Fazer valer o seu direito, mesmo com o risco de um pequeno acidente.' },
+  { id: 'C', question: 'Ceder seu direito ao motorista errado e evitar o acidente.' },
+  { id: 'D', question: 'Não se preocupar com o outro motorista, pois ele está errado.' }
 ];
 
 const columns = [

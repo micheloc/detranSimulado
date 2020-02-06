@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Utilizando óculos escuros à noite.' },
+  {id: 'B', question:'Posicionando a mão acima dos olhos para evitar a incidência da luz do sol.' },
+  {id: 'C', question:'Acionando a luz alta ao entrar em túneis.' },
+  {id: 'D', question:'Desviando a visão para uma referência na faixa à direita da pista ao cruzar com veículo que esteja com luz alta à noite.' }
 ]; 
 
 const columns = [

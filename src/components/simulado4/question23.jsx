@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Imobilizando duas articulações acima da fratura.' },
+  { id: 'B', question: 'Imobilizando uma articulação acima e duas articulações abaixo da fratura.' },
+  { id: 'C', question: 'Imobilizando uma articulação acima e outra articulação abaixo do membro lesionado.' },
+  { id: 'D', question: 'Imobilizando duas articulações abaixo da fratura.' }
 ];
 
 
