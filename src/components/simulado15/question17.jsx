@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.'}
+  { id: 'A', question: 'Sujar o motor do veículo.' },
+  { id: 'B', question: 'Interrupção no funcionamento do motor.' },
+  { id: 'C', question: 'Acender a luz da injeção eletrônica.' },
+  { id: 'D', question: 'O aumento do consumo de combustível.'}
 ];
 
 

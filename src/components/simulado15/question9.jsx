@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Através da marca do óleo usada.' },
+  { id: 'B', question: 'Pela recomendação do fabricante, ou pela perda de viscosidade do óleo.' },
+  { id: 'C', question: 'Após decorrido um mês em relação a última troca.' },
+  { id: 'D', question: 'Pela presença de fumaça escura no escapamento.' }
 ];
 
 
