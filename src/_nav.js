@@ -85,10 +85,10 @@ export default {
       url: '/nav/simulado15',
       icon: 'icon-pin',
     },
-    // {
-    //   name: 'Simulado 16',
-    //   url: '/nav/simulado16',
-    //   icon: 'icon-pin',
-    // },
+    {
+      name: 'Simulado 16',
+      url: '/nav/simulado16',
+      icon: 'icon-pin',
+    },
   ],
 };
