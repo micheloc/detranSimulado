@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Ser maior de 18 anos.' },
+  { id: 'B', question: 'Ser habilitado no mínimo há dois anos na categoria "B".' },
+  { id: 'C', question: 'Poderá ser analfabeto, mas que escreva pelo menos o nome.' },
+  { id: 'D', question: 'Ser habilitado, no mínimo, ha um ano na categoria "C".' }
 ];
 
 

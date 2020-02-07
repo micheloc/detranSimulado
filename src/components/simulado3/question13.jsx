@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Nos exames de sanidade física e mental, psicotécnico, Legislação veicular para categoria "A".' },
+  { id: 'B', question: 'Nos exames de sanidade física e mental, psicotécnico, Legislação de Trânsito e direção veicular para categoria "A".' },
+  { id: 'C', question: 'Nos exames de Legislação de Trânsito e direção veicular para categoria "A".' },
+  { id: 'D', question: 'No exame de direção veícular para categoria "A".' }
 ];
 
 const columns = [

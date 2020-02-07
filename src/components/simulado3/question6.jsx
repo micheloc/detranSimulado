@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Tomar banho bem frio ou molhar a cabeça para despertar, antes de dirigir.' },
+  {id: 'B', question:'Dirigir redobrando os cuidados.' },
+  {id: 'C', question:'Não dirigir o veículo, pedindo a outra pessoa, habilitada e sóbria, que realize tal atividade.' },
+  {id: 'D', question:'Esperar por algun tempo até que o efeito diminua um pouco.' }
 ]; 
 
 

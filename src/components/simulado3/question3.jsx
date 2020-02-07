@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Limita a percepção e reduz a capacidade de reação.' },
+  { id: 'B', question: 'Todas as alternativas estão corretas.' },
+  { id: 'C', question: 'Reduz a concentração.' },
+  { id: 'D', question: 'Afeta a coordenação motora.' }
 ];
 
 const columns = [

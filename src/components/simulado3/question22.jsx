@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Sinalizar e deslocar, com antecedência, o veículo para a faixa mais à esquerda ou mais a direita da sua mão de direção.' },
+  { id: 'B', question: 'Levar o veículo para o acostamento e aguardar a sua vez para entrar.' },
+  { id: 'C', question: 'Sinalizar, observar e deslocar mais à direita da sua mão de direção.' },
+  { id: 'D', question: 'Sinalizar, observar e deslocar mais à esquerda da sua mão de direção.' }
 ];
 
 

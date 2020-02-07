@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Não retirar o capacete, porém fazer com que ele se levante e permaneça em movimento até a chegada da equipe de socorro.' },
+  { id: 'B', question: 'Retirar o capacete para verificar se existe alguma lesão e caso exista recolocar o capacete.' },
+  { id: 'C', question: 'Fazer com que ele se levante para aguardar em pé a equipe de socorro.' },
+  { id: 'D', question: 'Não retirar o capacete, porque movimentar a cabeça pode agravar uma lesão na coluna.' }
 ];
 
 const columns = [

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'É válido quando apresentada junto com o documento de identidade do portador e os documento de identidade do portador e os documentos do veículo.' },
+  {id: 'B', question:'É válida quanto plastificada.' },
+  {id: 'C', question:'É válida quando apresentada junto com o documento de identidade do portador.' },
+  {id: 'D', question:'Não é válida para substituir documento original.' }
 ]; 
 
 

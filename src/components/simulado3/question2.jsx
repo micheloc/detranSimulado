@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Multa, apreensão do veículo e suspensão do direito de dirigir.' },
+  { id: 'B', question: 'Multa, apreensão de veículo e recolhimento do documento de habilitação.' },
+  { id: 'C', question: 'Multa, suspensão do direito de dirigir e o recolhimento do documento de habilitação.' },
+  { id: 'D', question: 'Multa, remoção do veículo e recolhimento do documento de habilitação.' }
 ];
 
 

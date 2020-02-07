@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Mostrar decisão e firmeza em suas ações.' },
+  { id: 'B', question: 'Passar as tarefas mais complicadas às pessoas que estejam mais desequilibradas.' },
+  { id: 'C', question: 'Discutir qualquer constestação.' },
+  { id: 'D', question: 'Executar todas as ações necessárias, individualmente, sem pedir ajuda a qualquer outra pessoa.' },
 ];
 
 

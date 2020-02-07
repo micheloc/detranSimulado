@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Desviar a visão para o acostamento da direita ou da esquerda, dependendo da mão de direção em que o condutor se encontra.' },
+  { id: 'B', question: 'Desviar a visão para o acostamento da esquerda' },
+  { id: 'C', question: 'Desviar a visão para centro da via.' },
+  { id: 'D', question: 'Utilizar as palas de proteção interna do veículo (quebra-sol).' }
 ];
 
 

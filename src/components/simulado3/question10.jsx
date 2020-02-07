@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Proibidas a todo condutor de veículo, exceto quando houver sinalização permitindo.' },
+  { id: 'B', question: 'Permitida quando houver boa visibilidade.' },
+  { id: 'C', question: 'Permitida em caso de veículo de transporte de passageiro.' },
+  { id: 'D', question: 'Proibida mesmo que a sinalização permita.' }
 ];
 
 
