@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Ramo do saber que entende ser o homem o senhor dos recursos naturais.' },
+  { id: 'B', question: 'Ramo do saber, pertencente à química que se ocupa dos valores quanticos, no campo das ciências.' },
+  { id: 'C', question: 'Ramo do saber que não tem relação com a ecologia.' },
+  { id: 'D', question: 'Ramo do saber ético que se ocupa dos valores morais de respeito à pessoa humana no campo das ciências da vida.' }
 ];
 
 

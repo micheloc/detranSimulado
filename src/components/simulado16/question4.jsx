@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Respeito aos direitos e aos deveres do cidadão e do grupo.' },
+  { id: 'B', question: 'Conflitos que ameaçam a segurança do trânsito.' },
+  { id: 'C', question: 'Convivência harmônica no transito.' },
+  { id: 'D', question: 'Superação das diferenças individuais entre condutores e pedestres.' }
 ];
 
 const columns = [

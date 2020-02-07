@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  {id: 'A', question:'.' },
-  {id: 'B', question:'.' },
-  {id: 'C', question:'.' },
-  {id: 'D', question:'.' }
+  {id: 'A', question:'Não agridem o meio ambiente.' },
+  {id: 'B', question:'Influenciam na valorização em caso de venda do veículo.' },
+  {id: 'C', question:'Apenas contribuem para a poluição do solo.' },
+  {id: 'D', question:'Contrbuem, principalmente, para a poluição do ar e sonora.' }
 ]; 
 
 

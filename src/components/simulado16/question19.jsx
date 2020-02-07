@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardFooter } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'A mistura álcool + gasolina, após a sua combustão, produz uma menor quantidade de gases poluentes.' },
+  { id: 'B', question: 'A mistura álcool + gasolina, após sua combustão, produz uma maior quantidade de gases poluentes.' },
+  { id: 'C', question: 'A mistura álcool + gasolina faz com que a combustão seja ruim.' },
+  { id: 'D', question: 'A utilização do álcool na gasolina não traz nenhuma vantagem.' }
 ];
 
 

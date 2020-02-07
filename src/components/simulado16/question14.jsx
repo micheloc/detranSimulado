@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.'},
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'A alteração desfavorável do meio ambiente pelos pelos subprodutos resultantes da atividade humana.' },
+  { id: 'B', question: 'Mudança que altera diretamente o organismo humano com vermes.'},
+  { id: 'C', question: 'A manutenção das características de um ambiente.' },
+  { id: 'D', question: 'A atividade que desenvolve a cidade.' }
 ];
 
 const columns = [

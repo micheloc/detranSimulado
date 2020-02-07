@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'Apresentam risco ao meio ambiente.' },
+  { id: 'B', question: 'Estão relacionados em portaria do Ministério dos Transportes.' },
+  { id: 'C', question: 'Apresentam riscos somente para os animais.' },
+  { id: 'D', question: 'São preparados somente para explodir.' }
 ];
 
 

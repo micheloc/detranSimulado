@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: '.' },
-  { id: 'B', question: '.' },
-  { id: 'C', question: '.' },
-  { id: 'D', question: '.' }
+  { id: 'A', question: 'A luta pela preservação ambiental é missão de todos.' },
+  { id: 'B', question: 'A natureza é limitada e pode ser destruida pelas ações humanas.' },
+  { id: 'C', question: 'O ser humano já domina as forças da natureza.' },
+  { id: 'D', question: 'O ser humano pertence a um todo maior que é complexo.' }
 ];
 
 
