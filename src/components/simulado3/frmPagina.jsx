@@ -415,7 +415,7 @@ export class frmPagina extends Component {
 
         {this.state.questao21 ?
           <Card>
-            <CardHeader> <b>(21)</b> : Dirigindo um veículo na via publica urbana, quando for entrar para a esquerda ou para a direita, o motorista deve: </CardHeader>
+            <CardHeader> <b>(21)</b> : Qual a velocidade máxima permitida para uma motoneta que circula, em uma via local, sem sinalização: </CardHeader>
             <CardBody><Question21 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('21') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
