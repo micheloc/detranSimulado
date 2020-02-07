@@ -33,10 +33,6 @@ import Question28 from './question28';
 import Question29 from './question29';
 import Question30 from './question30'; 
 
-import a34  from '../imagens/A-34.jpg';  
-import s4   from '../imagens/S-4.png'; 
-import r25a from '../imagens/R-25a.jpg'; 
-
 var selectList = [];
 var numberSelect = "";
 var contAcerto = 0; 
@@ -80,36 +76,36 @@ export class frmPagina extends Component {
       activateNext: true,
       id: 1,  
       resposta: [
-        { resp: 'C', questao: '1'},
-        { resp: 'D', questao: '2'},
-        { resp: 'C', questao: '3'},
-        { resp: 'D', questao: '4'},
-        { resp: 'C', questao: '5'},
-        { resp: 'B', questao: '6'}, 
-        { resp: 'C', questao: '7'}, 
+        { resp: 'A', questao: '1'},
+        { resp: 'A', questao: '2'},
+        { resp: 'D', questao: '3'},
+        { resp: 'B', questao: '4'},
+        { resp: 'D', questao: '5'},
+        { resp: 'D', questao: '6'}, 
+        { resp: 'D', questao: '7'}, 
         { resp: 'B', questao: '8'}, 
         { resp: 'B', questao: '9'}, 
-        { resp: 'B', questao: '10'}, 
-        { resp: 'D', questao: '11'},
-        { resp: 'A', questao: '12'},
-        { resp: 'D', questao: '13'},
-        { resp: 'D', questao: '14'},
-        { resp: 'B', questao: '15'},
-        { resp: 'B', questao: '16'},
-        { resp: 'C', questao: '17'},
-        { resp: 'D', questao: '18'},
-        { resp: 'C', questao: '19'},
-        { resp: 'D', questao: '20'},
-        { resp: 'B', questao: '21'},
-        { resp: 'C', questao: '22'},
-        { resp: 'A', questao: '23'},
-        { resp: 'A', questao: '24'},
-        { resp: 'C', questao: '25'},
-        { resp: 'C', questao: '26'},
-        { resp: 'D', questao: '27'},
-        { resp: 'D', questao: '28'},
-        { resp: 'D', questao: '29'},
-        { resp: 'B', questao: '30'},
+        { resp: 'C', questao: '10'}, 
+        { resp: 'C', questao: '11'},
+        { resp: 'C', questao: '12'},
+        { resp: 'B', questao: '13'},
+        { resp: 'A', questao: '14'},
+        { resp: 'D', questao: '15'},
+        { resp: 'D', questao: '16'},
+        { resp: 'B', questao: '17'},
+        { resp: 'A', questao: '18'},
+        { resp: 'A', questao: '19'},
+        { resp: 'C', questao: '20'},
+        { resp: 'C', questao: '21'},
+        { resp: 'D', questao: '22'},
+        { resp: 'B', questao: '23'},
+        { resp: 'C', questao: '24'},
+        { resp: 'D', questao: '25'},
+        { resp: 'A', questao: '26'},
+        { resp: 'C', questao: '27'},
+        { resp: 'B', questao: '28'},
+        { resp: 'C', questao: '29'},
+        { resp: 'D', questao: '30'},
       ], 
     }
     this._alterQuestion = this._alterQuestion.bind(this); 
@@ -271,70 +267,70 @@ export class frmPagina extends Component {
       <div>
         {this.state.questao1 ? 
           <Card>
-            <CardHeader> <b>(1)</b> :  :</CardHeader>
+            <CardHeader> <b>(1)</b> : O princípio básico para o relacionamento e a concivência social no trânsito, que diz respeito a formação de atitudes e ao aprender valorizar comportamentos necessários à segurança no trânsito, é o princípio da :</CardHeader>
             <CardBody><Question1 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('1')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao2 ?
           <Card>
-            <CardHeader> <b>(2)</b> : Qual o nome técnico da placa A-34? <img src={a34} width="120px" height="120px" align="right"/></CardHeader>
+            <CardHeader> <b>(2)</b> : Cidadania é : </CardHeader>
             <CardBody><Question2 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('2') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao3 ?
           <Card>
-            <CardHeader> <b>(3)</b>  :  : </CardHeader>
+            <CardHeader> <b>(3)</b>  : Qual o primeiro grupo social a que o homem está ligado : </CardHeader>
             <CardBody><Question3 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('3') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao4 ?
           <Card>
-            <CardHeader> <b>(4)</b> :  :</CardHeader>
+            <CardHeader> <b>(4)</b> : O egoísmo, a falta de controle emocional e a agressividade são fatores que geram :</CardHeader>
             <CardBody><Question4 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('4') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao5 ?
           <Card>
-            <CardHeader> <b>(5)</b> :  : </CardHeader>
+            <CardHeader> <b>(5)</b> : Entendemos a bioética como : </CardHeader>
             <CardBody><Question5 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('5') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao6 ?
           <Card>
-            <CardHeader> <b>(6)</b> :  :</CardHeader>
+            <CardHeader> <b>(6)</b> : Qual o nome do vínculo permanente de subordinação dos individuos à autoridade de um Estado (nação), que lhes dá proteção e reconhece seus direitos :</CardHeader>
             <CardBody><Question6 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('6') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao7 ?
           <Card>
-            <CardHeader> <b>(7)</b> : : </CardHeader>
+            <CardHeader> <b>(7)</b> : O conjunto de condições naturais e influências que atuam sobre os organismos vivos e os seres humanos denomina-se : </CardHeader>
             <CardBody><Question7 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('7') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao8 ?
           <Card>
-            <CardHeader> <b>(8)</b> :  : </CardHeader>
+            <CardHeader> <b>(8)</b> : A luta pela conservação do ambiente natural, ou de partes e aspectos dele, contra as pressões destrutivas das sociedades humanas denomina-se : </CardHeader>
             <CardBody><Question8 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('8') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao9 ?
           <Card>
-            <CardHeader> <b>(9)</b> :  :</CardHeader>
+            <CardHeader> <b>(9)</b> : Sobre trânsito e cidadania, assinale a alternativa incorreta :</CardHeader>
             <CardBody><Question9 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('9') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao10 ?
           <Card>
-            <CardHeader> <b>(10)</b> :  : </CardHeader>
+            <CardHeader> <b>(10)</b> : É incorreto afirmar que : </CardHeader>
             <CardBody><Question10 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('10') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
@@ -344,70 +340,70 @@ export class frmPagina extends Component {
 
         {this.state.questao11 ?
           <Card>
-            <CardHeader> <b>(11)</b> :  :</CardHeader>
+            <CardHeader> <b>(11)</b> : É o órgão máximo responsável pelo controle ambiental no Brasil :</CardHeader>
             <CardBody><Question11 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('11') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao12 ?
           <Card>
-            <CardHeader> <b>(12)</b> :  :</CardHeader>
+            <CardHeader> <b>(12)</b> : Os automóveis poluem o ambiente pois estão constantemente em funcionamento. Qual dos elementos abaixo não contribuí para esta poluição :</CardHeader>
             <CardBody><Question12 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('12') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao13 ?
           <Card>
-            <CardHeader> <b>(13)</b> ::</CardHeader>
+            <CardHeader> <b>(13)</b> : Nos grandes centros urbanos os principais causadores da poluição do ar são :</CardHeader>
             <CardBody><Question13 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('13') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao14 ?
           <Card>
-            <CardHeader> <b>(14)</b> : :</CardHeader>
+            <CardHeader> <b>(14)</b>: Poluição é :</CardHeader>
             <CardBody><Question14 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('14') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao15 ?
           <Card>
-            <CardHeader> <b>(15)</b> : : </CardHeader>
+            <CardHeader> <b>(15)</b> : Distúrbio do sono, estresse, perda da capacidade auditiva e perda da concentração são efeitos negativos provocados pela(o) : </CardHeader>
             <CardBody><Question15 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('15') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao16 ?
           <Card>
-            <CardHeader> <b>(16)</b> : :</CardHeader>
+            <CardHeader> <b>(16)</b> : A falta de conservação e a desregulagem dos veículos :</CardHeader>
             <CardBody><Question16 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('16') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao17 ?
           <Card>
-            <CardHeader> <b>(17)</b> : :</CardHeader>
+            <CardHeader> <b>(17)</b> : São consequências da poluição ambiental :</CardHeader>
             <CardBody><Question17 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('17') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao18 ?
           <Card>
-            <CardHeader> <b>(18)</b> :  : </CardHeader>
+            <CardHeader> <b>(18)</b> : Produtos perigosos são aqueles que  : </CardHeader>
             <CardBody><Question18 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('18') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao19 ?
           <Card>
-            <CardHeader> <b>(19)</b> :  :</CardHeader>
+            <CardHeader> <b>(19)</b> : É correto afirmar :</CardHeader>
             <CardBody><Question19 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('19') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
         : null}
         {this.state.questao20 ?
           <Card>
-            <CardHeader> <b>(20)</b> :   : </CardHeader>
+            <CardHeader> <b>(20)</b> : O gás que é eliminado pelos organismos, resultado do processo de respiração celular, bem como produzido pelos veículos automotores e pelas indústrias sendo um dos grandes responsáveis pelo efeito estufa, é o : </CardHeader>
             <CardBody><Question20 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('20') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
@@ -415,70 +411,70 @@ export class frmPagina extends Component {
 
         {this.state.questao21 ?
           <Card>
-            <CardHeader> <b>(21)</b> :  </CardHeader>
+            <CardHeader> <b>(21)</b> : Gás sem sabor, sem cheiro e sem cor que é perigoso porque reduz a capacidade de assimilação do oxigênio pelo sangue :  </CardHeader>
             <CardBody><Question21 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('21') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao22 ?
           <Card>
-            <CardHeader> <b>(22)</b> :  :</CardHeader>
+            <CardHeader> <b>(22)</b> : Os ruídos produzidos pelo tráfego e pelos veículos podem afetar nocivamente o homem. E correto afirmar que pessoas submetidas a ruídos intensos e constantes, acima de 90 decibéis podem apresentar :</CardHeader>
             <CardBody><Question22 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('22') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao23 ?
           <Card>
-            <CardHeader> <b>(23)</b> : :</CardHeader>
+            <CardHeader> <b>(23)</b> : Assinale a alternativa correta :</CardHeader>
             <CardBody><Question23 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('23') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao24 ?
           <Card>
-            <CardHeader> <b>(24)</b> : </CardHeader>
+            <CardHeader> <b>(24)</b> : Ativar lixo (papel, plástico, lata, etc.) de dentro do veículo, nas vias públicas com relação à legislação de trânsito constitui : </CardHeader>
             <CardBody><Question24 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('24') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao25 ?
           <Card>
-            <CardHeader> <b>(25)</b> :  :</CardHeader>
+            <CardHeader> <b>(25)</b> : Na fiscalização do transporte de produtos que afetam o meio ambiente, a nota fiscal apresentada deve conter :</CardHeader>
             <CardBody><Question25 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('25') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao26 ?
           <Card>
-            <CardHeader> <b>(26)</b> :  :</CardHeader>
+            <CardHeader> <b>(26)</b> : Não se enquadra entre os efeitos danosos do excesso de ruídos :</CardHeader>
             <CardBody><Question26 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('26') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao27 ?
           <Card>
-            <CardHeader> <b>(27)</b> :  :  </CardHeader>
+            <CardHeader> <b>(27)</b> : A poluição visual contribui para  :  </CardHeader>
             <CardBody><Question27 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('27') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao28 ?
           <Card>
-            <CardHeader> <b>(28)</b> :  : </CardHeader>
+            <CardHeader> <b>(28)</b> : São órgão de controle ambiental : </CardHeader>
             <CardBody><Question28 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('28') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao29 ?
           <Card>
-            <CardHeader> <b>(29)</b> :  :</CardHeader>
+            <CardHeader> <b>(29)</b> : Existem, no Brasil, especificações que a indústria automobilística deve seguir para diminuir a emissão de gases de seu veículo. Qual órgão é responsável por estas especificações :</CardHeader>
             <CardBody><Question29 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('29') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
           : null}
         {this.state.questao30 ?
           <Card>
-            <CardHeader> <b>(30)</b> :  : </CardHeader>
+            <CardHeader> <b>(30)</b> : A substância que é produzida pelos motores de veículos, sendo liberada na atmosfera pelo escapamento, e que tem ação tóxica sobre o organismo humano é o : </CardHeader>
             <CardBody><Question30 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._endQuestions() }} disabled={this.state.activateNext}>Finalizar</Button></CardFooter>
           </Card>
