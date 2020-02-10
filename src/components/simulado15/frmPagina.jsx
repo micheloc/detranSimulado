@@ -330,7 +330,7 @@ export class frmPagina extends Component {
         : null}
         {this.state.questao10 ?
           <Card>
-            <CardHeader> <b>(10)</b> : Qual a função especificada da veia de ignição : </CardHeader>
+            <CardHeader> <b>(10)</b> : Qual a função especificada da vela de ignição : </CardHeader>
             <CardBody><Question10 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('10') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>

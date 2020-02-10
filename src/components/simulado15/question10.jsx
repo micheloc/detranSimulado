@@ -3,7 +3,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
   { id: 'A', question: 'Interromper a corrente elétrica.' },
-  { id: 'B', question: 'Distribuir centelhas elétricas na câmara de exposição.' },
+  { id: 'B', question: 'Distribuir centelhas elétricas na câmara de explosão.' },
   { id: 'C', question: 'Aquecer o combustível.' },
   { id: 'D', question: 'Aquecer o ar da câmara de explosão.' }
 ];
