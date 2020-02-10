@@ -432,7 +432,7 @@ export class frmPagina extends Component {
           : null}
         {this.state.questao24 ?
           <Card>
-            <CardHeader> <b>(24)</b> : Ativar lixo (papel, plástico, lata, etc.) de dentro do veículo, nas vias públicas com relação à legislação de trânsito constitui : </CardHeader>
+            <CardHeader> <b>(24)</b> : Atirar lixo (papel, plástico, lata, etc.) de dentro do veículo, nas vias públicas com relação à legislação de trânsito constitui : </CardHeader>
             <CardBody><Question24 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('24') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
