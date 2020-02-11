@@ -443,7 +443,7 @@ export class frmPagina extends Component {
           : null}
         {this.state.questao25 ?
           <Card>
-            <CardHeader> <b>(25)</b> : Identifique as condições adcersas do condutor :</CardHeader>
+            <CardHeader> <b>(25)</b> : Identifique as condições adversas do condutor :</CardHeader>
             <CardBody><Question25 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('25') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>

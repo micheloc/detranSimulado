@@ -285,7 +285,7 @@ export class frmPagina extends Component {
         : null}
         {this.state.questao3 ?
           <Card>
-            <CardHeader> <b>(3)</b> : Os órgão técnicos que têm por finalidade estudar e oferecer sugestões e emabasamento, viculados ao CONTRAN, denominam-se :</CardHeader>
+            <CardHeader> <b>(3)</b> : Os órgão técnicos que têm por finalidade estudar e oferecer sugestões e embasamento, vinculados ao CONTRAN, denominam-se :</CardHeader>
             <CardBody><Question3 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('3') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
@@ -457,7 +457,7 @@ export class frmPagina extends Component {
           : null}
         {this.state.questao27 ?
           <Card>
-            <CardHeader> <b>(27)</b> : Entendmos a bioética como: </CardHeader>
+            <CardHeader> <b>(27)</b> : Entendemos a bioética como: </CardHeader>
             <CardBody><Question27 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('27') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>

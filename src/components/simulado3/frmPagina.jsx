@@ -422,7 +422,7 @@ export class frmPagina extends Component {
           : null}
         {this.state.questao22 ?
           <Card>
-            <CardHeader> <b>(22)</b> : Para evitar o ofuscamento pelo excesso de luz solar, o condutor deverá :</CardHeader>
+            <CardHeader> <b>(22)</b> : Dirigindo um veículo na via publica urbana, quando for entrar para a esquerda ou para a direita, o motorista deve :</CardHeader>
             <CardBody><Question22 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('22') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
