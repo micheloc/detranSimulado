@@ -382,7 +382,7 @@ export class frmPagina extends Component {
           : null}
         {this.state.questao17 ?
           <Card>
-            <CardHeader> <b>(17)</b> : Levando em consideração o combustível de um motor, que se inflama no r admitido após este ter sido altamente aquecido, podemos chamar este motor de:</CardHeader>
+            <CardHeader> <b>(17)</b> : Levando em consideração o combustível de um motor, que se inflama no ar admitido após este ter sido altamente aquecido, podemos chamar este motor de:</CardHeader>
             <CardBody><Question17 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('17') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
