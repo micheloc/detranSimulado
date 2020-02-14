@@ -4,7 +4,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 const question = [
   { id: 'A', question: 'Todas as alternativas são verdadeiras.' },
   { id: 'B', question: 'Pneus desgastados.' },
-  { id: 'C', question: 'Má distrivuição de peso no interior do veículo.' },
+  { id: 'C', question: 'Má distribuição de peso no interior do veículo.' },
   { id: 'D', question: 'Excesso de velocidade.' }
 ];
 
