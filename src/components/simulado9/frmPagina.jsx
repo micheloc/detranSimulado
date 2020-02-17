@@ -38,6 +38,7 @@ import a3b from '../imagens/A-3b.jfif';
 import r25c from '../imagens/R-25c.jpg'; 
 
 var selectList = [];
+var Errors = []; 
 var numberSelect = "";
 var contAcerto = 0; 
 var contError = 0; 
@@ -258,6 +259,7 @@ export class frmPagina extends Component {
       if (selectList[i] === this.state.resposta[i].resp){
         contAcerto += 1; 
       }else{
+        Errors.push("Questão : " + i + "  = " + this.state.resposta[i].resp); 
         contError +=1; 
       }
     }
@@ -498,6 +500,9 @@ export class frmPagina extends Component {
                     <tr key="respostaSeleciona">{selectList.map((opt, index) => <th  key={index} style={{width:'45px'}}><center>{opt}</center></th>)}</tr>
                   </tbody>
                 </table>
+                <br/>
+                <h3>Questão marcadas erradas:</h3>
+                {Errors.map(opt => <p>{opt}</p>)}
               </center>
             </CardBody>
           </Card>
