@@ -267,7 +267,7 @@ export class frmPagina extends Component {
       <div>
         {this.state.questao1 ? 
           <Card>
-            <CardHeader> <b>(1)</b> : O princípio básico para o relacionamento e a concivência social no trânsito, que diz respeito a formação de atitudes e ao aprender valorizar comportamentos necessários à segurança no trânsito, é o princípio da :</CardHeader>
+            <CardHeader> <b>(1)</b> : O princípio básico para o relacionamento e a convivência social no trânsito, que diz respeito a formação de atitudes e ao aprender valorizar comportamentos necessários à segurança no trânsito, é o princípio da :</CardHeader>
             <CardBody><Question1 alternativa={this._selectQuestion} habilitar={this._openNext}/> </CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('1')}} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>

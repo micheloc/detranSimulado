@@ -4,7 +4,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
   { id: 'A', question: 'O condutor ou passageiro deixar de usar o cinto de segurança, ou até colocá-lo.' },
-  { id: 'B', question: 'O condutor atirar do veículo objetos na via.' },
+  { id: 'B', question: 'O condutor que atirar do veículo objetos na via.' },
   { id: 'C', question: 'O condutor deixa de preservar o local do acidente.' },
   { id: 'D', question: 'O condutor dirigir sem atenção e sem os cuidados indispensáveis à segurança do trânsito.' }
 ];

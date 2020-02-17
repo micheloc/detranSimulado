@@ -3,7 +3,7 @@ import { Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'O conjunto de direitos e deveres de que todo individuo é investindo como membro de um Estado.' },
+  { id: 'A', question: 'O conjunto de direitos e deveres de que todo individuo é investido como membro de um Estado.' },
   { id: 'B', question: 'O conjunto de elementos naturais e a vida em todas as suas formas.' },
   { id: 'C', question: 'O desenvolvimento desequilibrado do cidadão.' },
   { id: 'D', question: 'O meio ambiente do cidadão.' }
