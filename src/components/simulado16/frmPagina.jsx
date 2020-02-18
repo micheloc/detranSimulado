@@ -497,7 +497,7 @@ export class frmPagina extends Component {
                   </tbody>
                 </table>
                 <br/>
-                <h3>Questão marcadas erradas:</h3>
+                <h3>Questões Erradas:</h3>
                 {Errors.map(opt => <p>{opt}</p>)}
               </center>
             </CardBody>
