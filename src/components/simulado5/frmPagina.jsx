@@ -259,7 +259,7 @@ export class frmPagina extends Component {
       if (selectList[i] === this.state.resposta[i].resp){
         contAcerto += 1; 
       }else{
-        Errors.push("Questão : " + ( i + 1 ) + "  = " + this.state.resposta[i].resp); 
+        Errors.push("Questão : " + ( i + 1 ) + "  = " + selectList[i]);   
         contError +=1; 
       }
     }
