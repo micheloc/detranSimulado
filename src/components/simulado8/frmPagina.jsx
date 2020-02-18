@@ -259,7 +259,7 @@ export class frmPagina extends Component {
       if (selectList[i] === this.state.resposta[i].resp){
         contAcerto += 1; 
       }else{
-        Errors.push("Questão : " + i + "  = " + this.state.resposta[i].resp); 
+        Errors.push("Questão : " + ( i + 1 ) + "  = " + this.state.resposta[i].resp); 
         contError +=1; 
       }
     }
@@ -501,7 +501,7 @@ export class frmPagina extends Component {
                   </tbody>
                 </table>
                 <br/>
-                <h3>Questão marcadas erradas:</h3>
+                <h3>Questões erradas:</h3>
                 {Errors.map(opt => <p>{opt}</p>)}
               </center>
             </CardBody>

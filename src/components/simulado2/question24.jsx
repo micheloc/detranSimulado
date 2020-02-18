@@ -5,7 +5,7 @@ const question = [
   { id: 'A', question: 'Transitar com velocidade compatível com a segurança nos cruzamentos não sinalizados' },
   { id: 'B', question: 'Sinalizar a mudança de direção somente quando estiver realizando a conversão.' },
   { id: 'C', question: 'Dar passagem pela direita, quando solicitado.' },
-  { id: 'D', question: 'Dar um toque brece na buzina próxima a hospitais e escolas.' }
+  { id: 'D', question: 'Dar um toque breve na buzina próxima a hospitais e escolas.' }
 ];
 
 

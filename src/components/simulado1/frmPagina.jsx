@@ -258,7 +258,7 @@ export class frmPagina extends Component {
       if (selectList[i] === this.state.resposta[i].resp){
         contAcerto += 1; 
       }else{
-        Errors.push("Questão : " + i + "  = " + this.state.resposta[i].resp); 
+        Errors.push("Questão : " + ( i + 1 ) + "  = " + this.state.resposta[i].resp); 
         contError +=1; 
       }
     }
@@ -352,7 +352,7 @@ export class frmPagina extends Component {
           : null}
         {this.state.questao12 ?
           <Card>
-            <CardHeader> <b>(12)</b> : Resover os conflitos sobre circuscrição e competência de trânsito no âmbito dos municípios é atribuição do:</CardHeader>
+            <CardHeader> <b>(12)</b> : Resolver os conflitos sobre circuscrição e competência de trânsito no âmbito dos municípios é atribuição do:</CardHeader>
             <CardBody><Question12 alternativa={this._selectQuestion} habilitar={this._openNext}/></CardBody>
             <CardFooter><Button onClick={() => { this._alterQuestion('12') }} disabled={this.state.activateNext}>Proxíma</Button></CardFooter>
           </Card>
@@ -501,7 +501,7 @@ export class frmPagina extends Component {
                 </table>
 
                 <br/>
-                <h3>Questão marcadas erradas:</h3>
+                <h3>Questões erradas:</h3>
                 {Errors.map(opt => <p>{opt}</p>)}
 
               </center>
