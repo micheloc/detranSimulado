@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 const question = [
-  { id: 'A', question: 'Corresponsabilidade pela vida social.' },
+  { id: 'A', question: 'Co-responsabilidade pela vida social.' },
   { id: 'B', question: 'Participação.' },
   { id: 'C', question: 'Igualdade de direitos.' },
   { id: 'D', question: 'Dignidade da pessoa humana.' }
