@@ -25,7 +25,7 @@
     "flag-icon-css": "^3.3.0",
     "font-awesome": "^4.7.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",
@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "jshint": "^2.10.2",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
